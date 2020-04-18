@@ -31,13 +31,14 @@ body{
   margin: 0;
   padding: 0;
   height: 100vw;
-  background: #F2F3F5;
+  background: white;
   
 
 } 
 #app{
  background: white;  /* donja pozadina */
  height: 1080px;
+ 
 }
 
 

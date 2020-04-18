@@ -59,15 +59,11 @@
   right: 0;
 }
 
-
-
-
-
-
-
 #header{
     display: block;
-    background: #708090  /* navbar */
+    background:	#F2F3F5; /* navbar */
+    border-radius: 0px 0px 25px 25px;
+ 
 }
 
 .link{
@@ -77,8 +73,8 @@
 .naslov{
     margin-bottom: 5%;
     text-align: center;
-    background-image: linear-gradient(to bottom right,  #1E90FF,rgb(70, 112, 238));  /* gornji header */
-    
+   background-color:rgba(51, 62, 121, 0.842);  /* gornji header */
+    border-radius: 0px 0px 26px 26px; 
       
 }
 .subtitle{
@@ -89,6 +85,7 @@
 }
 .navbar{
   list-style: none;
+  
    
   
 }
@@ -98,35 +95,24 @@
   padding: 0px 20px;
   letter-spacing: 0.5px;
 }
-
-.navbar li :hover{
-  border: 1px solid blue;
-}
-
-
 .title {
+  
   padding-bottom: 5%;  
   padding-top: 5%;
-  color: #FFF5EE;
   font-size: 60px;
-  font-weight: bold;
+  color: #FFF5EE;
   cursor: pointer;
-  white-space: nowrap;
-  font-size: 3em;
-  font-family: sans-serif;
+  font-family: 'Abril Fatface', cursive;
   letter-spacing: 0.1em;
   transition: 0.3s;
-  text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
-  1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
-  5px 13px 15px black;
+
+  
 }
-.title:hover {
-  transition: 0.3s;
-  transform: scale(1.1)translate(-5%, -5%);
-  text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
-  1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
-  1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
-}
+ .title:hover {
+    letter-spacing: 10px;
+   color: black;
+    text-shadow: #e0e0e0 1px 1px 0;    
+  }
 
 
 </style>

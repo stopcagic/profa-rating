@@ -2,7 +2,10 @@
   <div id="signup" class="container">
     <div class="card">
       <div class="card-body">
-        <h1>Regitracija</h1>
+        <h1>Registracija
+           <hr/>
+
+        </h1>
         <div class="input-group mb-5">
           <div class="input-group-prepend">
             <span class="input-group-text">
@@ -55,7 +58,7 @@
 
         <p class="text-center">
           Imate račun?
-          <router-link to="/prijava" href="button">Prijavite se</router-link>
+          <router-link to="/" href="button">Prijavite se</router-link>
         </p>
       </div>
     </div>
@@ -65,19 +68,17 @@
 <style scoped>
 .container {
   margin: 0px auto 10x;
-  max-width: 800px;
   padding: 0px;
   font-family: "Gotu", sans-serif;
   text-align: center;
 }
 .card {
-  margin: 0px auto 10px;
+   margin: 0px auto 10px;
   width: 85%;
-  background-color: #708090;
-  border: 1px solid white;
+  background-color: #F2F3F5;
   color: #272727;
   padding-top: 5%;
-  color: #fff5ee;
+  color: gray;
 }
 .input-group {
   width: 50%;
@@ -85,10 +86,10 @@
 }
 input[type="email"],
 [type="password"] {
-  background: transparent;
+  background: white;
 }
 ::placeholder {
-  color: #fff5ee;
+  color: gray;
 }
 .btn {
   margin-bottom: 5%;
@@ -96,16 +97,28 @@ input[type="email"],
   height: 60px;
   cursor: pointer;
   background: transparent;
-  border: 0.3px solid #4169e1;
+  border: 1px solid #4169e1;
   outline: none;
   transition: 0.3s ease-in-out;
-  color: #fff5ee;
+  color: gray;
 }
 .btn:hover {
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
   background: #4169e1;
+  color: white;
 }
 h1 {
   margin-bottom: 5%;
+  color: gray;
+   margin-left: 150px;
+  margin-right: 150px;
+transition: 0.3s ease-in-out;
+}
+h1:hover{
+  transition: 0.3s ease-in-out;
+  color: #4169e1;
+  letter-spacing: 1px;
+   margin-left: 100px;
+  margin-right: 100px;
 }
 </style>

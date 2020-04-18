@@ -4,7 +4,10 @@
       <div id="login" class="container">
         <div class="card">
           <div class="card-body">
-            <h1>Prijava</h1>
+            <h1>Prijava
+              <hr/>
+            </h1>
+            
 
             <div class="input-group mb-5">
               <div class="input-group-prepend">
@@ -55,19 +58,18 @@ export default {
 };
 </script>
 <style scoped>
+
 .card {
   margin: 0px auto 10px;
   width: 85%;
-  background-color: #708090;
-  border: 1px solid white;
+  background-color: #F2F3F5;
   color: #272727;
   padding-top: 5%;
-  color: #fff5ee;
+  color: gray;
 }
 
 .container {
   margin: 0px auto 10x;
-  max-width: 800 px;
   padding: 0px;
   font-family: "Gotu", sans-serif;
   text-align: center;
@@ -85,24 +87,36 @@ a {
   border: 1px solid #4169e1;
   outline: none;
   transition: 0.3s ease-in-out;
-  color: #fff5ee;
+  color: gray;
   margin-top: 5%;
 }
 .btn:hover {
   transition: 0.3s ease-in-out;
   background: #4169e1;
+  color: white;
 }
 
 input[type="email"],
 [type="password"] {
-  background: transparent;
+  background: white;
 }
 
 ::placeholder {
-  color: #fff5ee;
+  color: gray;
 }
 h1 {
   margin-bottom: 5%;
+  color: gray;
+   margin-left: 150px;
+  margin-right: 150px;
+transition: 0.3s ease-in-out;
+}
+h1:hover{
+  transition: 0.3s ease-in-out;
+  color: #4169e1;
+  letter-spacing: 1px;
+   margin-left: 100px;
+  margin-right: 100px;
 }
 .input-group {
   width: 50%;
