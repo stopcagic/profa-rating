@@ -1,33 +1,36 @@
 <template>
-<div class="naslov">
+  <div class="naslov">
     <div class="title">Profa rating</div>
     <div class="subtitle">Ocijenite vašeg profesora</div>
-    <div id="header">          
-    <div id="app-header" >
+    <div id="header">
+      <div id="app-header">
         <ul type="button" class="navbar">
-      
-           <button class="button">
-             <router-link class="link" to="/"><span>Home</span></router-link>
-           </button>
-             <button class="button">
-             <router-link class="link" to="/about"><span>About</span></router-link>
-           </button>
-            
-          
-        </ul>              
+          <button class="button">
+            <router-link class="link" to="/">
+              <span>Home</span>
+            </router-link>
+          </button>
+          <button class="button">
+            <router-link class="link" to="/popis">
+              <span>Popis</span>
+            </router-link>
+          </button>
+          <button class="button">
+            <router-link class="link" to="/about">
+              <span>About</span>
+            </router-link>
+          </button>
+        </ul>
+      </div>
     </div>
-</div> 
-</div>
-   
-
+  </div>
 </template>
 
 <style scoped>
 .button {
-  
   background-color: transparent;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 15px;
   width: 200px;
   transition: all 0.5s;
@@ -42,7 +45,7 @@
 }
 
 .button span:after {
-  content: '\00bb';
+  content: "\00bb";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -59,60 +62,48 @@
   right: 0;
 }
 
-#header{
-    display: block;
-    background:	#F2F3F5; /* navbar */
-    border-radius: 0px 0px 25px 25px;
- 
+#header {
+  display: block;
+  background: #f2f3f5; /* navbar */
+  border-radius: 0px 0px 25px 25px;
 }
 
-.link{
-    color: #FFF5EE;
-    font-weight: bold;
+.link {
+  color: rgb(39, 25, 139);
+  font-weight: bold;
 }
-.naslov{
-    margin-bottom: 5%;
-    text-align: center;
-   background-color:rgba(51, 62, 121, 0.842);  /* gornji header */
-    border-radius: 0px 0px 26px 26px; 
-      
+.naslov {
+  margin-bottom: 5%;
+  text-align: center;
+  background-color: rgba(51, 62, 121, 0.842); /* gornji header */
+  border-radius: 0px 0px 26px 26px;
 }
-.subtitle{
-    color: #FFF5EE;
-    font-size: 20px;
-    margin-bottom: 5%;
-
+.subtitle {
+  color: #fff5ee;
+  font-size: 20px;
+  margin-bottom: 5%;
 }
-.navbar{
+.navbar {
   list-style: none;
-  
-   
-  
 }
-.navbar li{
-  
+.navbar li {
   display: inline-block;
   padding: 0px 20px;
   letter-spacing: 0.5px;
 }
 .title {
-  
-  padding-bottom: 5%;  
+  padding-bottom: 5%;
   padding-top: 5%;
   font-size: 60px;
-  color: #FFF5EE;
+  color: #fff5ee;
   cursor: pointer;
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
   letter-spacing: 0.1em;
   transition: 0.3s;
-
-  
 }
- .title:hover {
-    letter-spacing: 10px;
-   color: black;
-    text-shadow: #e0e0e0 1px 1px 0;    
-  }
-
-
+.title:hover {
+  letter-spacing: 10px;
+  color: black;
+  text-shadow: #e0e0e0 1px 1px 0;
+}
 </style>

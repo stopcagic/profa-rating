@@ -2,9 +2,9 @@
   <div id="signup" class="container">
     <div class="card">
       <div class="card-body">
-        <h1>Registracija
-           <hr/>
-
+        <h1>
+          Registracija
+          <hr />
         </h1>
         <div class="input-group mb-5">
           <div class="input-group-prepend">
@@ -53,7 +53,7 @@
         </div>
 
         <div>
-          <button type="submit" class="btn btn-primary btn-lg">Reigstriraj se</button>
+          <button type="submit" class="btn btn-primary btn-lg">Registriraj se</button>
         </div>
 
         <p class="text-center">
@@ -73,9 +73,9 @@
   text-align: center;
 }
 .card {
-   margin: 0px auto 10px;
+  margin: 0px auto 10px;
   width: 85%;
-  background-color: #F2F3F5;
+  background-color: #f2f3f5;
   color: #272727;
   padding-top: 5%;
   color: gray;
@@ -84,13 +84,7 @@
   width: 50%;
   margin: 0 auto;
 }
-input[type="email"],
-[type="password"] {
-  background: white;
-}
-::placeholder {
-  color: gray;
-}
+
 .btn {
   margin-bottom: 5%;
   width: 180px;
@@ -110,15 +104,15 @@ input[type="email"],
 h1 {
   margin-bottom: 5%;
   color: gray;
-   margin-left: 150px;
+  margin-left: 150px;
   margin-right: 150px;
-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-h1:hover{
+h1:hover {
   transition: 0.3s ease-in-out;
   color: #4169e1;
   letter-spacing: 1px;
-   margin-left: 100px;
+  margin-left: 100px;
   margin-right: 100px;
 }
 </style>
