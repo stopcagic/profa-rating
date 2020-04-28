@@ -1,9 +1,29 @@
-import express from 'express';
+import express, { urlencoded } from 'express';
+import cors from 'cors'
+
+const app = express()
+const port = 3000
 
 
-const app = express() // instanciranje aplikacije
-const port = 3000 // port na kojem će web server slušati
+app.use(cors())
+app.use(urlencoded({ extended: true }))
 
+app.get('/', (req, res) => {
+    res.json('This is a homepage.')
+})
 
-app.get('/', (req, res) => res.send('Hello World, ovaj puta preko browsera!'))
+app.post('/prijava', (req, res) => {
+    let email = req.body.email
+    let password = req.body.password
+
+    res.json(podaci)
+})
+
+app.post('/registracija', (req, res) => {
+    let email = req.body.email
+    let password = req.body.password
+
+    res.json(podaci)
+})
+
 app.listen(port, () => console.log(`Slušam na portu ${port}!`))
