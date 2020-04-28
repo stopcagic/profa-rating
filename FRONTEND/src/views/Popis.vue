@@ -3,42 +3,36 @@
     <div class="container">
       <button class="btn btn-primary btn-lg" v-on:click="openProf=!openProf">Profesori</button>
       <button class="btn btn-primary btn-lg" v-on:click="openAsis=!openAsis">Asistenti</button>
-
-      <div v-if="!openProf" class="card">
-        <div class="card-body">
-          Nikola Tanković
-          <i class="far fa-check-circle fa-2x"></i>
-          <i class="far fa-hand-pointer fa-2x"></i>
-        </div>
-        <div class="card-body">
-          Nikola Tanković
-          <i class="far fa-check-circle fa-2x"></i>
-          <i class="far fa-hand-pointer fa-2x"></i>
-        </div>
-        <div class="card-body">
-          Nikola Tanković
-          <i class="far fa-check-circle fa-2x"></i>
-          <i class="far fa-hand-pointer fa-2x"></i>
-        </div>
-        <div class="card-body">
-          Nikola Tanković
-          <i class="far fa-check-circle fa-2x"></i>
-          <i class="far fa-hand-pointer fa-2x"></i>
-        </div>
-        <div class="card-body">
-          Nikola Tanković
-          <i class="far fa-check-circle fa-2x"></i>
-          <i class="far fa-hand-pointer fa-2x"></i>
+      <div v-if="!openProf">
+        <div v-for="profesor in profesori">
+          <kartica :info="profesor"></kartica>
         </div>
       </div>
 
       <div v-if="!openAsis" class="card">
-        <div class="card-body">Boris Oreški</div>
+        <div class="card-body"></div>
       </div>
     </div>
   </div>
 </template>
 
+
+<script>
+import profesori from "@/store.js";
+import kartica from "@/components/kartica";
+export default {
+  data() {
+    return {
+      openProf: true,
+      openAsis: true,
+      profesori
+    };
+  },
+  components: {
+    kartica
+  }
+};
+</script>
 <style scoped>
 .container {
   margin: 0px auto 10x;
@@ -74,14 +68,3 @@
   content: "\f023";
 }
 </style>
-
-<script>
-export default {
-  data() {
-    return {
-      openProf: true,
-      openAsis: true
-    };
-  }
-};
-</script>
