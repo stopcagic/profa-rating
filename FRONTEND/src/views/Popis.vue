@@ -4,32 +4,35 @@
       <button class="btn btn-primary btn-lg" v-on:click="openProf=!openProf">Profesori</button>
       <button class="btn btn-primary btn-lg" v-on:click="openAsis=!openAsis">Asistenti</button>
       <div v-if="!openProf">
-        <div v-for="profesor in profesori">
-          <kartica :info="profesor"></kartica>
-        </div>
+        <kartica :key="polje.id" :info="polje" v-for="polje in searchPosts"></kartica>
       </div>
+    </div>
 
-      <div v-if="!openAsis" class="card">
-        <div class="card-body"></div>
-      </div>
+    <div v-if="!openAsis" class="card">
+      <div class="card-body"></div>
     </div>
   </div>
 </template>
 
 
 <script>
-import profesori from "@/store.js";
-import kartica from "@/components/kartica";
+import store from "@/store.js";
+import kartica from "@/components/kartica.vue";
 export default {
   data() {
     return {
       openProf: true,
       openAsis: true,
-      profesori
+      store
     };
   },
   components: {
     kartica
+  },
+  computed: {
+    searchPosts() {
+      return this.polje.filter(polje => polje.title.includes(this.searchTerm));
+    }
   }
 };
 </script>
