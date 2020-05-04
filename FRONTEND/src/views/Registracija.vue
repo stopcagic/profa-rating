@@ -51,6 +51,29 @@
             placeholder="Ponovite Lozinku"
           />
         </div>
+        <div class="input-group mb-5">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="fas fa-university"></i>
+            </span>
+          </div>
+          <select
+            type="faks"
+            name="faks"
+            required
+            class="form-control"
+            placeholder="Odaberite Faks"
+          >
+            <option></option>
+            <option value="Pula">Pula</option>
+            <option value="Zagreb">Zagreb</option>
+            <option value="Osijek">Osijek</option>
+            <option value="Rijeka">Rijeka</option>
+            <option value="Split">Split</option>
+            <option value="Dubrovnik">Dubrovnik</option>
+            <option value="Zadar">Zadar</option>
+          </select>
+        </div>
 
         <div>
           <button type="submit" class="btn btn-primary btn-lg">Registriraj se</button>
@@ -66,6 +89,12 @@
 </template>
 
 <style scoped>
+select option {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+}
 .container {
   margin: 0px auto 10x;
   padding: 0px;
