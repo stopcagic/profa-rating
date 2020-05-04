@@ -57,15 +57,10 @@
               <i class="fas fa-university"></i>
             </span>
           </div>
-          <select
-            type="faks"
-            name="faks"
-            required
-            class="form-control"
-            placeholder="Odaberite Faks"
-          >
+          <label type="faks" for="faks" required></label>
+          <select class="form-control" id="faks">
             <option></option>
-            <option value="Pula">Pula</option>
+            <option value="fet">Fakultet ekonimije i turizma "Dr. Mijo Mirković"</option>
             <option value="Zagreb">Zagreb</option>
             <option value="Osijek">Osijek</option>
             <option value="Rijeka">Rijeka</option>

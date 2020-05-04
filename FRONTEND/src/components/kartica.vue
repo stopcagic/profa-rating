@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <router-link to="/anketa">
+    <router-link class="link" to="/anketa">
       <div class="card-body">
         {{info.titula}}
         {{info.ime}}
@@ -16,6 +16,9 @@ export default {
 };
 </script>
 <style scoped>
+.link {
+  text-decoration: none;
+}
 .card {
   cursor: pointer;
   margin: 0px auto 10px;

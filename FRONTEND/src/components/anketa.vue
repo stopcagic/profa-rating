@@ -17,11 +17,11 @@
         </div>
         <div class="form-group">
           <input type="radio" id="option3" name="question1" value="3" />
-          <label class="checkboxtext" for="3">2</label>
+          <label class="checkboxtext" for="3">3</label>
         </div>
         <div class="form-group">
           <input type="radio" id="option4" name="question1" value="3" />
-          <label class="checkboxtext" for="4">2</label>
+          <label class="checkboxtext" for="4">4</label>
         </div>
         <div class="form-group">
           <input type="radio" id="option5" name="question1" value="5" />
@@ -46,11 +46,11 @@
         </div>
         <div class="form-group">
           <input type="radio" id="option3" name="question2" value="3" />
-          <label class="checkboxtext" for="3">2</label>
+          <label class="checkboxtext" for="3">3</label>
         </div>
         <div class="form-group">
           <input type="radio" id="option4" name="question2" value="3" />
-          <label class="checkboxtext" for="4">2</label>
+          <label class="checkboxtext" for="4">4</label>
         </div>
         <div class="form-group">
           <input type="radio" id="option5" name="question2" value="5" />
