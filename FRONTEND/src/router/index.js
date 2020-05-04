@@ -30,7 +30,12 @@ const routes = [
     path: "/prijava",
     name: "Prijava",
     component: () => import("../views/Prijava.vue"),
-  }
+  },
+  {
+    path: "/anketa",
+    name: "Anketa",
+    component: () => import("../components/anketa.vue"),
+  },
 ];
 
 const router = new VueRouter({
