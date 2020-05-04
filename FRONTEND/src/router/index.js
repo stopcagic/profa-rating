@@ -26,6 +26,11 @@ const routes = [
     name: "Popis",
     component: () => import("../views/Popis.vue"),
   },
+  {
+    path: "/prijava",
+    name: "Prijava",
+    component: () => import("../views/Prijava.vue"),
+  }
 ];
 
 const router = new VueRouter({
