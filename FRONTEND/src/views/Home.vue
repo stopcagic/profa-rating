@@ -2,6 +2,8 @@
   <div>
     <div v-for="profesor in profesori" :key="profesor._id">
       <kartica :info="profesor" />
+      <button @click="show"></button>
+      <modal></modal>
     </div>
   </div>
 </template>
@@ -11,7 +13,7 @@
 import { profs } from "@/services";
 import regeneratorRuntime from "regenerator-runtime";
 import kartica from "@/components/kartica.vue";
-
+import modal from "@/components/modalPrijava.vue";
 export default {
   name: "Home",
   data() {
@@ -20,7 +22,8 @@ export default {
     };
   },
   components: {
-    kartica
+    kartica,
+    modal
   },
   async created() {
     this.fetchPosts();
@@ -28,6 +31,12 @@ export default {
   methods: {
     async fetchPosts() {
       this.profesori = await profs.getall();
+    },
+    show() {
+      this.$modal.show("hello-world");
+    },
+    hide() {
+      this.$modal.hide("hello-world");
     }
   }
 };
