@@ -59,14 +59,19 @@
           </div>
           <label type="faks" for="faks" required></label>
           <select class="form-control" id="faks">
-            <option></option>
+            <option selected>Odaberite...</option>
             <option value="fet">Fakultet ekonimije i turizma "Dr. Mijo Mirković"</option>
-            <option value="Zagreb">Zagreb</option>
-            <option value="Osijek">Osijek</option>
-            <option value="Rijeka">Rijeka</option>
-            <option value="Split">Split</option>
-            <option value="Dubrovnik">Dubrovnik</option>
-            <option value="Zadar">Zadar</option>
+            <option value="fooz">Fakultet za odgojne i obrazovne znanosti</option>
+            <option value="ffpu">Filozofski fakultet</option>
+            <option value="mapu">Muzička akademija u Puli</option>
+            <option value="fitiks">Fakultet za interdisciplinarne, talijanske i kulturološke studije</option>
+            <option value="fipu">Fakultet informatike u Puli</option>
+            <option value="mfpu">Medicinski fakultet u Puli</option>
+            <option value="opzs">Odjel za prirodne i zdravstvene studije</option>
+            <option value="ots">Odjel za tehničke studije</option>
+            <option value="ckpis">Centar za kulturološka i povijesna istraživanja socijalizma</option>
+            <option value="cko">Centar za kompetencije u obrazovanju</option>
+            <option value="sric">Sveučilišni računski i informacijski centar</option>
           </select>
         </div>
 
