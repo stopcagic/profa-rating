@@ -1020,6 +1020,18 @@
         </table>
       </div>
     </div>
+
+    <div class="card-comment">
+      <tr>
+        <td>Općenito je kvalitetan nastavnik/nastavnica</td>
+        <td>
+          <div>
+            <input type="radio" id="option1" name="question2" value="1" />
+            <label class="checkboxtext" for="option1"></label>
+          </div>
+        </td>
+      </tr>
+    </div>
   </div>
 </template>
 <script>
@@ -1028,6 +1040,14 @@ export default {
 };
 </script>
 <style  scoped>
+.card-comment {
+  margin: 0px auto 10px;
+  width: 105%;
+  background-color: #f2f3f5;
+  color: #272727;
+  color: gray;
+  margin-top: 5%;
+}
 .card-table {
   margin: 0px auto 10px;
   width: 105%;
