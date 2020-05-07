@@ -366,6 +366,63 @@
         </div>
       </div>
     </div>
+    <div class="card-table">
+      <div class="card-header">
+        <h2>*</h2>
+        <p>Molimo da u nastavku označite u kojoj se mjeri slažete s tvrdnjama koje se odnose na nastavnika pri čemu 1 znači da se uopće ne slažete, a 5 da se u potpunosti slažete:</p>
+      </div>
+      <div class="card-body">
+        <table>
+          <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>ne znam (ne mogu procijeniti)</th>
+          </tr>
+          <tr>
+            <td>Redovito održava nastavu</td>
+            <td>
+              <div class="form-group">
+                <input type="radio" id="option1" name="question2" value="1" />
+                <label class="checkboxtext" for="option1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <input type="radio" id="option1" name="question2" value="1" />
+                <label class="checkboxtext" for="option1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <input type="radio" id="option1" name="question2" value="1" />
+                <label class="checkboxtext" for="option1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <input type="radio" id="option1" name="question2" value="1" />
+                <label class="checkboxtext" for="option1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <input type="radio" id="option1" name="question2" value="1" />
+                <label class="checkboxtext" for="option1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <input type="radio" id="option1" name="question2" value="1" />
+                <label class="checkboxtext" for="option1"></label>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -374,6 +431,14 @@ export default {
 };
 </script>
 <style  scoped>
+.card-table {
+  margin: 0px auto 10px;
+  width: 105%;
+  background-color: #f2f3f5;
+  color: #272727;
+  color: gray;
+  margin-top: 5%;
+}
 .card {
   margin: 0px auto 10px;
   width: 55%;
