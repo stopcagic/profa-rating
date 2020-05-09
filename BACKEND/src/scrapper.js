@@ -3,7 +3,24 @@ const cheerio = require('cheerio')
 
 export default async (data) => {
 
-    const url = `https://${data.faks}.unipu.hr/${data.faks}/o_fakultetu/nastavnici`
+    let url
+
+    switch (data.faks.charAt) {
+        case 'm': {
+            url = `https://${data.faks}.unipu.hr/${data.faks}/o_akademiji/nastavnici`
+            break;
+        }
+        case 'o': {
+            url = `https://${data.faks}.unipu.hr/${data.faks}/o_odjelu/nastavnici`
+            break;
+        }
+        case 'f': {
+            url = `https://${data.faks}.unipu.hr/${data.faks}/o_fakultetu/nastavnici`
+            break;
+        }
+        default:
+            break;
+    }
 
     const html = await axios.get(url)
 
