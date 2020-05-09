@@ -1023,14 +1023,21 @@
 
     <div class="card-comment">
       <tr>
-        <td>Općenito je kvalitetan nastavnik/nastavnica</td>
+        <div class="card-header">
+          <p>Ovdje možete unijeti komentar, primjedbu ili pohvalu nastavnice/nastavnika, odnosno gdje vidite mogućnosti poboljšanja – ukratko obrazložite.</p>
+        </div>
+      </tr>
+
+      <tr>
         <td>
           <div>
-            <input type="radio" id="option1" name="question2" value="1" />
-            <label class="checkboxtext" for="option1"></label>
+            <textarea class="komentar" rows="5"></textarea>
           </div>
         </td>
       </tr>
+    </div>
+    <div class="card-button">
+      <button class="btn btn-primary btn-lg" type="submit">Pošalji</button>
     </div>
   </div>
 </template>
@@ -1040,6 +1047,13 @@ export default {
 };
 </script>
 <style  scoped>
+.komentar {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 95%;
+  text-indent: 5px;
+  font-size: 15px;
+}
 .card-comment {
   margin: 0px auto 10px;
   width: 105%;
@@ -1076,8 +1090,7 @@ input[type="radio"] {
 .form-group {
   margin-left: 15%;
 }
-.checkbox {
-}
+
 th {
   padding-left: 5%;
 }
@@ -1088,5 +1101,27 @@ td {
 }
 .boja {
   background-color: white;
+}
+
+.btn {
+  margin-bottom: 15%;
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #4169e1;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  color: gray;
+  margin-top: 5%;
+}
+.btn:hover {
+  transition: 0.3s ease-in-out;
+  background: #4169e1;
+  color: white;
+}
+.card-button {
+  display: flex;
+  justify-content: center;
 }
 </style>
