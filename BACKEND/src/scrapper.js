@@ -55,5 +55,7 @@ export default async (data) => {
             }
         }
     })
-    return predavaci
+
+    if (predavaci.length > 0) return predavaci
+    else return 'Failed to get data.'
 }

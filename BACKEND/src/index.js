@@ -15,7 +15,7 @@ app.use(urlencoded({ extended: true }))
 app.use(express.json())
 
 
-app.use('/home', predavaci)
+app.use('/', predavaci)
 app.use('/user', register)
 
 app.listen(port, () => console.log(`Slušam na portu ${port}!`))

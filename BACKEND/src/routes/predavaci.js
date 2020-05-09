@@ -15,4 +15,5 @@ router.get('/predavaci', verify, async (req, res) => {
     res.json(results)
 })
 
+
 export default router
