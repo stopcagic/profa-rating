@@ -24,7 +24,7 @@ export default async (data) => {
 
     const html = await axios.get(url)
 
-    const $ = await cheerio.load(html.data)
+    const $ = cheerio.load(html.data)
 
     let predavaci = []
 
