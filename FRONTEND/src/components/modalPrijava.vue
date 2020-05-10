@@ -1,5 +1,5 @@
 <template>
-  <modal name="hello-world">
+  <modal height="500px" name="prijava-modal">
     <div id="login" class="container">
       <div class="card">
         <div class="card-body">

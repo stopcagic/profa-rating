@@ -15,9 +15,15 @@
               <span>Popis</span>
             </router-link>
           </button>
+
           <button class="button">
             <router-link class="link" to="/about">
               <span>About</span>
+            </router-link>
+          </button>
+          <button class="button">
+            <router-link class="link" to="/prijava">
+              <span>Prijava</span>
             </router-link>
           </button>
         </ul>
