@@ -30,8 +30,4 @@ body {
   height: 100vw;
   background: white;
 }
-#app {
-  background: white; /* donja pozadina */
-  height: 1080px;
-}
 </style>

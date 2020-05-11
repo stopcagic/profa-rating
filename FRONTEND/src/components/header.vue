@@ -1,38 +1,70 @@
 <template>
-  <div class="naslov">
-    <div class="title">Profa rating</div>
-    <div class="subtitle">Ocijenite vašeg profesora</div>
-    <div id="header">
-      <div id="app-header">
-        <ul type="button" class="navbar">
-          <button class="button">
-            <router-link class="link" to="/">
-              <span>Home</span>
-            </router-link>
-          </button>
-          <button class="button">
-            <router-link class="link" to="/popis">
-              <span>Popis</span>
-            </router-link>
-          </button>
+  <div class="row" id="header">
+    <div class="col-sm-8" id="naslov">
+      <div class="title">Profa rating</div>
+    </div>
 
-          <button class="button">
-            <router-link class="link" to="/about">
-              <span>About</span>
-            </router-link>
-          </button>
-          <button class="button">
-            <router-link class="link" to="/prijava">
-              <span>Prijava</span>
-            </router-link>
-          </button>
-        </ul>
-      </div>
+    <div class="col-sm-4" id="logo ">LOGO</div>
+    <div class="row">
+      <ul type="button" class="navbar">
+        <button class="button">
+          <router-link class="link" to="/">
+            <span>Home</span>
+          </router-link>
+        </button>
+        <button class="button">
+          <router-link class="link" to="/popis">
+            <span>Popis</span>
+          </router-link>
+        </button>
+
+        <button class="button">
+          <router-link class="link" to="/about">
+            <span>About</span>
+          </router-link>
+        </button>
+        <button class="button">
+          <router-link class="link" to="/prijava">
+            <span>Prijava</span>
+          </router-link>
+        </button>
+      </ul>
     </div>
   </div>
 </template>
 
 <style scoped>
+#header {
+  margin-bottom: 5%;
+  text-align: center;
+  background-image: url("../assets/pozadina.png") no-repeat;
+  background-size: cover;
+  border-radius: 0px 0px 26px 26px;
+}
+
+#naslov {
+  display: block;
+  /*   background: rgba(51, 62, 121, 0.842); */
+
+  border-radius: 0px 0px 25px 25px;
+}
+
+.title {
+  padding-bottom: 1%;
+  font-size: 30px;
+  color: transparent;
+  cursor: pointer;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 0.1em;
+  transition: 0.3s;
+}
+
+.title:hover {
+  letter-spacing: 5px;
+  color: #e0e0e0;
+  text-shadow: black 1px 1px 0;
+}
+
 .button {
   background-color: transparent;
   border: none;
@@ -68,48 +100,16 @@
   right: 0;
 }
 
-#header {
-  display: block;
-  background: #f2f3f5; /* navbar */
-  border-radius: 0px 0px 25px 25px;
-}
-
-.link {
-  color: rgb(39, 25, 139);
-  font-weight: bold;
-}
-.naslov {
-  margin-bottom: 5%;
-  text-align: center;
-  background-color: rgba(51, 62, 121, 0.842); /* gornji header */
-  border-radius: 0px 0px 26px 26px;
-}
-.subtitle {
-  color: #fff5ee;
-  font-size: 20px;
-  margin-bottom: 5%;
-}
 .navbar {
+  width: 70%;
   list-style: none;
 }
 .navbar li {
   display: inline-block;
-  padding: 0px 20px;
   letter-spacing: 0.5px;
 }
-.title {
-  padding-bottom: 5%;
-  padding-top: 5%;
-  font-size: 60px;
-  color: #fff5ee;
-  cursor: pointer;
-  font-family: "Abril Fatface", cursive;
-  letter-spacing: 0.1em;
-  transition: 0.3s;
-}
-.title:hover {
-  letter-spacing: 10px;
-  color: black;
-  text-shadow: #e0e0e0 1px 1px 0;
+.link {
+  color: rgb(39, 25, 139);
+  font-weight: bold;
 }
 </style>
