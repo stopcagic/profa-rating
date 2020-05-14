@@ -29,7 +29,7 @@ router.put('/:id', verify, async (req, res) => {
 
     const id = req.params._id
 
-    //Samo provjera dal je forma ispravno i potpuno ispunjena. JOS NE RADI.
+    //Samo provjera dal je forma ispravno i potpuno ispunjena. (JOS NE RADI).
     const { error } = formValidation(req.body)
     if (error) return res.status(400).send(error.details[0].message)
 
