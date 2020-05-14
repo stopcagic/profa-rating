@@ -23,4 +23,9 @@ const loginValidation = (data) => {
 
     return schema.validate(data)
 }
-export { registerValidation, loginValidation }
+
+const formValidation = (data) => {
+    //Dodati validation kada saznamo što sve ide u formu i kako.
+}
+
+export { registerValidation, loginValidation, formValidation }
