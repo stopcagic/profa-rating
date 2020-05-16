@@ -1,10 +1,13 @@
 <template>
   <div class="row" id="header">
     <div class="col-sm-8" id="naslov">
-      <div class="title">Profa rating</div>
+      <div class="title">Ocijenite vašeg profesora</div>
     </div>
 
-    <div class="col-sm-4" id="logo ">LOGO</div>
+    <div class="col-sm-4" id="logo ">
+      <i class="fas fa-chalkboard-teacher"></i>
+      <div class="logo-title"></div>Profa rating
+    </div>
     <div class="row">
       <ul type="button" class="navbar">
         <button class="button">
@@ -37,21 +40,21 @@
 #header {
   margin-bottom: 5%;
   text-align: center;
-  background-image: url("../assets/pozadina.png") no-repeat;
+
   background-size: cover;
   border-radius: 0px 0px 26px 26px;
 }
 
 #naslov {
   display: block;
-  /*   background: rgba(51, 62, 121, 0.842); */
+  background: rgba(51, 62, 121, 0.842);
 
   border-radius: 0px 0px 25px 25px;
 }
 
 .title {
   padding-bottom: 1%;
-  font-size: 30px;
+  font-size: 20px;
   color: transparent;
   cursor: pointer;
   font-family: "Abril Fatface", cursive;
@@ -111,5 +114,8 @@
 .link {
   color: rgb(39, 25, 139);
   font-weight: bold;
+}
+.fas {
+  font-size: 250%;
 }
 </style>
