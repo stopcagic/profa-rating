@@ -4,10 +4,12 @@
       <div class="title">Ocijenite vašeg profesora</div>
     </div>
 
-    <div class="col-sm-4" id="logo ">
+    <div class="w3-center w3-animate-right" id="logo">
       <i class="fas fa-chalkboard-teacher"></i>
-      <div class="logo-title"></div>Profa rating
+      <div class="logo-title"></div>
+      <h1>Profa Rating</h1>
     </div>
+
     <div class="row">
       <ul type="button" class="navbar">
         <button class="button">
@@ -50,6 +52,13 @@
   background: rgba(51, 62, 121, 0.842);
 
   border-radius: 0px 0px 25px 25px;
+}
+#logo {
+  margin-left: 5%;
+}
+
+.class {
+  margin-top: 15%;
 }
 
 .title {
@@ -107,15 +116,24 @@
   width: 70%;
   list-style: none;
 }
+
 .navbar li {
   display: inline-block;
   letter-spacing: 0.5px;
 }
+
 .link {
   color: rgb(39, 25, 139);
   font-weight: bold;
 }
+
 .fas {
-  font-size: 250%;
+  margin-top: 5%;
+  font-size: 350%;
+}
+h1 {
+  font-weight: 500;
+  color: rgba(51, 62, 121, 0.842);
+  font-family: "Fredericka the Great", cursive;
 }
 </style>

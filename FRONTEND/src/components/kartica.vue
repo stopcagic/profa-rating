@@ -5,7 +5,7 @@
         {{info.titula}}
         {{info.ime}}
         {{info.prezime}}
-        <i class="far fa-check-circle"></i>
+        <i class="fas fa-clipboard"></i>
       </div>
     </router-link>
   </div>
@@ -25,7 +25,8 @@ export default {
   width: 85%;
   background-color: #f2f3f5;
 }
-.far {
+.fas {
+  color: rgba(51, 62, 121, 0.842);
   float: right;
   font-size: 150%;
 }
