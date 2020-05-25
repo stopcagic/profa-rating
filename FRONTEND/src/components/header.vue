@@ -200,7 +200,7 @@ span:after {
   border: none;
   color: #ffffff;
   font-size: 15px;
-  width: 90px;
+  width: 30%;
   transition: all 0.5s;
   cursor: pointer;
 }

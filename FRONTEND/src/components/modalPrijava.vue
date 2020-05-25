@@ -1,5 +1,5 @@
 <template>
-  <modal height="500px" name="prijava-modal">
+  <modal height="50%" name="prijava-modal">
     <div id="login" class="container">
       <div class="card">
         <div class="card-body">
@@ -63,10 +63,9 @@ export default {};
 
 .card {
   margin: 0px auto 10px;
-
   background-color: #f2f3f5;
   color: #272727;
-  padding-top: 5%;
+  padding-top: 1%;
   color: gray;
 }
 
@@ -105,5 +104,7 @@ h1:hover {
 .input-group {
   width: 50%;
   margin: 0 auto;
+}
+@media (max-width: 400px) {
 }
 </style>

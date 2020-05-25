@@ -100,5 +100,19 @@ h1:hover {
   width: 50%;
   margin: 0 auto;
 }
+@media (max-width: 400px) {
+  h1 {
+    display: inline;
+    margin: 0 auto;
+  }
+  h1:hover {
+    margin: 0 auto;
+    letter-spacing: 5px;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+}
 </style>
 
