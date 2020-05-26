@@ -58,7 +58,7 @@ export default {
   height: 60px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid #4169e1;
+  border: 1px solid #4fc1e9;
   outline: none;
   transition: 0.3s ease-in-out;
   color: gray;
@@ -66,7 +66,7 @@ export default {
 }
 .btn:hover {
   transition: 0.3s ease-in-out;
-  background: #4169e1;
+  background: #4fc1e9;
   color: white;
 }
 

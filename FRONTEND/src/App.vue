@@ -27,7 +27,7 @@ body {
   font-family: "Gotu", sans-serif;
   margin: 0;
   padding: 0;
-  height: 100vw;
-  background: white;
+
+  background-image: url("assets/pozadina4.svg");
 }
 </style>

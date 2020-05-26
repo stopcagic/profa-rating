@@ -171,12 +171,11 @@ span:after {
   margin-bottom: 5%;
   text-align: center;
   background-size: cover;
-  border-radius: 0px 0px 26px 26px;
 }
 
 #naslov {
   display: block;
-  background: rgba(51, 62, 121, 0.842);
+  background: #6356e5;
   border-radius: 0px 0px 25px 25px;
 }
 
