@@ -27,7 +27,10 @@ body {
   font-family: "Gotu", sans-serif;
   margin: 0;
   padding: 0;
-
-  background-image: url("assets/pozadina4.svg");
+  background-image: linear-gradient(lightgray, white);
+  background-repeat: no-repeat;
 }
+/* #app {
+  background-image: url("assets/pozadina3.svg");
+} */
 </style>

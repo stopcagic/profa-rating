@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div v-for="profesor in profesori" :key="profesor._id">
       <kartica :info="profesor" />
     </div>
@@ -34,4 +34,11 @@ export default {
 };
 </script>
 <style scoped>
+.container {
+  margin: 0px auto 10x;
+  padding: 0px;
+  font-family: "Gotu", sans-serif;
+  text-align: center;
+  height: 100%;
+}
 </style>

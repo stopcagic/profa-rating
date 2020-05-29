@@ -75,7 +75,7 @@ export default {};
   height: 60px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid #4169e1;
+  border: 1px solid rgba(51, 62, 121, 0.842);
   outline: none;
   transition: 0.3s ease-in-out;
   color: gray;
@@ -83,7 +83,7 @@ export default {};
 }
 .btn:hover {
   transition: 0.3s ease-in-out;
-  background: #4169e1;
+  background: rgba(51, 62, 121, 0.842);
   color: white;
 }
 
@@ -96,7 +96,7 @@ h1 {
 }
 h1:hover {
   transition: 0.3s ease-in-out;
-  color: #4169e1;
+  color: rgba(51, 62, 121, 0.842);
   letter-spacing: 1px;
   margin-left: 100px;
   margin-right: 100px;

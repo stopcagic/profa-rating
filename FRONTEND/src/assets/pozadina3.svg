@@ -1,16 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
   <defs>
-    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#424478"/>
-      <stop offset="0.218" stop-color="#3f4172"/>
-      <stop offset="0.799" stop-color="#313259"/>
-      <stop offset="1" stop-color="#21223c"/>
+    <linearGradient id="linear-gradient" x1="0.035" y1="0.5" x2="0.961" y2="0.101" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.235" stop-color="#f4f4f4"/>
+      <stop offset="0.936" stop-color="#d5d5d5"/>
+      <stop offset="0.992" stop-color="#bbb"/>
+      <stop offset="1" stop-color="gray"/>
     </linearGradient>
     <clipPath id="clip-Web_1920_1">
       <rect width="1920" height="1080"/>
     </clipPath>
   </defs>
   <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
-    <rect width="1920" height="1080" fill="url(#linear-gradient)"/>
+    <rect width="1920" height="1080" fill="#fefefe"/>
+    <path id="Path_1" data-name="Path 1" d="M3.947,666.638c223.761-55.815,430.83-155.776,607.747-200.009,427.145-106.795,725.753-206.526,946.145-253.5,535.146-114.058,550.564-76.3,550.564-76.3l-22.937-314.339L-79.2-144.56Z" transform="translate(-92.854 68)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="25" height="25" transform="translate(182.454 783.888) rotate(25)" fill="#f8f8f8"/>
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(1740.039 350.93) rotate(-16)" fill="#d6d6d6" stroke="#707070" stroke-width="1">
+      <rect width="25" height="25" stroke="none"/>
+      <rect x="0.5" y="0.5" width="24" height="24" fill="none"/>
+    </g>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="25" height="25" transform="matrix(0.978, 0.208, -0.208, 0.978, 1242.872, 931.674)" fill="#e4e4e4"/>
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="25" height="25" transform="translate(518.039 929.93) rotate(-16)" fill="#f0f0f0"/>
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="25" height="25" transform="translate(1679.039 710.93) rotate(-16)" fill="#dadada"/>
+    <rect id="Rectangle_6" data-name="Rectangle 6" width="25" height="25" transform="translate(355.039 182.93) rotate(-16)" fill="#fff"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="25" height="25" transform="translate(642.861 615.382) rotate(8)" fill="#efefef"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="25" height="25" transform="translate(1286.89 56.959) rotate(-40)" fill="#fff"/>
+    <rect id="Rectangle_9" data-name="Rectangle 9" width="25" height="25" transform="translate(74.039 498.93) rotate(-16)" fill="#fff"/>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="25" height="25" transform="translate(105.039 490.93) rotate(-16)" fill="#fff"/>
+    <rect id="Rectangle_11" data-name="Rectangle 11" width="25" height="25" transform="translate(1732.039 112.93) rotate(-16)" fill="#fff"/>
   </g>
 </svg>

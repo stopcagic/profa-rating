@@ -58,7 +58,7 @@ export default {
   height: 60px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid #4fc1e9;
+  border: 1px solid rgba(51, 62, 121, 0.842);
   outline: none;
   transition: 0.3s ease-in-out;
   color: gray;
@@ -66,7 +66,7 @@ export default {
 }
 .btn:hover {
   transition: 0.3s ease-in-out;
-  background: #4fc1e9;
+  background: rgba(51, 62, 121, 0.842);
   color: white;
 }
 
@@ -74,10 +74,18 @@ export default {
   margin: 0px auto 10px;
   width: 85%;
   background-color: #f2f3f5;
-  color: gray;
+  color: rgb(110, 110, 110);
   padding-top: 5%;
+  border: none;
+  background-image: url("../assets/card-pozadina.svg");
+  box-shadow: 5px 10px;
 }
 p {
   margin: 5%;
+  line-height: 2.5;
+}
+h1 {
+  color: black;
+  font-weight: 600;
 }
 </style>

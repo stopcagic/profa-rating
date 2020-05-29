@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
   <defs>
-    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#f5f7fa"/>
-      <stop offset="0.314" stop-color="#d1d3d5"/>
-      <stop offset="0.804" stop-color="#9b9d9e"/>
-      <stop offset="1" stop-color="#7b7c7d"/>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.023" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.424" stop-color="#d7d7d7"/>
+      <stop offset="0.808" stop-color="#acacac"/>
+      <stop offset="1" stop-color="gray"/>
     </linearGradient>
     <clipPath id="clip-Web_1920_1">
       <rect width="1920" height="1080"/>
@@ -12,5 +12,23 @@
   </defs>
   <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
     <rect width="1920" height="1080" fill="url(#linear-gradient)"/>
+    <g id="Web_1920_1-2" data-name="Web 1920 – 1">
+      <g id="Sizing_Rectangle" data-name="Sizing Rectangle" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="1">
+        <rect width="1920" height="1080" stroke="none"/>
+        <rect x="0.5" y="0.5" width="1919" height="1079" fill="none"/>
+      </g>
+      <path id="rgba_248_248_248_1_" data-name="rgba(248,248,248,1)" d="M0,0H1919.5l.5.5V159H.5l-.5-.5Z" fill="#f8f8f8"/>
+      <path id="rgba_233_233_233_1_" data-name="rgba(233,233,233,1)" d="M0,237H1919.5l.5.5V327H.5l-.5-.5Z" fill="#e9e9e9"/>
+      <path id="rgba_237_237_237_1_" data-name="rgba(237,237,237,1)" d="M0,159H1919.5l.5.5V237H.5l-.5-.5Z" fill="#ededed"/>
+      <path id="rgba_212_212_212_1_" data-name="rgba(212,212,212,1)" d="M0,461H1919.5l.5.5V547H.5l-.5-.5Z" fill="#d4d4d4"/>
+      <path id="rgba_222_222_222_1_" data-name="rgba(222,222,222,1)" d="M0,327H1919.5l.5.5V416H.5l-.5-.5Z" fill="#dedede"/>
+      <path id="rgba_218_218_218_1_" data-name="rgba(218,218,218,1)" d="M0,416H1919.5l.5.5V461H.5l-.5-.5Z" fill="#dadada"/>
+      <path id="rgba_189_189_189_1_" data-name="rgba(189,189,189,1)" d="M0,679H1919.5l.5.5V773H.5l-.5-.5Z" fill="#bdbdbd"/>
+      <path id="rgba_201_201_201_1_" data-name="rgba(201,201,201,1)" d="M0,547H1919.5l.5.5V623H.5l-.5-.5Z" fill="#c9c9c9"/>
+      <path id="rgba_196_196_196_1_" data-name="rgba(196,196,196,1)" d="M0,623H1919.5l.5.5V679H.5l-.5-.5Z" fill="#c4c4c4"/>
+      <path id="rgba_147_147_147_1_" data-name="rgba(147,147,147,1)" d="M0,928H1919.5l.5.5V1080H.5l-.5-.5Z" fill="#939393"/>
+      <path id="rgba_176_176_176_1_" data-name="rgba(176,176,176,1)" d="M0,773H1919.5l.5.5V849H.5l-.5-.5Z" fill="#b0b0b0"/>
+      <path id="rgba_173_173_173_1_" data-name="rgba(173,173,173,1)" d="M0,849H1919.5l.5.5V928H.5l-.5-.5Z" fill="#adadad"/>
+    </g>
   </g>
 </svg>

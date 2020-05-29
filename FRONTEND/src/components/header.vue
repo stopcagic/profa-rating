@@ -8,19 +8,19 @@
         <ul type="button" class="navbar">
           <button class="button">
             <router-link class="link" to="/">
-              <span>About</span>
+              <a class="dugme">About</a>
             </router-link>
           </button>
 
           <button class="button">
             <router-link class="link" to="/popis">
-              <span>Popis</span>
+              <a class="dugme">Popis</a>
             </router-link>
           </button>
 
           <button class="button">
             <router-link class="link" to="/prijava">
-              <span>Prijava</span>
+              <a class="dugme">Prijava</a>
             </router-link>
           </button>
         </ul>
@@ -63,20 +63,21 @@
 }
 .first-container h1,
 .second-container h1 {
-  font-family: "Lobster", cursive;
+  font-family: "Kaushan Script", cursive;
   position: relative;
   font-weight: 500;
   color: rgba(51, 62, 121, 0.842);
 }
 
 .first-container {
-  margin-bottom: 15px;
+  margin-bottom: 5%;
 }
 
 span {
   display: inline-block;
   position: relative;
   margin-right: 5px;
+  font-size: 120%;
 }
 span:after {
   content: "";
@@ -171,11 +172,12 @@ span:after {
   margin-bottom: 5%;
   text-align: center;
   background-size: cover;
+  border-radius: 0px 0px 25px 25px;
 }
 
 #naslov {
   display: block;
-  background: #6356e5;
+  background: rgba(51, 62, 121, 0.842);
   border-radius: 0px 0px 25px 25px;
 }
 
@@ -189,7 +191,7 @@ span:after {
   animation: in 30s ease-out forwards infinite;
   animation-delay: 1s;
   cursor: pointer;
-  font-family: "Lobster", cursive;
+  font-family: "Piedra", cursive;
   letter-spacing: 0.1em;
   transition: 0.3s;
 }
@@ -197,20 +199,20 @@ span:after {
 .button {
   background-color: transparent;
   border: none;
-  color: #ffffff;
+  color: gray;
   font-size: 15px;
   width: 30%;
   transition: all 0.5s;
   cursor: pointer;
 }
-.button span {
+.button .dugme {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button span:after {
+.button .dugme:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -219,11 +221,11 @@ span:after {
   transition: 0.5s;
 }
 
-.button:hover span {
+.button:hover .dugme {
   padding-right: 25px;
 }
 
-.button:hover span:after {
+.button:hover .dugme:after {
   opacity: 1;
   right: 0;
 }
