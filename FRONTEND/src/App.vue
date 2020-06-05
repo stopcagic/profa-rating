@@ -27,7 +27,8 @@ body {
   font-family: "Gotu", sans-serif;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(lightgray, white);
+  /*  background-image: linear-gradient(lightgray, white); */
+  background-image: url("assets/pozadina3.svg");
   background-repeat: no-repeat;
 }
 /* #app {
