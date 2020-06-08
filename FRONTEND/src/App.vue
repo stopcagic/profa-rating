@@ -1,9 +1,6 @@
 <template>
-  <div class="container">
+  <div>
     <div id="app">
-      <div id="nav">
-        <app-header />
-      </div>
       <div id="content">
         <router-view />
       </div>
@@ -12,24 +9,18 @@
 </template>
 
 <script>
-import header from "@/components/header";
-
 export default {
   name: "App",
-  components: {
-    "app-header": header
-  }
+  components: {}
 };
 </script>
 
 <style >
 body {
-  font-family: "Gotu", sans-serif;
   margin: 0;
   padding: 0;
   /*  background-image: linear-gradient(lightgray, white); */
-  background-image: url("assets/pozadina3.svg");
-  background-repeat: no-repeat;
+  /*  background-image: url("assets/pozadina3.svg"); */
 }
 /* #app {
   background-image: url("assets/pozadina3.svg");
