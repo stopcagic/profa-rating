@@ -10,6 +10,7 @@
           <div class="col-sm-2"></div>
           <div class="col-sm-2"></div>
         </div>
+        <hr />
         <div class="row">
           <div class="col"></div>
           <div class="col-lg">
@@ -58,14 +59,13 @@
                 to možete postići klikom na gumb ispod.
               </p>
             </div>
-            <button class="btn btn-primary btn-lg" @click="show">Prijavi se</button>
+            <button class="btn btn-primary btn-lg" v-on:click="prikaziPrijava">Prijavi se</button>
           </div>
         </div>
-
-        <!--     <modal></modal> -->
       </div>
       <div class="col right">
         <app-header />
+        <prijava v-show="prikaziPrijava=!prikaziPrijava"></prijava>
       </div>
     </div>
   </div>
@@ -74,22 +74,19 @@
 
 <script>
 import kartica from "@/components/kartica.vue";
-import modal from "@/components/modalPrijava.vue";
 import header from "@/components/header";
+import prijava from "./Prijava.vue";
 
 export default {
+  data() {
+    return {
+      prikaziPrijava: true
+    };
+  },
   components: {
     kartica,
-    modal,
-    "app-header": header
-  },
-  methods: {
-    show() {
-      this.$modal.show("prijava-modal");
-    },
-    hide() {
-      this.$modal.hide("prijava-modal");
-    }
+    "app-header": header,
+    prijava
   }
 };
 </script>
