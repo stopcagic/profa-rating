@@ -24,6 +24,7 @@
   </div>
 </template>
 
+
 <style scoped>
 ul {
   display: flexbox;
@@ -70,7 +71,7 @@ ul {
 }
 
 .link {
-  color: rgb(39, 25, 139);
+  color: white;
   font-weight: bold;
 }
 </style>

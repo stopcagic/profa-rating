@@ -1,6 +1,6 @@
 <template>
-  <modal height="70%" name="registracija-modal">
-    <div id="signup" class="container">
+  <modal height="76.3%" name="registracija-modal">
+    <div id="signup">
       <div class="card-registracija">
         <div class="card-body">
           <h1>
@@ -99,6 +99,7 @@
 </template>
 
 <style scoped>
+@import url("../css/styles.css");
 /* select option {
   white-space: nowrap;
   overflow: hidden;
@@ -155,7 +156,7 @@ h1:hover {
   margin-right: 100px;
 }
  */
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   h1 {
     display: inline;
     margin: 0 auto;
@@ -167,5 +168,5 @@ h1:hover {
   .input-group {
     width: 100%;
   }
-}
+} */
 </style>

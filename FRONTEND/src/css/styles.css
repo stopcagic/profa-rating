@@ -15,10 +15,10 @@
   height: 60px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid #00b7ff;
+  border: 1px solid white;
   outline: none;
   transition: 0.3s ease-in-out;
-  color: gray;
+  color: white;
   margin-top: 5%;
 }
 .btn:hover {
@@ -41,17 +41,31 @@
 .card-prijava {
   margin: 0px auto 10px;
   width: 80%;
-  background-color: #f2f3f5;
-  color: rgb(110, 110, 110);
+  color: white;
   padding-top: 5%;
   margin-top: 15%;
   border: none;
+  border-radius: 15px;
   background-image: url("../assets/card-pozadina.svg");
 }
-.text-center .btn {
-  color: blue;
+.card-prijava .reg {
+  border: 1px solid #00b7ff;
+  color: white;
+  border-radius: 30px;
+  padding: 6px;
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
 }
-
+.card-prijava .reg:active {
+  box-shadow: 0 5px #00b7ff;
+  transform: translateY(4px);
+}
+.card-registracija {
+  background-image: url("../assets/card-pozadina.svg");
+  background-size: cover;
+  border: 1px solid #00b7ff;
+}
 .right {
   padding: 0px;
 }
@@ -59,6 +73,23 @@
   padding: 0px;
   height: 100vh;
 }
+.input-group-text {
+  border-radius: 20px;
+  background-color: transparent;
+  color: #00b7ff;
+}
+input[type="email"],
+[type="password"] {
+  color: #00b7ff;
+  background-color: transparent;
+  border-radius: 0px 20px 20px 0px;
+}
+input[type="email"]:focus,
+[type="password"]:focus {
+  background-color: transparent;
+  color: #00b7ff;
+}
+
 .input-group {
   width: 50%;
   margin: 0 auto;

@@ -34,7 +34,7 @@
 
         <p>
           Nemate račun?
-          <button href="button" @click="show">Registriraj se</button>
+          <button class="reg" href="button" @click="show">Registriraj se</button>
 
           <modal></modal>
         </p>
