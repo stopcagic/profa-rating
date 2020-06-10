@@ -88,7 +88,6 @@ import header from "@/components/header";
 import prijava from "./Prijava.vue";
 import registracija from "./Registracija.vue";
 import store from "../store.js";
-import modal from "./Registracija.vue";
 
 export default {
   data() {
@@ -101,16 +100,7 @@ export default {
     kartica,
     "app-header": header,
     prijava,
-    registracija,
-    modal
-  },
-  methods: {
-    show() {
-      this.$modal.show("registracija-modal");
-    },
-    hide() {
-      this.$modal.hide("registracija-modal");
-    }
+    registracija
   }
 };
 </script>

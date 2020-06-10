@@ -1,5 +1,5 @@
 <template>
-  <modal>
+  <modal height="100%" name="registracija-modal">
     <div id="signup" class="container">
       <div class="card">
         <div class="card-body">

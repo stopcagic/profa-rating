@@ -34,10 +34,9 @@
 
         <p class="text-center">
           Nemate račun?
-          <button
-            href="button"
-            v-on:click="prikaziRegistracija==!prikaziRegistracija"
-          >Registriraj se</button>
+          <button href="button" @click="show">Registriraj se</button>
+
+          <modal></modal>
         </p>
       </div>
     </div>
@@ -47,6 +46,7 @@
 
 <script>
 import store from "../store.js";
+import modal from "./Registracija.vue";
 export default {
   name: "Prijava",
 
@@ -54,6 +54,17 @@ export default {
     return {
       prikaziRegistracija: store.registriraj_se
     };
+  },
+  methods: {
+    show() {
+      this.$modal.show("registracija-modal");
+    },
+    hide() {
+      this.$modal.hide("registracija-modal");
+    }
+  },
+  components: {
+    modal
   }
 };
 </script>
@@ -115,6 +126,7 @@ h1:hover {
   width: 50%;
   margin: 0 auto;
 }
+
 @media (max-width: 400px) {
   h1 {
     display: inline;
