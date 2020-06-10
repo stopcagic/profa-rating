@@ -16,13 +16,7 @@ export default {
 </script>
 
 <style >
-body {
-  margin: 0;
-  padding: 0;
-  /*  background-image: linear-gradient(lightgray, white); */
-  /*  background-image: url("assets/pozadina3.svg"); */
+#app {
+  background-image: url("assets/app_pozadina.svg");
 }
-/* #app {
-  background-image: url("assets/pozadina3.svg");
-} */
 </style>

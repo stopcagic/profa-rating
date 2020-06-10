@@ -39,31 +39,29 @@
         </div>
 
         <div class="row">
-          <div id="pozz">
-            <div class="col-lg">
-              <h1>O aplikaciji</h1>
-              <p>
-                Ova web aplikacija izrađena je u svrhu vrednovanja profesora i asistenata od strane
-                studenata. Profa rating omogućuje studentu da odabere profesora kojega
-                želi ocjeniti, te mu zatim nudi određena pitanja, ta ista pitanja se sastoje od
-                tri dijela. Prvi dio su osobna pitanja, u kojima student odgovara koliko često izlazi
-                na predavanja te koja mu je najčešća ocjena u indeksu, drugi dio je anketa o porfesoru/asistentu
-                a treća je komentar ukoliko student želi nešto svoje nadodati.
-              </p>
-              <p>
-                Cilj aplikacije je omoćiti ocjenjivanje preko interneta, bez ikakve potrebe
-                fizičkog dolaska studenta u učionu.
-              </p>
-              <p>
-                Da bi ste bili u mogućnosti koristiti našu aplikaciju morate se prvo prijaviti,
-                to možete postići klikom na gumb ispod.
-              </p>
+          <div class="col-lg">
+            <h1>O aplikaciji</h1>
+            <p>
+              Ova web aplikacija izrađena je u svrhu vrednovanja profesora i asistenata od strane
+              studenata. Profa rating omogućuje studentu da odabere profesora kojega
+              želi ocjeniti, te mu zatim nudi određena pitanja, ta ista pitanja se sastoje od
+              tri dijela. Prvi dio su osobna pitanja, u kojima student odgovara koliko često izlazi
+              na predavanja te koja mu je najčešća ocjena u indeksu, drugi dio je anketa o porfesoru/asistentu
+              a treća je komentar ukoliko student želi nešto svoje nadodati.
+            </p>
+            <p>
+              Cilj aplikacije je omoćiti ocjenjivanje preko interneta, bez ikakve potrebe
+              fizičkog dolaska studenta u učionu.
+            </p>
+            <p>
+              Da bi ste bili u mogućnosti koristiti našu aplikaciju morate se prvo prijaviti,
+              to možete postići klikom na gumb ispod.
+            </p>
 
-              <button
-                class="btn btn-primary btn-lg"
-                v-on:click="prikaziPrijava=!prikaziPrijava"
-              >Prijavi se</button>
-            </div>
+            <button
+              class="btn btn-primary btn-lg"
+              v-on:click="prikaziPrijava=!prikaziPrijava"
+            >Prijavi se</button>
           </div>
         </div>
       </div>
@@ -160,11 +158,10 @@ export default {
 }
 
 .right {
-  background-image: url("../assets/card-pozadina2.svg");
   padding: 0px;
 }
 .left {
-  background-image: linear-gradient(to right, #00b7ff, #ffffff);
+  /*  background-image: linear-gradient(to right, #00b7ff, #ffffff); */
   padding: 0px;
   height: 100vh;
 }
