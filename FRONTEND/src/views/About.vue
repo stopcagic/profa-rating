@@ -67,10 +67,16 @@
         </div>
       </div>
       <div class="col right">
-        <app-header />
-        <transition name="slide-fade">
-          <prijava v-show="!prikaziPrijava"></prijava>
-        </transition>
+        <!-- <app-header /> -->
+        <div class="col">
+          <transition name="slide-fade">
+            <prijava v-show="!prikaziPrijava"></prijava>
+          </transition>
+        </div>
+
+        <div class="col">
+          <registracija v-if="!prikaziRegistracija"></registracija>
+        </div>
       </div>
     </div>
   </div>
@@ -81,24 +87,28 @@
 import kartica from "@/components/kartica.vue";
 import header from "@/components/header";
 import prijava from "./Prijava.vue";
+import registracija from "./Registracija.vue";
+import store from "../store.js";
 
 export default {
   data() {
     return {
-      prikaziPrijava: true
+      prikaziPrijava: true,
+      prikaziRegistracija: store.registriraj_se
     };
   },
   components: {
     kartica,
     "app-header": header,
-    prijava
+    prijava,
+    registracija
   }
 };
 </script>
 
 <style scoped>
 #pozz {
-  /*   background-image: url("../assets/card-pozadina.svg"); */
+  background-image: url("../assets/pozadina4.svg");
 }
 #about {
   padding: 0px;

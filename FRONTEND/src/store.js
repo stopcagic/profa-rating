@@ -1,4 +1,5 @@
 export default {
+  registriraj_se: true,
   polje: [
     {
       id: 1,

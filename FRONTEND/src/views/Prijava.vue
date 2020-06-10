@@ -34,7 +34,10 @@
 
         <p class="text-center">
           Nemate račun?
-          <router-link to="/registracija" href="button">Registriraj se</router-link>
+          <button
+            href="button"
+            v-on:click="prikaziRegistracija==!prikaziRegistracija"
+          >Registriraj se</button>
         </p>
       </div>
     </div>
@@ -43,8 +46,15 @@
  
 
 <script>
+import store from "../store.js";
 export default {
-  name: "Prijava"
+  name: "Prijava",
+
+  data() {
+    return {
+      prikaziRegistracija: store.registriraj_se
+    };
+  }
 };
 </script>
 <style scoped>
