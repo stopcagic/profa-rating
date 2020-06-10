@@ -1,7 +1,7 @@
 <template>
-  <modal height="100%" name="registracija-modal">
+  <modal height="70%" name="registracija-modal">
     <div id="signup" class="container">
-      <div class="card">
+      <div class="card-registracija">
         <div class="card-body">
           <h1>
             Registracija
@@ -99,7 +99,7 @@
 </template>
 
 <style scoped>
-select option {
+/* select option {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -154,7 +154,7 @@ h1:hover {
   margin-left: 100px;
   margin-right: 100px;
 }
-
+ */
 @media (max-width: 400px) {
   h1 {
     display: inline;

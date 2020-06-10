@@ -1,6 +1,6 @@
 <template>
-  <div id="login" class="container">
-    <div class="card">
+  <div id="login">
+    <div class="card-prijava">
       <div class="card-body">
         <h1>
           Prijava
@@ -32,7 +32,7 @@
           <button type="submit" class="btn btn-primary btn-lg">Prijavi se</button>
         </div>
 
-        <p class="text-center">
+        <p>
           Nemate račun?
           <button href="button" @click="show">Registriraj se</button>
 
@@ -68,78 +68,5 @@ export default {
   }
 };
 </script>
-<style scoped>
-#login {
-  transition-timing-function: ease;
-  transition-duration: 2s;
-}
-.container {
-  margin: 0px auto 10x;
-  padding: 0px;
-  font-family: "Gotu", sans-serif;
-  text-align: center;
-}
 
-.card {
-  margin: 0px auto 10px;
-  width: 85%;
-  background-color: #f2f3f5;
-  color: #272727;
-  padding-top: 5%;
-  color: gray;
-  border: none;
-}
-
-.btn {
-  margin-bottom: 5%;
-  width: 180px;
-  height: 60px;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid rgba(51, 62, 121, 0.842);
-  outline: none;
-  transition: 0.3s ease-in-out;
-  color: gray;
-  margin-top: 5%;
-}
-.btn:hover {
-  transition: 0.3s ease-in-out;
-  background: rgba(51, 62, 121, 0.842);
-  color: white;
-}
-
-h1 {
-  margin-bottom: 5%;
-  color: gray;
-  margin-left: 150px;
-  margin-right: 150px;
-  transition: 0.3s ease-in-out;
-}
-h1:hover {
-  transition: 0.3s ease-in-out;
-  color: rgba(51, 62, 121, 0.842);
-  letter-spacing: 1px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-.input-group {
-  width: 50%;
-  margin: 0 auto;
-}
-
-@media (max-width: 400px) {
-  h1 {
-    display: inline;
-    margin: 0 auto;
-  }
-  h1:hover {
-    margin: 0 auto;
-    letter-spacing: 5px;
-  }
-
-  .input-group {
-    width: 100%;
-  }
-}
-</style>
 
