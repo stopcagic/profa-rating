@@ -39,8 +39,8 @@
         </div>
 
         <div class="row">
-          <div class="col-lg">
-            <div id="pozz">
+          <div id="pozz">
+            <div class="col-lg">
               <h1>O aplikaciji</h1>
               <p>
                 Ova web aplikacija izrađena je u svrhu vrednovanja profesora i asistenata od strane
@@ -58,16 +58,17 @@
                 Da bi ste bili u mogućnosti koristiti našu aplikaciju morate se prvo prijaviti,
                 to možete postići klikom na gumb ispod.
               </p>
+
+              <button
+                class="btn btn-primary btn-lg"
+                v-on:click="prikaziPrijava=!prikaziPrijava"
+              >Prijavi se</button>
             </div>
-            <button
-              class="btn btn-primary btn-lg"
-              v-on:click="prikaziPrijava=!prikaziPrijava"
-            >Prijavi se</button>
           </div>
         </div>
       </div>
       <div class="col right">
-        <!-- <app-header /> -->
+        <!--       <app-header /> -->
         <div class="col">
           <transition name="slide-fade">
             <prijava v-show="!prikaziPrijava"></prijava>
@@ -107,9 +108,6 @@ export default {
 </script>
 
 <style scoped>
-#pozz {
-  background-image: url("../assets/pozadina4.svg");
-}
 #about {
   padding: 0px;
   text-align: center;
@@ -145,8 +143,8 @@ export default {
 .slide-fade-leave-active {
   transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
 }
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active below version 2.1.8 */ {
+.slide-fade-enter,
+.slide-fade-leave-to {
   transform: translateY(20px);
   opacity: 0;
 }
@@ -164,6 +162,11 @@ export default {
 .right {
   background-image: url("../assets/card-pozadina2.svg");
   padding: 0px;
+}
+.left {
+  background-image: linear-gradient(to right, #00b7ff, #ffffff);
+  padding: 0px;
+  height: 100vh;
 }
 p {
   font-family: "Nunito Sans", sans-serif;
