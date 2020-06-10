@@ -48,6 +48,10 @@ export default {
 };
 </script>
 <style scoped>
+#login {
+  transition-timing-function: ease;
+  transition-duration: 2s;
+}
 .container {
   margin: 0px auto 10x;
   padding: 0px;

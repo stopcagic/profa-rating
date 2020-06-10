@@ -40,7 +40,7 @@
 
         <div class="row">
           <div class="col-lg">
-            <div class="card">
+            <div id="pozz">
               <h1>O aplikaciji</h1>
               <p>
                 Ova web aplikacija izrađena je u svrhu vrednovanja profesora i asistenata od strane
@@ -59,13 +59,18 @@
                 to možete postići klikom na gumb ispod.
               </p>
             </div>
-            <button class="btn btn-primary btn-lg" v-on:click="prikaziPrijava">Prijavi se</button>
+            <button
+              class="btn btn-primary btn-lg"
+              v-on:click="prikaziPrijava=!prikaziPrijava"
+            >Prijavi se</button>
           </div>
         </div>
       </div>
       <div class="col right">
         <app-header />
-        <prijava v-show="prikaziPrijava=!prikaziPrijava"></prijava>
+        <transition name="slide-fade">
+          <prijava v-show="!prikaziPrijava"></prijava>
+        </transition>
       </div>
     </div>
   </div>
@@ -92,6 +97,9 @@ export default {
 </script>
 
 <style scoped>
+#pozz {
+  /*   background-image: url("../assets/card-pozadina.svg"); */
+}
 #about {
   padding: 0px;
   text-align: center;
@@ -121,6 +129,17 @@ export default {
   color: white;
 }
 
+.slide-fade-enter-active {
+  transition: all 0.1s;
+}
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(20px);
+  opacity: 0;
+}
 .card {
   margin: 0px auto 10px;
   width: 50%;
