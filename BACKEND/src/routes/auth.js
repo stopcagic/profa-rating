@@ -55,9 +55,11 @@ router.post('/login', async (req, res) => {
     const token = jwt.sign({
         _id: user._id,
         email: user.email
-    }, process.env.TOKEN_SECRET)
+    }, process.env.TOKEN_SECRET, {
+        expiresIn: '1 week'
+    })
 
-    res.header('auth-token', token).send(token)
+    res.send(token)
 })
 
 export default router
