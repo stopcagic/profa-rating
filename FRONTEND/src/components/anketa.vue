@@ -101,7 +101,7 @@
           <label class="checkboxtext" for="3">3</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option4" name="question2" value="3" />
+          <input type="radio" id="option4" name="question2" value="4" />
           <label class="checkboxtext" for="4">4</label>
         </div>
         <div class="form-group">
