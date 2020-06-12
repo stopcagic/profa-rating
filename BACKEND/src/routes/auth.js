@@ -58,8 +58,10 @@ router.post('/login', async (req, res) => {
     }, process.env.TOKEN_SECRET, {
         expiresIn: '1 week'
     })
-
-    res.send(token)
+    res.send({
+        token: token,
+        email: user.email
+    })
 })
 
 export default router

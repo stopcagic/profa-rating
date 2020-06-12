@@ -7,11 +7,28 @@ let Services = axios.create({
 
 let profs = {
     async getall() {
-        let response = await Services.get('/home')
+        let response = await Services.get('/predavaci')
         let data = await response.data
 
         return data
     }
 }
 
-export { Services, profs }
+let auth = {
+    async login(email, password) {
+        let response = await Services.post('/user/login', {
+            email: email,
+            password: password
+        })
+        let data = await response.data
+
+        localStorage.setItem('user', JSON.stringify(data))
+
+        return true;
+    },
+    logout() {
+        localStorage.removeItem('user')
+    }
+}
+
+export { Services, profs, auth }

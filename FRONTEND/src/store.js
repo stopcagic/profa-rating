@@ -29,5 +29,5 @@ export default {
       id: 6,
       ime: "Nikola Tanković",
     },
-  ],
+  ]
 };
