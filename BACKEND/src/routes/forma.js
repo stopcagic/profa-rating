@@ -45,3 +45,5 @@ router.put('/:id', verify, async (req, res) => {
         res.status(400).send(err)
     }
 })
+
+export default router

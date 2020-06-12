@@ -2,7 +2,6 @@ import express, { urlencoded } from 'express';
 import cors from 'cors'
 import dotenv from 'dotenv'
 
-import connect from './db.js'
 import register from './routes/auth'
 import predavaci from './routes/predavaci'
 import forma from './routes/forma'
