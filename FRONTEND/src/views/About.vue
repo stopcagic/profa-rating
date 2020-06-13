@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-sm-8 title">
             <div class="w3-container">
-              <div class="w3-center w3-animate-top">
+              <div class="w3-center w3-animate-left">
                 OCIJENITE
                 PROFESORA
               </div>
@@ -18,7 +18,7 @@
         <div class="row">
           <div class="col"></div>
           <div class="col-lg">
-            <div class="w3-center w3-animate-right" id="logo">
+            <div class="w3-center w3-animate-left" id="logo">
               <div class="logo-title">
                 <div class="first-container share">
                   <h1>
@@ -99,7 +99,7 @@ import store from "../store.js";
 export default {
   data() {
     return {
-      prikaziPrijava: true,
+      prikaziPrijava: store.prikaziPrijava,
       prikaziRegistracija: store.registriraj_se
     };
   },
