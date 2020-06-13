@@ -1,3 +1,5 @@
+import jwt from 'jsonwebtoken'
+
 export default (req, res, next) => {
     if (req.headers['authorization']) {
         try {
@@ -7,7 +9,7 @@ export default (req, res, next) => {
             } else {
                 let token = authorization[1];
 
-                const verified = jwt.verify(token[1], process.env.TOKEN_SECRET)
+                req.jwt = jwt.verify(token, process.env.TOKEN_SECRET)
                 return next();
             }
         } catch (err) {
