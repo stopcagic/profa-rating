@@ -32,7 +32,6 @@
 import { auth } from "@/services";
 
 export default {
-  props: ["info"],
   methods: {
     logout() {
       auth.logout();

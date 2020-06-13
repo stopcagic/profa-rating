@@ -29,7 +29,7 @@ router.post('/register', async (req, res) => {
     }
     try {
         await db.collection('users').insertOne(user)
-        res.send({ user: user._id })
+        res.status(200).send('success.')
     } catch (err) {
         res.status(400).send(err)
     }

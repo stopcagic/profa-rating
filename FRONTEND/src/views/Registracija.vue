@@ -7,87 +7,98 @@
             Registracija
             <hr />
           </h1>
-          <div class="input-group mb-5">
-            <div class="input-group-prepend">
-              <span class="input-group-text">
-                <i class="far fa-envelope"></i>
-              </span>
+          <form @submit.prevent="signup">
+            <div class="input-group mb-5">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="far fa-envelope"></i>
+                </span>
+              </div>
+              <input
+                type="email"
+                name="email"
+                required
+                class="form-control"
+                placeholder="Email"
+                v-model="email"
+              />
             </div>
-            <input type="email" name="email" required class="form-control" placeholder="Email" />
-          </div>
-          <div class="input-group mb-5">
-            <div class="input-group-prepend">
-              <span class="input-group-text">
-                <i class="far fa-envelope"></i>
-              </span>
+            <div class="input-group mb-5">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="far fa-envelope"></i>
+                </span>
+              </div>
+              <input
+                type="email"
+                name="email"
+                required
+                class="form-control"
+                placeholder="Ponovite Email"
+                v-model="newEmail"
+              />
             </div>
-            <input
-              type="email"
-              name="email"
-              required
-              class="form-control"
-              placeholder="Ponovite Email"
-            />
-          </div>
 
-          <div class="input-group mb-5">
-            <div class="input-group-prepend">
-              <span class="input-group-text">
-                <i class="fas fa-key"></i>
-              </span>
+            <div class="input-group mb-5">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-key"></i>
+                </span>
+              </div>
+              <input
+                type="password"
+                name="lozinka"
+                required
+                class="form-control"
+                placeholder="Lozinka"
+                v-model="lozinka"
+              />
             </div>
-            <input
-              type="password"
-              name="lozinka"
-              required
-              class="form-control"
-              placeholder="Lozinka"
-            />
-          </div>
-          <div class="input-group mb-5">
-            <div class="input-group-prepend">
-              <span class="input-group-text">
-                <i class="fas fa-key"></i>
-              </span>
+            <div class="input-group mb-5">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-key"></i>
+                </span>
+              </div>
+              <input
+                type="password"
+                name="lozinka"
+                required
+                class="form-control"
+                placeholder="Ponovite Lozinku"
+                v-model="newLozinka"
+              />
             </div>
-            <input
-              type="password"
-              name="lozinka"
-              required
-              class="form-control"
-              placeholder="Ponovite Lozinku"
-            />
-          </div>
-          <div class="input-group mb-5">
-            <div class="input-group-prepend">
-              <span class="input-group-text">
-                <i class="fas fa-university"></i>
-              </span>
+            <div class="input-group mb-5">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-university"></i>
+                </span>
+              </div>
+              <label type="faks" for="faks" required></label>
+              <select class="form-control" id="faks" v-model="faks">
+                <option selected>Odaberite...</option>
+                <option value="fet">Fakultet ekonimije i turizma "Dr. Mijo Mirković"</option>
+                <option value="fooz">Fakultet za odgojne i obrazovne znanosti</option>
+                <option value="ffpu">Filozofski fakultet</option>
+                <option value="mapu">Muzička akademija u Puli</option>
+                <option
+                  value="fitiks"
+                >Fakultet za interdisciplinarne, talijanske i kulturološke studije</option>
+                <option value="fipu">Fakultet informatike u Puli</option>
+                <option value="mfpu">Medicinski fakultet u Puli</option>
+                <option value="opzs">Odjel za prirodne i zdravstvene studije</option>
+                <option value="ots">Odjel za tehničke studije</option>
+                <option value="ckpis">Centar za kulturološka i povijesna istraživanja socijalizma</option>
+                <option value="cko">Centar za kompetencije u obrazovanju</option>
+                <option value="sric">Sveučilišni računski i informacijski centar</option>
+              </select>
             </div>
-            <label type="faks" for="faks" required></label>
-            <select class="form-control" id="faks">
-              <option selected>Odaberite...</option>
-              <option value="fet">Fakultet ekonimije i turizma "Dr. Mijo Mirković"</option>
-              <option value="fooz">Fakultet za odgojne i obrazovne znanosti</option>
-              <option value="ffpu">Filozofski fakultet</option>
-              <option value="mapu">Muzička akademija u Puli</option>
-              <option
-                value="fitiks"
-              >Fakultet za interdisciplinarne, talijanske i kulturološke studije</option>
-              <option value="fipu">Fakultet informatike u Puli</option>
-              <option value="mfpu">Medicinski fakultet u Puli</option>
-              <option value="opzs">Odjel za prirodne i zdravstvene studije</option>
-              <option value="ots">Odjel za tehničke studije</option>
-              <option value="ckpis">Centar za kulturološka i povijesna istraživanja socijalizma</option>
-              <option value="cko">Centar za kompetencije u obrazovanju</option>
-              <option value="sric">Sveučilišni računski i informacijski centar</option>
-            </select>
-          </div>
 
-          <div>
-            <button type="submit" class="btn btn-primary btn-lg">Registriraj se</button>
-          </div>
-
+            <div>
+              <button type="submit" class="btn btn-primary btn-lg">Registriraj se</button>
+            </div>
+          </form>
           <p class="text-center">
             Imate račun?
             <router-link to="/" href="button">Prijavite se</router-link>
@@ -97,7 +108,38 @@
     </div>
   </modal>
 </template>
+<script>
+import { auth } from "@/services";
 
+export default {
+  data() {
+    return {
+      email: "",
+      newEmail: "",
+      lozinka: "",
+      newLozinka: "",
+      faks: ""
+    };
+  },
+  methods: {
+    async signup() {
+      if (this.email != this.newEmail) console.log("Emails dont match.");
+      else if (this.lozinka != this.newLozinka)
+        console.log("Passwords dont match.");
+      else {
+        let data = await auth.signup(this.email, this.password, this.faks);
+        console.log(data);
+        // if (data.status == 200) {
+        //   let success = await auth.login(this.email, this.password);
+        //   if (succss == true) {
+        //     this.$router.push({ path: "/popis" });
+        //   }
+        // }
+      }
+    }
+  }
+};
+</script>
 <style scoped>
 @import url("../css/styles.css");
 /* select option {

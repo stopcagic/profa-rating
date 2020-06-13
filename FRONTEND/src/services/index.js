@@ -43,6 +43,16 @@ let auth = {
 
         return true;
     },
+    async signup(email, password, faks) {
+        let response = await Services.post('/user/register', {
+            email: email,
+            password: password,
+            faks: faks
+        })
+        let data = await response.data
+
+        return data
+    },
     logout() {
         localStorage.removeItem('user')
     },
