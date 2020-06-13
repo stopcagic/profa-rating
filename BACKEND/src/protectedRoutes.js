@@ -1,7 +1,7 @@
 export default (req, res, next) => {
     if (req.headers['authorization']) {
         try {
-            let authorization = req.headers['authorization'].split(' ');
+            let authorization = req.headers['Authorization'].split(' ');
             if (authorization[0] !== 'Bearer') {
                 return res.status(401).send();
             } else {
