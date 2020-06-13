@@ -24,6 +24,7 @@ export default {
   margin: 0px auto 10px;
   width: 85%;
   background-color: #f2f3f5;
+  margin-top: 5%;
 }
 .fas {
   color: rgba(51, 62, 121, 0.842);
