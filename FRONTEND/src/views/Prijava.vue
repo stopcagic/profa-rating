@@ -83,7 +83,7 @@ export default {
     async login() {
       let success = await auth.login(this.email, this.lozinka);
       if (success == true) {
-        this.$router.push({ path: "predavaci" });
+        this.$router.push({ path: "popis" });
       }
     }
   },
