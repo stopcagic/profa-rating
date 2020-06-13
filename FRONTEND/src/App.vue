@@ -26,6 +26,7 @@ body {
   background-image: linear-gradient(to right, #014083, #178c9e);
 }
 .footy {
+  margin-top: 100px;
   border-top: 1px solid white;
   color: #014083;
   -webkit-text-stroke: 1px black;
