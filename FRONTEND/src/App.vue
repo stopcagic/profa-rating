@@ -17,6 +17,6 @@ export default {
 
 <style >
 #app {
-  background-image: url("assets/app_pozadina.svg");
+  background-image: linear-gradient(to right, #014083, #178c9e);
 }
 </style>
