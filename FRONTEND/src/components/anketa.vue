@@ -431,13 +431,14 @@
                 </div>
               </td>
             </tr>
+            <hr />
             <tr class="boja">
               <td>Odgovara na elektronsku poštu</td>
 
               <td>
                 <div>
                   <input type="radio" id="option1" name="question2" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
+                  <label class="checkboxtext" for="option"></label>
                 </div>
               </td>
 
@@ -476,6 +477,7 @@
                 </div>
               </td>
             </tr>
+            <hr />
             <tr>
               <td>Dobar je govornik</td>
 
@@ -521,6 +523,7 @@
                 </div>
               </td>
             </tr>
+            <hr />
             <tr class="boja">
               <td>Predaje razumljivo</td>
 
@@ -566,6 +569,7 @@
                 </div>
               </td>
             </tr>
+            <hr />
             <tr>
               <td>Predaje zanimljivo</td>
 
@@ -611,6 +615,7 @@
                 </div>
               </td>
             </tr>
+            <hr />
             <tr class="boja">
               <td>Pravedan/pravedna je</td>
 
@@ -656,6 +661,7 @@
                 </div>
               </td>
             </tr>
+            <hr />
             <tr>
               <td>Potiče studente na komunikaciju i postavljanje pitanja</td>
 
@@ -701,6 +707,7 @@
                 </div>
               </td>
             </tr>
+            <hr />
             <tr class="boja">
               <td>Poštuje studente</td>
 
@@ -746,6 +753,7 @@
                 </div>
               </td>
             </tr>
+            <hr />
             <tr>
               <td>Općenito motivira studente</td>
 
@@ -791,6 +799,7 @@
                 </div>
               </td>
             </tr>
+            <hr />
             <tr class="boja">
               <td>Uvažava različita mišljenja</td>
 
@@ -836,6 +845,7 @@
                 </div>
               </td>
             </tr>
+            <hr />
             <tr>
               <td>Kvalitetno organizira nastavu</td>
 
@@ -881,6 +891,7 @@
                 </div>
               </td>
             </tr>
+            <hr />
             <tr class="boja">
               <td>Stručan/stručna je</td>
 
@@ -926,6 +937,7 @@
                 </div>
               </td>
             </tr>
+            <hr />
             <tr>
               <td>Povezuje nastavno gradivo i praktične primjere</td>
 
@@ -971,6 +983,7 @@
                 </div>
               </td>
             </tr>
+            <hr />
             <tr class="boja">
               <td>Općenito je kvalitetan nastavnik/nastavnica</td>
 
@@ -1056,26 +1069,23 @@ export default {
 }
 .card-comment {
   margin: 0px auto 10px;
-  width: 105%;
-  background-color: #f2f3f5;
-  color: #272727;
-  color: gray;
+  width: 70%;
+  background-color: rgb(228, 227, 227);
+  color: black;
   margin-top: 5%;
 }
 .card-table {
   margin: 0px auto 10px;
-  width: 105%;
-  background-color: #f2f3f5;
-  color: #272727;
-  color: gray;
+  width: 70%;
+  background-color: rgb(228, 227, 227);
+  color: black;
   margin-top: 5%;
 }
 .card {
   margin: 0px auto 10px;
   width: 55%;
-  background-color: #f2f3f5;
-  color: #272727;
-  color: gray;
+  background-color: rgb(228, 227, 227);
+  color: black;
   margin-top: 5%;
 }
 input[type="radio"] {
@@ -1099,9 +1109,6 @@ td {
   width: 2%;
   padding-left: 5%;
 }
-.boja {
-  background-color: white;
-}
 
 .btn {
   margin-bottom: 15%;
@@ -1109,10 +1116,10 @@ td {
   height: 60px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid #4169e1;
+  border: 1px solid #00b7ff;
   outline: none;
   transition: 0.3s ease-in-out;
-  color: gray;
+  color: white;
   margin-top: 5%;
 }
 .btn:hover {

@@ -19,6 +19,11 @@
             <a class="dugme">Prijava</a>
           </router-link>
         </button>
+        <button class="button">
+          <router-link class="link" to="/prijava">
+            <a class="dugme odjava">Odjavi se</a>
+          </router-link>
+        </button>
       </ul>
     </div>
   </div>
@@ -26,15 +31,18 @@
 
 
 <style scoped>
+.odjava:hover {
+  color: rgb(219, 6, 6);
+}
 ul {
-  display: flexbox;
-  justify-content: left;
+  float: right;
 }
 .naslov {
   height: 40px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.384);
   backdrop-filter: blur(5px);
+  transition: 2s;
 }
 
 .button {
