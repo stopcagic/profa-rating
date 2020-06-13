@@ -18,6 +18,6 @@ app.use(express.json())
 
 app.use('/', predavaci)
 app.use('/user', auth)
-app.use('/forma', forma)
+app.use('/anketa', forma)
 
 app.listen(port, () => console.log(`Slušam na portu ${port}!`))

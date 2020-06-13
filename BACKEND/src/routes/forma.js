@@ -4,7 +4,7 @@ import mongo from 'mongodb'
 import connect from '../db'
 import verify from '../protectedRoutes'
 import { formValidation } from '../validation'
-import { MongoClient } from 'mongodb'
+
 
 const router = express.Router()
 

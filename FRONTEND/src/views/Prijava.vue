@@ -37,10 +37,6 @@
               v-model="lozinka"
             />
           </div>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-            <label class="form-check-label" for="exampleCheck1">Zapamti me</label>
-          </div>
 
           <div>
             <button type="submit" class="btn btn-primary btn-lg">Prijavi se</button>

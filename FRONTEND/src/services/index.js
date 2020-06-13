@@ -44,6 +44,7 @@ let auth = {
         return true;
     },
     async signup(email, password, faks) {
+
         let response = await Services.post('/user/register', {
             email: email,
             password: password,
@@ -65,7 +66,16 @@ let auth = {
             return user.token
         }
         else return 'Token does not exist.'
+    },
+    getAuthenticated() {
+        let user = auth.getUser()
+        if (user && user.token) return true;
+        else return false;
+    },
+    state: {
+        get authenticated() {
+            return auth.getAuthenticated()
+        }
     }
 }
-
 export { Services, profs, auth }

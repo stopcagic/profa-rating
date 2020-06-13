@@ -13,17 +13,20 @@
             <a class="dugme">Popis</a>
           </router-link>
         </button>
-
-        <button class="button">
-          <router-link class="link" to="/prijava">
-            <a class="dugme">Prijava</a>
-          </router-link>
-        </button>
-        <button class="button" @click="logout">
-          <router-link class="link" to="/">
-            <a class="dugme odjava">Odjavi se</a>
-          </router-link>
-        </button>
+        <div v-if="!auth.authenticated">
+          <button class="button">
+            <router-link class="link" to="/prijava">
+              <a class="dugme">Prijava</a>
+            </router-link>
+          </button>
+        </div>
+        <div v-if="auth.authenticated">
+          <button class="button" @click="logout">
+            <router-link class="link" to="/">
+              <a class="dugme odjava">Odjavi se</a>
+            </router-link>
+          </button>
+        </div>
       </ul>
     </div>
   </div>
@@ -32,6 +35,11 @@
 import { auth } from "@/services";
 
 export default {
+  data() {
+    return {
+      auth: auth.state
+    };
+  },
   methods: {
     logout() {
       auth.logout();

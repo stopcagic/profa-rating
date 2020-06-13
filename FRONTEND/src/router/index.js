@@ -41,7 +41,7 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
 
-  const publicPages = ['/', '/about'];
+  const publicPages = ['/', '/about', '/prijava'];
   const authRequired = !publicPages.includes(to.path);
   const user = auth.getUser();
 
