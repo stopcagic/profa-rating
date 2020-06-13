@@ -5,18 +5,29 @@
         <router-view />
       </div>
     </div>
+    <div class="container footy">
+      <appFooter />
+    </div>
   </div>
 </template>
 
 <script>
+import appFooter from "@/components/footer";
 export default {
   name: "App",
-  components: {}
+  components: {
+    appFooter
+  }
 };
 </script>
 
 <style >
 body {
   background-image: linear-gradient(to right, #014083, #178c9e);
+}
+.footy {
+  border-top: 1px solid white;
+  color: #014083;
+  -webkit-text-stroke: 1px black;
 }
 </style>
