@@ -25,6 +25,15 @@ export default {
   width: 85%;
   background-color: #f2f3f5;
   margin-top: 5%;
+  transition: transform 0.2s;
+}
+.card:hover {
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -ms-transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
 }
 .fas {
   color: rgba(51, 62, 121, 0.842);
