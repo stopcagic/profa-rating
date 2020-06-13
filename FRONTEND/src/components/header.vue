@@ -19,8 +19,8 @@
             <a class="dugme">Prijava</a>
           </router-link>
         </button>
-        <button class="button">
-          <router-link class="link" to="/prijava">
+        <button class="button" @click="logout">
+          <router-link class="link" to="/">
             <a class="dugme odjava">Odjavi se</a>
           </router-link>
         </button>
@@ -28,7 +28,19 @@
     </div>
   </div>
 </template>
+<script>
+import { auth } from "@/services";
 
+export default {
+  props: ["info"],
+  methods: {
+    logout() {
+      auth.logout();
+      this.$router.go();
+    }
+  }
+};
+</script>
 
 <style scoped>
 .odjava:hover {

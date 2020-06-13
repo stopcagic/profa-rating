@@ -45,6 +45,10 @@ router.beforeEach((to, from, next) => {
   const authRequired = !publicPages.includes(to.path);
   const user = auth.getUser();
 
+  if (!authRequired && user) {
+    return next('/popis')
+  }
+
   if (authRequired && !user) {
     return next('/');
   }
