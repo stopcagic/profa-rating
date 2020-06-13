@@ -40,17 +40,16 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  const javnaStranica = '/'
-  let loginPotreban
-  if (javnaStranica === to.path) {
-    loginPotreban = true
-  }
-  const user = auth.getUser()
 
-  if (!user && loginPotreban) {
-    return next(javnaStranica)
+  const publicPages = ['/', '/about'];
+  const authRequired = !publicPages.includes(to.path);
+  const user = auth.getUser();
+
+
+  if (authRequired && !user) {
+    return next('/');
   }
-  next()
-})
+  next();
+});
 
 export default router;
