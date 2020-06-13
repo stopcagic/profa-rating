@@ -15,9 +15,9 @@
         </button>
         <div v-if="!auth.authenticated">
           <button class="button">
-            <router-link class="link" to="/prijava">
-              <a class="dugme">Prijava</a>
-            </router-link>
+            <div class="link">
+              <a class="dugme" v-on:click="prikaziPrijava=!prikaziPrijava">Prijava</a>
+            </div>
           </button>
         </div>
         <div v-if="auth.authenticated">
@@ -33,11 +33,13 @@
 </template>
 <script>
 import { auth } from "@/services";
+import store from "../store.js";
 
 export default {
   data() {
     return {
-      auth: auth.state
+      auth: auth.state,
+      prikaziPrijava: store.prijavi_se
     };
   },
   methods: {
@@ -58,6 +60,7 @@ ul {
 }
 .naslov {
   height: 40px;
+  border-radius: 0px 0px 0px 10px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.384);
   backdrop-filter: blur(5px);
