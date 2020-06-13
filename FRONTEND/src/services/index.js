@@ -1,8 +1,25 @@
 import axios from 'axios'
+import router from '@/router'
 
 let Services = axios.create({
     baseURL: 'http://localhost:3000',
     timeout: 10000
+})
+
+Services.interceptors.request.use((request) => {
+    try {
+        request.headers['Authorization'] = 'Bearer ' + Auth.getToken();
+    } catch (e) {
+        console.error(e);
+    }
+    return request;
+});
+
+Services.interceptors.response.use((response) => response, (error) => {
+    if (error.response.status == 401 || 403) {
+        auth.logout()
+        router.go()
+    }
 })
 
 let profs = {
@@ -28,6 +45,16 @@ let auth = {
     },
     logout() {
         localStorage.removeItem('user')
+    },
+    getUser() {
+        return JSON.parse(localStorage.getItem("user"))
+    },
+    getToken() {
+        let user = auth.getToken()
+        if (user && user.token) {
+            return user.token
+        }
+        else return 'Token does not exist.'
     }
 }
 

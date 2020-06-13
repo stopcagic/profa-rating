@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-/* import Home from "../views/Home.vue"; */
+import { auth } from '@/services'
 
 Vue.use(VueRouter);
 
@@ -38,5 +38,19 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
 });
+
+router.beforeEach((to, from, next) => {
+  const javnaStranica = '/'
+  let loginPotreban
+  if (javnaStranica === to.path) {
+    loginPotreban = true
+  }
+  const user = auth.getUser()
+
+  if (!user && loginPotreban) {
+    return next(javnaStranica)
+  }
+  next()
+})
 
 export default router;

@@ -6,32 +6,46 @@
           Prijava
           <hr />
         </h1>
-
-        <div class="input-group mb-5">
-          <div class="input-group-prepend">
-            <span class="input-group-text">
-              <i class="far fa-envelope"></i>
-            </span>
+        <form @submit.prevent="login">
+          <div class="input-group mb-5">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="far fa-envelope"></i>
+              </span>
+            </div>
+            <input
+              type="email"
+              name="email"
+              required
+              class="form-control"
+              placeholder="Email"
+              v-model="email"
+            />
           </div>
-          <input type="email" name="email" required class="form-control" placeholder="Email" />
-        </div>
-        <div class="input-group mb-5">
-          <div class="input-group-prepend">
-            <span class="input-group-text">
-              <i class="fas fa-key"></i>
-            </span>
+          <div class="input-group mb-5">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-key"></i>
+              </span>
+            </div>
+            <input
+              type="password"
+              name="lozinka"
+              required
+              class="form-control"
+              placeholder="Lozinka"
+              v-model="lozinka"
+            />
           </div>
-          <input type="password" name="lozinka" required class="form-control" placeholder="Lozinka" />
-        </div>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1">Zapamti me</label>
-        </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+            <label class="form-check-label" for="exampleCheck1">Zapamti me</label>
+          </div>
 
-        <div>
-          <button type="submit" class="btn btn-primary btn-lg">Prijavi se</button>
-        </div>
-
+          <div>
+            <button type="submit" class="btn btn-primary btn-lg">Prijavi se</button>
+          </div>
+        </form>
         <p>
           Nemate račun?
           <button class="reg" href="button" @click="show">Registriraj se</button>
@@ -47,12 +61,16 @@
 <script>
 import store from "../store.js";
 import modal from "./Registracija.vue";
+import { auth } from "@/services";
+
 export default {
   name: "Prijava",
 
   data() {
     return {
-      prikaziRegistracija: store.registriraj_se
+      prikaziRegistracija: store.registriraj_se,
+      lozinka: "",
+      email: ""
     };
   },
   methods: {
@@ -61,6 +79,12 @@ export default {
     },
     hide() {
       this.$modal.hide("registracija-modal");
+    },
+    async login() {
+      let success = await auth.login(this.email, this.lozinka);
+      if (success == true) {
+        this.$router.push({ path: "predavaci" });
+      }
     }
   },
   components: {
