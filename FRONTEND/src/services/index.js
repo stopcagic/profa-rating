@@ -50,7 +50,7 @@ let auth = {
         return JSON.parse(localStorage.getItem("user"))
     },
     getToken() {
-        let user = auth.getToken()
+        let user = auth.getUser()
         if (user && user.token) {
             return user.token
         }
