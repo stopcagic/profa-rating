@@ -8,7 +8,7 @@ let Services = axios.create({
 
 Services.interceptors.request.use((request) => {
     try {
-        request.headers['Authorization'] = 'Bearer ' + Auth.getToken();
+        request.headers['Authorization'] = 'Bearer ' + auth.getToken();
     } catch (e) {
         console.error(e);
     }
