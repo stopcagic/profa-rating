@@ -61,9 +61,11 @@ ul {
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.384);
   backdrop-filter: blur(5px);
-  transition: 2s;
+  -webkit-animation: w70 3s ease backwards;
 }
-
+.naslov .w70 {
+  margin-left: 0%;
+}
 .button {
   background-color: transparent;
   border: none;
@@ -100,5 +102,13 @@ ul {
 .link {
   color: white;
   font-weight: bold;
+}
+@-webkit-keyframes w70 {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 </style>
