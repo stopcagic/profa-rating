@@ -49,4 +49,18 @@ export default {
   padding: 0px;
   margin: 0px;
 }
+.navbar-about {
+  -webkit-animation: w100 3s ease backwards;
+}
+.navbar-about w100 {
+  margin-left: 0%;
+}
+@-webkit-keyframes w100 {
+  from {
+    margin-left: 50%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
 </style>
