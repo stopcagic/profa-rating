@@ -82,7 +82,6 @@
 
         <div class="col">
           <registracija v-if="!prikaziRegistracija"></registracija>
-          <!-- <popis></popis> -->
         </div>
       </div>
     </div>
@@ -96,7 +95,6 @@ import header from "@/components/header";
 import prijava from "./Prijava.vue";
 import registracija from "./Registracija.vue";
 import store from "../store.js";
-import popis from "./Popis.vue";
 
 export default {
   data() {
@@ -109,8 +107,7 @@ export default {
     kartica,
     "app-header": header,
     prijava,
-    registracija,
-    popis
+    registracija
   }
 };
 </script>
