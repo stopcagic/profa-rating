@@ -12,7 +12,7 @@
 
 
 <script>
-import { profs } from "@/services";
+import { profs, auth } from "@/services";
 import regeneratorRuntime from "regenerator-runtime";
 import kartica from "@/components/kartica.vue";
 import appheader from "@/components/header";
@@ -32,7 +32,8 @@ export default {
   },
   methods: {
     async fetchPosts() {
-      this.profesori = await profs.getall();
+      let faks = auth.getFaks();
+      this.profesori = await profs.getall(faks);
     }
   }
 };

@@ -1,13 +1,9 @@
 <template>
   <div class="card">
-    <router-link class="link" to="/anketa">
-      <div class="card-body">
-        {{info.titula}}
-        {{info.ime}}
-        {{info.prezime}}
-        <i class="fas fa-clipboard"></i>
-      </div>
-    </router-link>
+    <div class="card-body">
+      <router-link class="link" to="/anketa">{{info.profesor}}</router-link>
+      <i class="fas fa-clipboard"></i>
+    </div>
   </div>
 </template> 
 <script>

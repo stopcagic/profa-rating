@@ -23,8 +23,8 @@ Services.interceptors.response.use((response) => response, (error) => {
 })
 
 let profs = {
-    async getall() {
-        let response = await Services.get('/predavaci')
+    async getall(faks) {
+        let response = await Services.get(`/predavaci/${faks}`)
         let data = await response.data
 
         return data
@@ -65,12 +65,19 @@ let auth = {
         if (user && user.token) {
             return user.token
         }
-        else return 'Token does not exist.'
+        else return 'Korisnik nije prijavljen.'
     },
     getAuthenticated() {
         let user = auth.getUser()
         if (user && user.token) return true;
         else return false;
+    },
+    getFaks() {
+        let user = auth.getUser()
+        if (user && user.faks) {
+            return user.faks
+        }
+        else return 'Korisnik nije prijavljen.'
     },
     state: {
         get authenticated() {
