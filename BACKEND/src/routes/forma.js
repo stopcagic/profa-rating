@@ -42,7 +42,7 @@ router.post('/', verify, async (req, res) => {
     }
 
     try {
-        await db.collection('forme').insertOne(forma)
+        await db.collection('predavaci').update({ $push: { forma: forma } })
         res.send(forma._id)
 
     } catch (err) {
@@ -58,7 +58,10 @@ router.put('/:id', verify, async (req, res) => {
     let forma = req.body.forma
 
     try {
-        await db.collection('forme').replaceOne({ _id: mongo.ObjectId(id) }, forma)
+        await db.collection('predavaci').update({},
+            { $pull: { forma: { _id: mongo.ObjectId(id) } } }, { multi: true },
+            { $push: { forma: forma } })
+
         res.status(200).send('success.')
 
     } catch (err) {
