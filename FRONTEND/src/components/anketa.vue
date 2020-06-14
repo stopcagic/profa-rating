@@ -1055,8 +1055,52 @@
   </div>
 </template>
 <script>
+import { anketa } from "@/services";
+
 export default {
-  props: ["info"]
+  props: ["info"],
+  data() {
+    return {
+      forma: {
+        prvo: "",
+        drugo: "",
+        trece: "",
+        cetvrto: "",
+        peto: "",
+        sesto: "",
+        sedmo: "",
+        osmo: "",
+        deveto: "",
+        deseto: "",
+        jedanaesto: "",
+        dvanaesto: "",
+        trinaesto: "",
+        cetrnaesto: "",
+        petnaesto: "",
+        sesnaesto: "",
+        sedamnaesto: "",
+        osamnaesto: "",
+        devetnaesto: "",
+        dvadeseto: "",
+        dvadesetPrvo: "",
+        dvadesetDrugo: "",
+        dvadesetTrece: "",
+        dvadesetCetvrto: "",
+        dvadesetPeto: "",
+        dvadesetSesto: "",
+        dvadesetSedmo: "",
+        komentar: ""
+      }
+    };
+  },
+  methods: {
+    async form() {
+      let save = await anketa.finishPoll(this.forma);
+      if (save == "success.") {
+        this.$router.push("/popis");
+      }
+    }
+  }
 };
 </script>
 <style  scoped>

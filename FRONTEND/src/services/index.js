@@ -22,7 +22,7 @@ Services.interceptors.response.use((response) => response, (error) => {
     }
 })
 
-let profs = {
+const profs = {
     async getall(faks) {
         let response = await Services.get(`/predavaci/${faks}`)
         let data = await response.data
@@ -31,7 +31,25 @@ let profs = {
     }
 }
 
-let auth = {
+const anketa = {
+    async create() {
+        let response = await Services.post('/anketa')
+        let data = await response.data
+
+        return data;
+    },
+    async finishPoll(forma) {
+        let id = await anketa.create()
+        let response = await Services.put(`/anketa/${id}`, {
+            forma
+        })
+        let data = response.data
+
+        return data
+    }
+}
+
+const auth = {
     async login(email, password) {
         let response = await Services.post('/user/login', {
             email: email,
@@ -85,4 +103,4 @@ let auth = {
         }
     }
 }
-export { Services, profs, auth }
+export { profs, auth, anketa }
