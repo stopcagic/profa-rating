@@ -42,7 +42,7 @@ router.post('/', verify, async (req, res) => {
     }
 
     try {
-        await db.collection('predavaci').update({ $push: { forma: forma } })
+        await db.collection('predavaci').updateOne({ $push: { forma: forma } })
         res.send(forma._id)
 
     } catch (err) {
@@ -58,7 +58,7 @@ router.put('/:id', verify, async (req, res) => {
     let forma = req.body.forma
 
     try {
-        await db.collection('predavaci').update({},
+        await db.collection('predavaci').updateOne({},
             { $pull: { forma: { _id: mongo.ObjectId(id) } } }, { multi: true },
             { $push: { forma: forma } })
 
