@@ -105,6 +105,7 @@ ul {
 .link {
   color: white;
   font-weight: bold;
+  outline: none;
 }
 @-webkit-keyframes w70 {
   from {
