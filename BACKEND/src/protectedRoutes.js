@@ -4,7 +4,7 @@ export default (req, res, next) => {
     if (req.headers['authorization']) {
         try {
             let authorization = req.headers['authorization'].split(' ');
-            if (authorization[0] !== 'Bearer') {
+            if (authorization[0] != 'Bearer') {
                 return res.status(401).send();
             } else {
                 let token = authorization[1];

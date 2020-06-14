@@ -1,16 +1,8 @@
 <template>
   <div class="card">
     <div class="card-body">
-      <router-link class="link" to="/anketa">
-        {{info.titula}}
-        {{info.ime}}
-        {{info.prezime}}
-      </router-link>
-      <i
-        :style="isClicked ? { 'color': '#6ec26e' } : null"
-        @click="toggleIsClicked"
-        class="fas fa-clipboard"
-      ></i>
+      <router-link class="link" to="/anketa">{{info.profesor}}</router-link>
+      <i class="fas fa-clipboard"></i>
     </div>
   </div>
 </template> 

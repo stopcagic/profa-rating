@@ -22,6 +22,11 @@ const routes = [
     component: () => import("../views/Popis.vue"),
   },
   {
+    path: "/oznacene",
+    name: "Oznacene",
+    component: () => import("../views/oznaceneForme.vue"),
+  },
+  {
     path: "/prijava",
     name: "Prijava",
     component: () => import("../views/Prijava.vue"),
@@ -41,7 +46,7 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
 
-  const publicPages = ['/', '/about', '/prijava'];
+  const publicPages = ['/', '/about'];
   const authRequired = !publicPages.includes(to.path);
   const user = auth.getUser();
 
