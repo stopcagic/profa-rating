@@ -12,7 +12,34 @@ router.post('/', verify, async (req, res) => {
     let db = await connect()
 
     const forma = {
-        //Unjeti sve vrijednosti ali prazne.
+        prvoPitanje: '',
+        drugoPitanje: '',
+        trecePitanje: '',
+        cetvrtoPitanje: '',
+        petoPitanje: '',
+        sestoPitanje: '',
+        sedmoPitanje: '',
+        osmoPitanje: '',
+        devetoPitanje: '',
+        desetoPitanje: '',
+        jedanaestoPitanje: '',
+        dvanaestoPitanje: '',
+        trinaestoPitanje: '',
+        cetrnaestoPitanje: '',
+        petnaestoPitanje: '',
+        sesnaestoPitanje: '',
+        sedamnaestoPitanje: '',
+        osamnaestoPitanje: '',
+        devetnaestoPitanje: '',
+        dvadesetoPitanje: '',
+        dvadesetPrvoPitanje: '',
+        dvadesetDrugoPitanje: '',
+        dvadesetTrecePitanje: '',
+        dvadesetCetvrtoPitanje: '',
+        dvadesetPetoPitanje: '',
+        dvadesetSestoPitanje: '',
+        dvadesetSedmoPitanje: '',
+        komentar: ''
     }
 
     try {
