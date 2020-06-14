@@ -22,6 +22,11 @@ const routes = [
     component: () => import("../views/Popis.vue"),
   },
   {
+    path: "/oznacene",
+    name: "Oznacene",
+    component: () => import("../views/oznaceneForme.vue"),
+  },
+  {
     path: "/prijava",
     name: "Prijava",
     component: () => import("../views/Prijava.vue"),
