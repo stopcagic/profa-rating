@@ -3,7 +3,7 @@
     <div class="col">
       <ul type="button" class="navbar">
         <button class="button">
-          <router-link class="link" to="/">
+          <router-link class="link" to="/About_Tab">
             <a class="dugme">About |</a>
           </router-link>
         </button>
@@ -16,6 +16,11 @@
         <button class="button">
           <router-link class="link" to="/oznacene">
             <a class="dugme">Popunjene forme |</a>
+          </router-link>
+        </button>
+        <button class="button">
+          <router-link class="link" to="/profil">
+            <a class="dugme">Profil |</a>
           </router-link>
         </button>
         <div v-if="!auth.authenticated">

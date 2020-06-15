@@ -7,23 +7,23 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <input type="radio" id="option1" name="question1" value="1" />
+          <input required type="radio" id="option1" name="question1" value="1" />
           <label class="checkboxtext" for="option1">0-20%</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option2" name="question1" value="2" />
+          <input required type="radio" id="option1" name="question1" value="2" />
           <label class="checkboxtext" for="2">20-40%</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option3" name="question1" value="3" />
+          <input required type="radio" id="option1" name="question1" value="3" />
           <label class="checkboxtext" for="3">40-60%</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option4" name="question1" value="4" />
+          <input required type="radio" id="option1" name="question1" value="4" />
           <label class="checkboxtext" for="4">60-80%</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option5" name="question1" value="5" />
+          <input required type="radio" id="option1" name="question1" value="5" />
           <label class="checkboxtext" for="5">80-100%</label>
         </div>
       </div>
@@ -35,19 +35,19 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <input type="radio" id="option2" name="question1" value="2" />
+          <input required type="radio" id="option1" name="question2" value="2" />
           <label class="checkboxtext" for="2">2</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option3" name="question1" value="3" />
+          <input required type="radio" id="option1" name="question2" value="3" />
           <label class="checkboxtext" for="3">3</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option4" name="question1" value="4" />
+          <input required type="radio" id="option1" name="question2" value="4" />
           <label class="checkboxtext" for="4">4</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option5" name="question1" value="5" />
+          <input required type="radio" id="option1" name="question2" value="5" />
           <label class="checkboxtext" for="5">5</label>
         </div>
       </div>
@@ -60,23 +60,23 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <input type="radio" id="option1" name="question1" value="1" />
+          <input required type="radio" id="option1" name="question3" value="1" />
           <label class="checkboxtext" for="option1">1</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option2" name="question1" value="2" />
+          <input required type="radio" id="option2" name="question3" value="2" />
           <label class="checkboxtext" for="2">2</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option3" name="question1" value="3" />
+          <input required type="radio" id="option3" name="question3" value="3" />
           <label class="checkboxtext" for="3">3</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option4" name="question1" value="4" />
+          <input required type="radio" id="option4" name="question3" value="4" />
           <label class="checkboxtext" for="4">4</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option5" name="question1" value="5" />
+          <input required type="radio" id="option5" name="question3" value="5" />
           <label class="checkboxtext" for="5">5</label>
         </div>
       </div>
@@ -89,23 +89,23 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <input type="radio" id="option1" name="question2" value="1" />
+          <input required type="radio" id="option1" name="question4" value="1" />
           <label class="checkboxtext" for="option1">1</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option2" name="question2" value="2" />
+          <input required type="radio" id="option2" name="question4" value="2" />
           <label class="checkboxtext" for="2">2</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option3" name="question2" value="3" />
+          <input required type="radio" id="option3" name="question4" value="3" />
           <label class="checkboxtext" for="3">3</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option4" name="question2" value="4" />
+          <input required type="radio" id="option4" name="question4" value="4" />
           <label class="checkboxtext" for="4">4</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option5" name="question2" value="5" />
+          <input required type="radio" id="option5" name="question4" value="5" />
           <label class="checkboxtext" for="5">5</label>
         </div>
       </div>
@@ -118,23 +118,23 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <input type="radio" id="option1" name="question2" value="1" />
+          <input required type="radio" id="option1" name="question5" value="1" />
           <label class="checkboxtext" for="option1">1</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option2" name="question2" value="2" />
+          <input required type="radio" id="option2" name="question5" value="2" />
           <label class="checkboxtext" for="2">2</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option3" name="question2" value="3" />
+          <input required type="radio" id="option3" name="question5" value="3" />
           <label class="checkboxtext" for="3">3</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option4" name="question2" value="3" />
+          <input required type="radio" id="option4" name="question5" value="3" />
           <label class="checkboxtext" for="4">4</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option5" name="question2" value="5" />
+          <input required type="radio" id="option5" name="question5" value="5" />
           <label class="checkboxtext" for="5">5</label>
         </div>
       </div>
@@ -146,15 +146,15 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <input type="radio" id="option1" name="question2" value="1" />
+          <input required type="radio" id="option1" name="question6" value="1" />
           <label class="checkboxtext" for="option1">prevelika</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option2" name="question2" value="2" />
+          <input required type="radio" id="option2" name="question6" value="2" />
           <label class="checkboxtext" for="2">primjerena</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option3" name="question2" value="3" />
+          <input required type="radio" id="option3" name="question6" value="3" />
           <label class="checkboxtext" for="3">premala</label>
         </div>
       </div>
@@ -167,23 +167,23 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <input type="radio" id="option1" name="question2" value="1" />
+          <input required type="radio" id="option1" name="question7" value="1" />
           <label class="checkboxtext" for="option1">1</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option2" name="question2" value="2" />
+          <input required type="radio" id="option2" name="question7" value="2" />
           <label class="checkboxtext" for="2">2</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option3" name="question2" value="3" />
+          <input required type="radio" id="option3" name="question7" value="3" />
           <label class="checkboxtext" for="3">3</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option4" name="question2" value="3" />
+          <input required type="radio" id="option4" name="question7" value="3" />
           <label class="checkboxtext" for="4">4</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option5" name="question2" value="5" />
+          <input required type="radio" id="option5" name="question7" value="5" />
           <label class="checkboxtext" for="5">5</label>
         </div>
       </div>
@@ -196,23 +196,23 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <input type="radio" id="option1" name="question2" value="1" />
+          <input required type="radio" id="option1" name="question8" value="1" />
           <label class="checkboxtext" for="option1">1</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option2" name="question2" value="2" />
+          <input required type="radio" id="option2" name="question8" value="2" />
           <label class="checkboxtext" for="2">2</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option3" name="question2" value="3" />
+          <input required type="radio" id="option3" name="question8" value="3" />
           <label class="checkboxtext" for="3">3</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option4" name="question2" value="3" />
+          <input required type="radio" id="option4" name="question8" value="3" />
           <label class="checkboxtext" for="4">4</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option5" name="question2" value="5" />
+          <input required type="radio" id="option5" name="question8" value="5" />
           <label class="checkboxtext" for="5">5</label>
         </div>
       </div>
@@ -225,23 +225,23 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <input type="radio" id="option1" name="question2" value="1" />
+          <input required type="radio" id="option1" name="question9" value="1" />
           <label class="checkboxtext" for="option1">1</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option2" name="question2" value="2" />
+          <input required type="radio" id="option2" name="question9" value="2" />
           <label class="checkboxtext" for="2">2</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option3" name="question2" value="3" />
+          <input required type="radio" id="option3" name="question9" value="3" />
           <label class="checkboxtext" for="3">3</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option4" name="question2" value="3" />
+          <input required type="radio" id="option4" name="question9" value="3" />
           <label class="checkboxtext" for="4">4</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option5" name="question2" value="5" />
+          <input required type="radio" id="option5" name="question9" value="5" />
           <label class="checkboxtext" for="5">5</label>
         </div>
       </div>
@@ -254,23 +254,23 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <input type="radio" id="option1" name="question2" value="1" />
+          <input required type="radio" id="option1" name="question10" value="1" />
           <label class="checkboxtext" for="option1">1</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option2" name="question2" value="2" />
+          <input required type="radio" id="option2" name="question10" value="2" />
           <label class="checkboxtext" for="2">2</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option3" name="question2" value="3" />
+          <input required type="radio" id="option3" name="question10" value="3" />
           <label class="checkboxtext" for="3">3</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option4" name="question2" value="3" />
+          <input required type="radio" id="option4" name="question10" value="3" />
           <label class="checkboxtext" for="4">4</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option5" name="question2" value="5" />
+          <input required type="radio" id="option5" name="question10" value="5" />
           <label class="checkboxtext" for="5">5</label>
         </div>
       </div>
@@ -283,23 +283,23 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <input type="radio" id="option1" name="question2" value="1" />
+          <input required type="radio" id="option1" name="question11" value="1" />
           <label class="checkboxtext" for="option1">1</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option2" name="question2" value="2" />
+          <input required type="radio" id="option2" name="question11" value="2" />
           <label class="checkboxtext" for="2">2</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option3" name="question2" value="3" />
+          <input required type="radio" id="option3" name="question11" value="3" />
           <label class="checkboxtext" for="3">3</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option4" name="question2" value="3" />
+          <input required type="radio" id="option4" name="question11" value="3" />
           <label class="checkboxtext" for="4">4</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option5" name="question2" value="5" />
+          <input required type="radio" id="option5" name="question11" value="5" />
           <label class="checkboxtext" for="5">5</label>
         </div>
       </div>
@@ -312,23 +312,23 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <input type="radio" id="option1" name="question2" value="1" />
+          <input required type="radio" id="option1" name="question12" value="1" />
           <label class="checkboxtext" for="option1">1</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option2" name="question2" value="2" />
+          <input required type="radio" id="option2" name="question12" value="2" />
           <label class="checkboxtext" for="2">2</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option3" name="question2" value="3" />
+          <input required type="radio" id="option3" name="question12" value="3" />
           <label class="checkboxtext" for="3">3</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option4" name="question2" value="3" />
+          <input required type="radio" id="option4" name="question12" value="3" />
           <label class="checkboxtext" for="4">4</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option5" name="question2" value="5" />
+          <input required type="radio" id="option5" name="question12" value="5" />
           <label class="checkboxtext" for="5">5</label>
         </div>
       </div>
@@ -341,28 +341,28 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <input type="radio" id="option1" name="question2" value="1" />
+          <input required type="radio" id="option1" name="question13" value="1" />
           <label class="checkboxtext" for="option1">1</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option2" name="question2" value="2" />
+          <input required type="radio" id="option2" name="question13" value="2" />
           <label class="checkboxtext" for="2">2</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option3" name="question2" value="3" />
+          <input required type="radio" id="option3" name="question13" value="3" />
           <label class="checkboxtext" for="3">3</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option4" name="question2" value="3" />
+          <input required type="radio" id="option4" name="question13" value="3" />
           <label class="checkboxtext" for="4">4</label>
         </div>
         <div class="form-group">
-          <input type="radio" id="option5" name="question2" value="5" />
+          <input required type="radio" id="option5" name="question13" value="5" />
           <label class="checkboxtext" for="5">5</label>
         </div>
 
         <div class="form-group">
-          <input type="radio" id="option6" name="question2" value="6" />
+          <input required type="radio" id="option6" name="question13" value="6" />
           <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
         </div>
       </div>
@@ -391,42 +391,42 @@
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question14" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question14" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question14" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question14" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question14" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
-                <div class="checkbox">
-                  <input type="radio" id="option1" name="question2" value="1" />
+                <div required class="checkbox">
+                  <input type="radio" id="option1" name="question14" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
@@ -437,42 +437,42 @@
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question15" value="1" />
                   <label class="checkboxtext" for="option"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question15" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question15" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question15" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question15" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div class="checkbox">
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question15" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
@@ -483,42 +483,42 @@
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question16" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question16" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question16" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question16" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question16" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div class="checkbox">
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question16" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
@@ -529,42 +529,42 @@
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question17" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question17" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question17" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question17" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question17" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div class="checkbox">
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question17" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
@@ -575,42 +575,42 @@
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question18" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question18" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question18" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question18" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question18" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div class="checkbox">
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question18" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
@@ -621,42 +621,42 @@
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question19" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question19" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question19" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question19" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question19" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div class="checkbox">
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question19" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
@@ -667,42 +667,42 @@
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question20" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question20" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question20" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question20" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question20" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div class="checkbox">
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question20" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
@@ -713,42 +713,42 @@
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question21" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question21" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question21" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question21" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question21" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div class="checkbox">
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question21" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
@@ -759,42 +759,42 @@
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question22" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question22" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question22" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question22" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question22" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div class="checkbox">
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question22" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
@@ -805,42 +805,42 @@
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question23" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question23" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question23" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question23" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question23" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div class="checkbox">
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question23" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
@@ -851,42 +851,42 @@
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question24" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question24" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question24" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question24" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question24" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div class="checkbox">
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question24" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
@@ -897,42 +897,42 @@
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question25" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question25" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question25" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question25" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question25" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div class="checkbox">
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question25" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
@@ -943,42 +943,42 @@
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question26" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question26" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question26" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question26" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question26" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div class="checkbox">
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question26" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
@@ -989,42 +989,42 @@
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question27" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question27" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question27" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question27" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div>
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question27" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
 
               <td>
                 <div class="checkbox">
-                  <input type="radio" id="option1" name="question2" value="1" />
+                  <input required type="radio" id="option1" name="question27" value="1" />
                   <label class="checkboxtext" for="option1"></label>
                 </div>
               </td>
