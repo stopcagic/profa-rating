@@ -3,7 +3,7 @@
     <div class="col">
       <ul type="button" class="navbar">
         <button class="button">
-          <router-link class="link" to="/About_Tab">
+          <router-link class="link" to="/about">
             <a class="dugme">About |</a>
           </router-link>
         </button>
@@ -18,11 +18,7 @@
             <a class="dugme">Popunjene forme |</a>
           </router-link>
         </button>
-        <button class="button">
-          <router-link class="link" to="/profil">
-            <a class="dugme">Profil |</a>
-          </router-link>
-        </button>
+
         <div v-if="!auth.authenticated">
           <button class="button">
             <router-link class="link" to="/prijava">
@@ -83,7 +79,7 @@ ul {
   background-color: transparent;
   border: none;
   color: gray;
-  font-size: 15px;
+  font-size: 1em;
   transition: all 0.5s;
   cursor: pointer;
 }

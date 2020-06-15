@@ -22,6 +22,37 @@
   margin-top: 5%;
   color: #00b7ff;
 }
+.profil {
+  width: 80%;
+  color: black;
+  padding-top: 5%;
+  margin-top: 15%;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(192, 190, 190);
+}
+.profil-btn {
+  background-color: transparent;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+.profil-btn:hover {
+  transition: 0.3s ease-in-out;
+  background: #00b7ff;
+  color: white;
+}
+.hero {
+  cursor: pointer;
+}
+.promjenaL input[type="password"] {
+  color: black;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  border: 1px solid black;
+  border-radius: 25px;
+}
 
 .btn {
   margin-bottom: 5%;

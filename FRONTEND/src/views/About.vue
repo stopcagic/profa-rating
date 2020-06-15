@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-sm-8 title">
             <div class="w3-container">
-              <div class="w3-center w3-animate-left">
+              <div class="w3-center w3-animate-left hero">
                 OCIJENITE
                 PROFESORA
               </div>
@@ -54,7 +54,7 @@
                 na predavanja te koja mu je najčešća ocjena u indeksu, drugi dio je anketa o porfesoru/asistentu
                 a treća je komentar ukoliko student želi nešto svoje nadodati.
               </p>
-              <p>
+              <p class="opis">
                 Cilj aplikacije je omoćiti ocjenjivanje preko interneta, bez ikakve potrebe
                 fizičkog dolaska studenta u učionu.
               </p>
@@ -73,7 +73,6 @@
       </div>
       <div class="col right">
         <app-header />
-
         <div class="col">
           <transition name="slide-fade">
             <prijava v-show="!prikaziPrijava"></prijava>

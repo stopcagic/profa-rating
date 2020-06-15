@@ -12,7 +12,7 @@ const routes = [
   },
 
   {
-    path: "/about_Tab",
+    path: "/about",
     name: "AboutTab",
     component: () => import("../views/AboutTab.vue"),
   },
@@ -60,7 +60,7 @@ router.beforeEach((to, from, next) => {
   const authRequired = !publicPages.includes(to.path);
   const user = auth.getUser();
 
-  if (!authRequired && user) {
+  if (to.path == "/") {
     return next("/popis");
   }
 
