@@ -27,7 +27,7 @@ router.post('/:kljuc', verify, async (req, res) => {
             })
 
         res.send({
-            id: id,
+            id: _id,
             message: "success."
         })
 
