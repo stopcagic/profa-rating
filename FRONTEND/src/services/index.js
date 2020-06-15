@@ -32,20 +32,13 @@ const profs = {
 }
 
 const anketa = {
-    async create() {
-        let response = await Services.post('/anketa')
+    async create(kljuc, forma) {
+        let response = await Services.post(`/anketa/${kljuc}`, {
+            forma: forma
+        })
         let data = await response.data
 
         return data;
-    },
-    async finishPoll(forma) {
-        let id = await anketa.create()
-        let response = await Services.put(`/anketa/${id}`, {
-            forma
-        })
-        let data = response.data
-
-        return data
     }
 }
 

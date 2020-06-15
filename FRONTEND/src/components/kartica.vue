@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="card-body">
-      <router-link class="link" to="/anketa">{{info.profesor}}</router-link>
+      <router-link class="link" to="/anketa" :kljuc="info._id">{{info.profesor}}</router-link>
       <i class="fas fa-clipboard"></i>
     </div>
   </div>
