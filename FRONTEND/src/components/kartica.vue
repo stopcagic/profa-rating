@@ -1,8 +1,10 @@
 <template>
-  <div class="card">
-    <div class="card-body">
-      <router-link class="link" to="/anketa">{{info.profesor}}</router-link>
-      <i class="fas fa-clipboard"></i>
+  <div class="container-fluid">
+    <div class="card col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
+      <div class="card-body">
+        <router-link class="link" to="/anketa">{{info.profesor}}</router-link>
+        <i class="fas fa-clipboard"></i>
+      </div>
     </div>
   </div>
 </template> 
@@ -59,5 +61,10 @@ export default {
 .card-body {
   color: #272727;
   font-size: 20px;
+}
+@media (max-width: 767px) {
+  .card-body {
+    font-size: 100%;
+  }
 }
 </style>

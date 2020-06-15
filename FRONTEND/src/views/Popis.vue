@@ -1,10 +1,12 @@
 <template>
-  <div class="w3-container">
-    <appheader class="navbar-about"></appheader>
+  <div class="container-fluid">
+    <div class="w3-container col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
+      <appheader class="navbar-about"></appheader>
 
-    <div class="container w3-center w3-animate-right">
-      <div v-for="profesor in profesori" :key="profesor._id">
-        <kartica :info="profesor" />
+      <div class="container w3-center w3-animate-right">
+        <div v-for="profesor in profesori" :key="profesor._id">
+          <kartica :info="profesor" />
+        </div>
       </div>
     </div>
   </div>
@@ -39,13 +41,6 @@ export default {
 };
 </script>
 <style scoped>
-.container {
-  margin: 0px auto 10x;
-  padding: 0px;
-  font-family: "Gotu", sans-serif;
-  text-align: center;
-  height: 100%;
-}
 .w3-container {
   padding: 0px;
   margin: 0px;

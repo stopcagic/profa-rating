@@ -60,7 +60,7 @@ router.beforeEach((to, from, next) => {
   const authRequired = !publicPages.includes(to.path);
   const user = auth.getUser();
 
-  if (to.path == "/") {
+  if (to.path == "/" && user) {
     return next("/popis");
   }
 

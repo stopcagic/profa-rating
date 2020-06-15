@@ -367,688 +367,345 @@
         </div>
       </div>
     </div>
-    <div class="card-table">
-      <div class="card-header">
-        <h2>*</h2>
-        <p>Molimo da u nastavku označite u kojoj se mjeri slažete s tvrdnjama koje se odnose na nastavnika pri čemu 1 znači da se uopće ne slažete, a 5 da se u potpunosti slažete:</p>
-      </div>
-      <div class="card-body">
-        <table width="100%">
-          <thead>
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">1</th>
-              <th scope="col">2</th>
-              <th scope="col">3</th>
-              <th scope="col">4</th>
-              <th scope="col">5</th>
-              <th scope="col">ne znam(ne mogu procijeniti)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Redovito održava nastavu</td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question14" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question14" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question14" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question14" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question14" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div required class="checkbox">
-                  <input type="radio" id="option1" name="question14" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-            </tr>
-            <hr />
-            <tr class="boja">
-              <td>Odgovara na elektronsku poštu</td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question15" value="1" />
-                  <label class="checkboxtext" for="option"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question15" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question15" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question15" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question15" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div class="checkbox">
-                  <input required type="radio" id="option1" name="question15" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-            </tr>
-            <hr />
-            <tr>
-              <td>Dobar je govornik</td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question16" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question16" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question16" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question16" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question16" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div class="checkbox">
-                  <input required type="radio" id="option1" name="question16" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-            </tr>
-            <hr />
-            <tr class="boja">
-              <td>Predaje razumljivo</td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question17" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question17" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question17" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question17" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question17" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div class="checkbox">
-                  <input required type="radio" id="option1" name="question17" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-            </tr>
-            <hr />
-            <tr>
-              <td>Predaje zanimljivo</td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question18" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question18" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question18" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question18" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question18" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div class="checkbox">
-                  <input required type="radio" id="option1" name="question18" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-            </tr>
-            <hr />
-            <tr class="boja">
-              <td>Pravedan/pravedna je</td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question19" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question19" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question19" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question19" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question19" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div class="checkbox">
-                  <input required type="radio" id="option1" name="question19" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-            </tr>
-            <hr />
-            <tr>
-              <td>Potiče studente na komunikaciju i postavljanje pitanja</td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question20" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question20" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question20" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question20" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question20" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div class="checkbox">
-                  <input required type="radio" id="option1" name="question20" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-            </tr>
-            <hr />
-            <tr class="boja">
-              <td>Poštuje studente</td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question21" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question21" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question21" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question21" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question21" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div class="checkbox">
-                  <input required type="radio" id="option1" name="question21" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-            </tr>
-            <hr />
-            <tr>
-              <td>Općenito motivira studente</td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question22" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question22" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question22" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question22" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question22" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div class="checkbox">
-                  <input required type="radio" id="option1" name="question22" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-            </tr>
-            <hr />
-            <tr class="boja">
-              <td>Uvažava različita mišljenja</td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question23" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question23" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question23" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question23" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question23" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div class="checkbox">
-                  <input required type="radio" id="option1" name="question23" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-            </tr>
-            <hr />
-            <tr>
-              <td>Kvalitetno organizira nastavu</td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question24" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question24" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question24" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question24" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question24" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div class="checkbox">
-                  <input required type="radio" id="option1" name="question24" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-            </tr>
-            <hr />
-            <tr class="boja">
-              <td>Stručan/stručna je</td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question25" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question25" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question25" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question25" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question25" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div class="checkbox">
-                  <input required type="radio" id="option1" name="question25" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-            </tr>
-            <hr />
-            <tr>
-              <td>Povezuje nastavno gradivo i praktične primjere</td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question26" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question26" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question26" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question26" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question26" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div class="checkbox">
-                  <input required type="radio" id="option1" name="question26" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-            </tr>
-            <hr />
-            <tr class="boja">
-              <td>Općenito je kvalitetan nastavnik/nastavnica</td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question27" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question27" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question27" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question27" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div>
-                  <input required type="radio" id="option1" name="question27" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-
-              <td>
-                <div class="checkbox">
-                  <input required type="radio" id="option1" name="question27" value="1" />
-                  <label class="checkboxtext" for="option1"></label>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="card-comment">
-      <tr>
+    <hr />
+    <h4
+      class="molimo"
+    >Molimo da u nastavku označite u kojoj se mjeri slažete s tvrdnjama koje se odnose na nastavnika pri čemu 1 znači da se uopće ne slažete, a 5 da se u potpunosti slažete:</h4>
+
+    <hr />
+    <div class="card grupiranje">
+      <div class="card grupiranje2">
         <div class="card-header">
-          <p>Ovdje možete unijeti komentar, primjedbu ili pohvalu nastavnice/nastavnika, odnosno gdje vidite mogućnosti poboljšanja – ukratko obrazložite.</p>
+          <h2>*</h2>
+          <p>Redovito održava nastavu</p>
         </div>
-      </tr>
-
-      <tr>
-        <td>
-          <div>
-            <textarea class="komentar" rows="5"></textarea>
+        <div class="card-body">
+          <div class="form-group">
+            <input required type="radio" id="option1" name="question14" value="1" />
+            <label class="checkboxtext" for="option1">1</label>
           </div>
-        </td>
-      </tr>
+          <div class="form-group">
+            <input required type="radio" id="option2" name="question14" value="2" />
+            <label class="checkboxtext" for="2">2</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option3" name="question14" value="3" />
+            <label class="checkboxtext" for="3">3</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option4" name="question14" value="3" />
+            <label class="checkboxtext" for="4">4</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option5" name="question14" value="5" />
+            <label class="checkboxtext" for="5">5</label>
+          </div>
+
+          <div class="form-group">
+            <input required type="radio" id="option6" name="question14" value="6" />
+            <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h2>*</h2>
+          <p>Odgovara na elektronsku poštu</p>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input required type="radio" id="option1" name="question15" value="1" />
+            <label class="checkboxtext" for="option1">1</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option2" name="question15" value="2" />
+            <label class="checkboxtext" for="2">2</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option3" name="question15" value="3" />
+            <label class="checkboxtext" for="3">3</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option4" name="question15" value="3" />
+            <label class="checkboxtext" for="4">4</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option5" name="question15" value="5" />
+            <label class="checkboxtext" for="5">5</label>
+          </div>
+
+          <div class="form-group">
+            <input required type="radio" id="option6" name="question15" value="6" />
+            <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h2>*</h2>
+          <p>Dobar je govornik</p>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input required type="radio" id="option1" name="question16" value="1" />
+            <label class="checkboxtext" for="option1">1</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option2" name="question16" value="2" />
+            <label class="checkboxtext" for="2">2</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option3" name="question16" value="3" />
+            <label class="checkboxtext" for="3">3</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option4" name="question16" value="3" />
+            <label class="checkboxtext" for="4">4</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option5" name="question16" value="5" />
+            <label class="checkboxtext" for="5">5</label>
+          </div>
+
+          <div class="form-group">
+            <input required type="radio" id="option6" name="question16" value="6" />
+            <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h2>*</h2>
+          <p>Predaje zanimljivo</p>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input required type="radio" id="option1" name="question17" value="1" />
+            <label class="checkboxtext" for="option1">1</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option2" name="question17" value="2" />
+            <label class="checkboxtext" for="2">2</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option3" name="question17" value="3" />
+            <label class="checkboxtext" for="3">3</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option4" name="question17" value="3" />
+            <label class="checkboxtext" for="4">4</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option5" name="question17" value="5" />
+            <label class="checkboxtext" for="5">5</label>
+          </div>
+
+          <div class="form-group">
+            <input required type="radio" id="option6" name="question17" value="6" />
+            <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h2>*</h2>
+          <p>Pravedan/pravedna je</p>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input required type="radio" id="option1" name="question17" value="1" />
+            <label class="checkboxtext" for="option1">1</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option2" name="question17" value="2" />
+            <label class="checkboxtext" for="2">2</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option3" name="question17" value="3" />
+            <label class="checkboxtext" for="3">3</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option4" name="question17" value="3" />
+            <label class="checkboxtext" for="4">4</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option5" name="question17" value="5" />
+            <label class="checkboxtext" for="5">5</label>
+          </div>
+
+          <div class="form-group">
+            <input required type="radio" id="option6" name="question17" value="6" />
+            <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h2>*</h2>
+          <p>Potiče studente na komunikaciju i postavljanje pitanja</p>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input required type="radio" id="option1" name="question17" value="1" />
+            <label class="checkboxtext" for="option1">1</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option2" name="question17" value="2" />
+            <label class="checkboxtext" for="2">2</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option3" name="question17" value="3" />
+            <label class="checkboxtext" for="3">3</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option4" name="question17" value="3" />
+            <label class="checkboxtext" for="4">4</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option5" name="question17" value="5" />
+            <label class="checkboxtext" for="5">5</label>
+          </div>
+
+          <div class="form-group">
+            <input required type="radio" id="option6" name="question17" value="6" />
+            <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h2>*</h2>
+          <p>Poštuje studente</p>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input required type="radio" id="option1" name="question17" value="1" />
+            <label class="checkboxtext" for="option1">1</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option2" name="question17" value="2" />
+            <label class="checkboxtext" for="2">2</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option3" name="question17" value="3" />
+            <label class="checkboxtext" for="3">3</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option4" name="question17" value="3" />
+            <label class="checkboxtext" for="4">4</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option5" name="question17" value="5" />
+            <label class="checkboxtext" for="5">5</label>
+          </div>
+
+          <div class="form-group">
+            <input required type="radio" id="option6" name="question17" value="6" />
+            <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h2>*</h2>
+          <p>Predaje zanimljivo</p>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input required type="radio" id="option1" name="question17" value="1" />
+            <label class="checkboxtext" for="option1">1</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option2" name="question17" value="2" />
+            <label class="checkboxtext" for="2">2</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option3" name="question17" value="3" />
+            <label class="checkboxtext" for="3">3</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option4" name="question17" value="3" />
+            <label class="checkboxtext" for="4">4</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option5" name="question17" value="5" />
+            <label class="checkboxtext" for="5">5</label>
+          </div>
+
+          <div class="form-group">
+            <input required type="radio" id="option6" name="question17" value="6" />
+            <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h2>*</h2>
+          <p>Predaje zanimljivo</p>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input required type="radio" id="option1" name="question17" value="1" />
+            <label class="checkboxtext" for="option1">1</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option2" name="question17" value="2" />
+            <label class="checkboxtext" for="2">2</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option3" name="question17" value="3" />
+            <label class="checkboxtext" for="3">3</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option4" name="question17" value="3" />
+            <label class="checkboxtext" for="4">4</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option5" name="question17" value="5" />
+            <label class="checkboxtext" for="5">5</label>
+          </div>
+
+          <div class="form-group">
+            <input required type="radio" id="option6" name="question17" value="6" />
+            <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h2>*</h2>
+          <p>Predaje zanimljivo</p>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input required type="radio" id="option1" name="question17" value="1" />
+            <label class="checkboxtext" for="option1">1</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option2" name="question17" value="2" />
+            <label class="checkboxtext" for="2">2</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option3" name="question17" value="3" />
+            <label class="checkboxtext" for="3">3</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option4" name="question17" value="3" />
+            <label class="checkboxtext" for="4">4</label>
+          </div>
+          <div class="form-group">
+            <input required type="radio" id="option5" name="question17" value="5" />
+            <label class="checkboxtext" for="5">5</label>
+          </div>
+
+          <div class="form-group">
+            <input required type="radio" id="option6" name="question17" value="6" />
+            <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
+          </div>
+        </div>
+      </div>
     </div>
+
     <div class="card-button">
       <button class="btn btn-primary btn-lg" type="submit">Pošalji</button>
     </div>
@@ -1060,27 +717,6 @@ export default {
 };
 </script>
 <style  scoped>
-.komentar {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  width: 95%;
-  text-indent: 5px;
-  font-size: 15px;
-}
-.card-comment {
-  margin: 0px auto 10px;
-  width: 70%;
-  background-color: rgb(228, 227, 227);
-  color: black;
-  margin-top: 5%;
-}
-.card-table {
-  margin: 0px auto 10px;
-  width: 70%;
-  background-color: rgb(228, 227, 227);
-  color: black;
-  margin-top: 5%;
-}
 .card {
   margin: 0px auto 10px;
   width: 55%;
@@ -1088,26 +724,23 @@ export default {
   color: black;
   margin-top: 5%;
 }
+.grupiranje {
+  background-color: #01408325;
+}
 input[type="radio"] {
   transform: scale(1.75);
   cursor: pointer;
 }
-
+.molimo {
+  color: white;
+  text-align: center;
+}
 .checkboxtext {
   font-size: 120%;
   margin-left: 5%;
 }
 .form-group {
   margin-left: 15%;
-}
-
-th {
-  padding-left: 5%;
-}
-
-td {
-  width: 2%;
-  padding-left: 5%;
 }
 
 .btn {
@@ -1130,5 +763,22 @@ td {
 .card-button {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 1326px) {
+  .grupiranje2 {
+    width: 95%;
+  }
+}
+@media (max-width: 767px) {
+  .card {
+    width: 80%;
+  }
+  .grupiranje {
+    width: 100%;
+    font-size: 13px;
+  }
+  .grupiranje2 {
+    width: 95%;
+  }
 }
 </style>

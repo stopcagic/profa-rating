@@ -1,9 +1,9 @@
 <template>
-  <div id="about">
+  <div class="container-fluid" id="about">
     <div class="row">
-      <div class="col left">
+      <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 left">
         <div class="row">
-          <div class="col-sm-8 title">
+          <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12 left title">
             <div class="w3-container">
               <div @click="idiHome" class="w3-center w3-animate-left hero">
                 OCIJENITE
@@ -11,13 +11,10 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-2"></div>
-          <div class="col-sm-2"></div>
         </div>
         <hr />
         <div class="row">
-          <div class="col"></div>
-          <div class="col-lg">
+          <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
             <div class="w3-center w3-animate-left" id="logo logo_about">
               <div class="logo-title">
                 <div class="first-container share">
@@ -39,66 +36,103 @@
               </div>
             </div>
           </div>
-          <div class="col"></div>
         </div>
 
         <div class="row">
-          <div class="w3-container">
-            <div class="col-lg w3-center w3-animate-left">
-              <div class="card about_tab">
-                <h1>O aplikaciji</h1>
-                <p class="opis">
-                  Ova web aplikacija izrađena je u svrhu vrednovanja profesora i asistenata od strane
-                  studenata. Profa rating omogućuje studentu da odabere profesora kojega
-                  želi ocjeniti, te mu zatim nudi određena pitanja, ta ista pitanja se sastoje od
-                  tri dijela. Prvi dio su osobna pitanja, u kojima student odgovara koliko često izlazi
-                  na predavanja te koja mu je najčešća ocjena u indeksu, drugi dio je anketa o porfesoru/asistentu
-                  a treća je komentar ukoliko student želi nešto svoje nadodati.
-                </p>
-                <p>
-                  Cilj aplikacije je omoćiti ocjenjivanje preko interneta, bez ikakve potrebe
-                  fizičkog dolaska studenta u učionu.
-                </p>
-                <p class="opis">
-                  Da bi ste bili u mogućnosti koristiti našu aplikaciju morate se prvo prijaviti,
-                  to možete postići klikom na gumb ispod.
-                </p>
-              </div>
+          <div class="w3-container col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
+            <div class="w3-center w3-animate-left">
+              <h1>O aplikaciji</h1>
+              <p class="opis">
+                Ova web aplikacija izrađena je u svrhu vrednovanja profesora i asistenata od strane
+                studenata. Profa rating omogućuje studentu da odabere profesora kojega
+                želi ocjeniti, te mu zatim nudi određena pitanja, ta ista pitanja se sastoje od
+                tri dijela. Prvi dio su osobna pitanja, u kojima student odgovara koliko često izlazi
+                na predavanja te koja mu je najčešća ocjena u indeksu, drugi dio je anketa o porfesoru/asistentu
+                a treća je komentar ukoliko student želi nešto svoje nadodati.
+              </p>
+              <p class="opis">
+                Cilj aplikacije je omoćiti ocjenjivanje preko interneta, bez ikakve potrebe
+                fizičkog dolaska studenta u učionu.
+              </p>
+              <p class="opis">
+                Da bi ste bili u mogućnosti koristiti našu aplikaciju morate se prvo prijaviti,
+                to možete postići klikom na gumb ispod.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col right">
+      <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 right">
         <app-header></app-header>
+
         <div class="col">
           <div v-if="auth.authenticated">
             <div class="profil">
               <div class="card-header">
                 <h2>Korisnički profil</h2>
               </div>
-              <div class="card-body">
-                <div class="col">Email:</div>
-                <div class="col">Fakultet:</div>
+
+              <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
                 <div class="row">
-                  <div class="col">
+                  <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">Email:</div>
+                </div>
+                <div class="row">
+                  <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">Fakultet:</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6">
                     <button
                       v-on:click="prikaziEmail=!prikaziEmail "
                       class="profil-btn"
                     >Promijeni Email</button>
                   </div>
 
-                  <div class="col">
+                  <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6">
                     <button
                       v-on:click="prikaziLozinku=!prikaziLozinku  "
                       class="profil-btn"
                     >Promijeni Lozinku</button>
                   </div>
                 </div>
-                <div v-if="!prikaziEmail" class="col">Email</div>
+                <div
+                  v-if="!prikaziEmail"
+                  class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12"
+                >
+                  Trenutačan email
+                  <div class="col promjena">
+                    <input
+                      type="text"
+                      name="lozinka"
+                      required
+                      class="form-control"
+                      v-model="lozinka"
+                    />
+                  </div>Novi email
+                  <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 promjena">
+                    <input
+                      type="text"
+                      name="lozinka"
+                      required
+                      class="form-control"
+                      v-model="lozinka"
+                    />
+                  </div>Ponovite novi email
+                  <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 promjena">
+                    <input
+                      type="text"
+                      name="lozinka"
+                      required
+                      class="form-control"
+                      v-model="lozinka"
+                    />
+                  </div>
+                </div>
+
                 <div v-if="!prikaziLozinku" class="col">
                   Trenutačna lozinka
-                  <div class="col promjenaL">
+                  <div class="col promjena">
                     <input
                       type="password"
                       name="lozinka"
@@ -107,7 +141,7 @@
                       v-model="lozinka"
                     />
                   </div>Nova lozinka
-                  <div class="col promjenaL">
+                  <div class="col promjena">
                     <input
                       type="password"
                       name="lozinka"
@@ -116,7 +150,7 @@
                       v-model="lozinka"
                     />
                   </div>Ponovite novu lozinku
-                  <div class="col promjenaL">
+                  <div class="col promjena">
                     <input
                       type="password"
                       name="lozinka"

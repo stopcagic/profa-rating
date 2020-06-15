@@ -1,9 +1,9 @@
 <template>
-  <div id="about">
+  <div class="container-fluid no-gutters" id="about">
     <div class="row">
-      <div class="col left">
+      <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 left">
         <div class="row">
-          <div class="col-sm-8 title">
+          <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12 left title">
             <div class="w3-container">
               <div class="w3-center w3-animate-left hero">
                 OCIJENITE
@@ -11,13 +11,10 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-2"></div>
-          <div class="col-sm-2"></div>
         </div>
         <hr />
         <div class="row">
-          <div class="col"></div>
-          <div class="col-lg">
+          <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
             <div class="w3-center w3-animate-left" id="logo">
               <div class="logo-title">
                 <div class="first-container share">
@@ -39,12 +36,11 @@
               </div>
             </div>
           </div>
-          <div class="col"></div>
         </div>
 
         <div class="row">
-          <div class="w3-container">
-            <div class="col-lg w3-center w3-animate-left">
+          <div class="w3-container col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
+            <div class="w3-center w3-animate-left">
               <h1>O aplikaciji</h1>
               <p class="opis">
                 Ova web aplikacija izrađena je u svrhu vrednovanja profesora i asistenata od strane
@@ -71,16 +67,20 @@
           </div>
         </div>
       </div>
-      <div class="col right">
+      <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 left">
         <app-header />
-        <div class="col">
-          <transition name="slide-fade">
-            <prijava v-show="!prikaziPrijava"></prijava>
-          </transition>
+        <div class="row">
+          <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
+            <transition name="slide-fade">
+              <prijava v-show="!prikaziPrijava"></prijava>
+            </transition>
+          </div>
         </div>
 
-        <div class="col">
-          <registracija v-if="!prikaziRegistracija"></registracija>
+        <div class="row">
+          <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
+            <registracija v-if="!prikaziRegistracija"></registracija>
+          </div>
         </div>
       </div>
     </div>

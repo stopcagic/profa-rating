@@ -29,7 +29,7 @@
   margin-top: 15%;
   border: none;
   border-radius: 15px;
-  background-color: rgb(192, 190, 190);
+  background-color: rgb(218, 218, 218);
 }
 .profil-btn {
   background-color: transparent;
@@ -46,12 +46,18 @@
 .hero {
   cursor: pointer;
 }
-.promjenaL input[type="password"] {
+.promjena input[type="password"],
+[type="text"] {
   color: black;
   margin-top: 10%;
   margin-bottom: 5%;
   border: 1px solid black;
   border-radius: 25px;
+  background-color: transparent;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .btn {
@@ -83,6 +89,7 @@
   transform: translateY(20px);
   opacity: 0;
 }
+
 .card-prijava {
   margin: 0px auto 10px;
   width: 80%;
@@ -112,19 +119,19 @@
   background-size: cover;
   border: 1px solid #00b7ff;
 }
-.right {
+/* .right {
   padding: 0px;
 }
 .left {
   padding: 0px;
   height: 100vh;
-}
+} */
 .input-group-text {
   border-radius: 20px;
   background-color: transparent;
   color: #00b7ff;
 }
-input[type="email"],
+.card-prijava input[type="email"],
 [type="password"] {
   color: #00b7ff;
   background-color: transparent;
@@ -332,3 +339,17 @@ span:after {
   color: white;
   transition-delay: 530ms;
 }
+
+/* @media (max-width: 767px) {
+  .navbar-fixed-top {
+    position: relative;
+    top: auto;
+  }
+  .navbar-collapse {
+    max-height: none;
+  }
+  body {
+    margin: 0;
+  }
+}
+ */
