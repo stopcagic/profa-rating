@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import { auth } from '@/services'
+import { auth } from "@/services";
 
 Vue.use(VueRouter);
 
@@ -9,6 +9,12 @@ const routes = [
     path: "/",
     name: "About",
     component: () => import("../views/About.vue"),
+  },
+
+  {
+    path: "/about_Tab",
+    name: "AboutTab",
+    component: () => import("../views/AboutTab.vue"),
   },
 
   {
@@ -36,6 +42,11 @@ const routes = [
     name: "Anketa",
     component: () => import("../components/anketa.vue"),
   },
+  {
+    path: "/profil",
+    name: "Profil",
+    component: () => import("../components/profil.vue"),
+  },
 ];
 
 const router = new VueRouter({
@@ -45,17 +56,16 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
-
-  const publicPages = ['/', '/about'];
+  const publicPages = ["/", "/about"];
   const authRequired = !publicPages.includes(to.path);
   const user = auth.getUser();
 
   if (!authRequired && user) {
-    return next('/popis')
+    return next("/popis");
   }
 
   if (authRequired && !user) {
-    return next('/');
+    return next("/");
   }
   next();
 });

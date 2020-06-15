@@ -3,7 +3,7 @@
     <div class="col">
       <ul type="button" class="navbar">
         <button class="button">
-          <router-link class="link" to="/">
+          <router-link class="link" to="/About_Tab">
             <a class="dugme">About |</a>
           </router-link>
         </button>
@@ -16,6 +16,11 @@
         <button class="button">
           <router-link class="link" to="/oznacene">
             <a class="dugme">Popunjene forme |</a>
+          </router-link>
+        </button>
+        <button class="button">
+          <router-link class="link" to="/profil">
+            <a class="dugme">Profil |</a>
           </router-link>
         </button>
         <div v-if="!auth.authenticated">
@@ -38,11 +43,13 @@
 </template>
 <script>
 import { auth } from "@/services";
+import store from "../store.js";
 
 export default {
   data() {
     return {
-      auth: auth.state
+      auth: auth.state,
+      prikaziPrijava: store.prijavi_se
     };
   },
   methods: {
@@ -63,6 +70,7 @@ ul {
 }
 .naslov {
   height: 40px;
+  border-radius: 0px 0px 0px 10px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.384);
   backdrop-filter: blur(5px);

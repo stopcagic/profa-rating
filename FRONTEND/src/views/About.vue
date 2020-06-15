@@ -21,7 +21,7 @@
             <div class="w3-center w3-animate-left" id="logo">
               <div class="logo-title">
                 <div class="first-container share">
-                  <h1>
+                  <h1 class="Profa">
                     <span id="one">P</span>
                     <span>r</span>
                     <span>o</span>
@@ -46,7 +46,7 @@
           <div class="w3-container">
             <div class="col-lg w3-center w3-animate-left">
               <h1>O aplikaciji</h1>
-              <p>
+              <p class="opis">
                 Ova web aplikacija izrađena je u svrhu vrednovanja profesora i asistenata od strane
                 studenata. Profa rating omogućuje studentu da odabere profesora kojega
                 želi ocjeniti, te mu zatim nudi određena pitanja, ta ista pitanja se sastoje od
@@ -58,7 +58,7 @@
                 Cilj aplikacije je omoćiti ocjenjivanje preko interneta, bez ikakve potrebe
                 fizičkog dolaska studenta u učionu.
               </p>
-              <p>
+              <p class="opis">
                 Da bi ste bili u mogućnosti koristiti našu aplikaciju morate se prvo prijaviti,
                 to možete postići klikom na gumb ispod.
               </p>
@@ -99,7 +99,7 @@ import store from "../store.js";
 export default {
   data() {
     return {
-      prikaziPrijava: store.prikaziPrijava,
+      prikaziPrijava: store.prijavi_se,
       prikaziRegistracija: store.registriraj_se
     };
   },

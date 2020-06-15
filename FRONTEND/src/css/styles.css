@@ -2,6 +2,20 @@
   padding: 0px;
   text-align: center;
 }
+.about_ocjenam {
+  margin-top: -15%;
+  padding: 0px;
+}
+.about_tab {
+  margin: 0px auto 10px;
+  width: 50%;
+  color: white;
+  padding-top: 5%;
+  border: none;
+  border-radius: 15px;
+  background-image: url("../assets/card-pozadina.svg");
+}
+
 .title {
   font-family: "Playfair Display", serif;
   font-size: 25px;
@@ -57,6 +71,7 @@
   text-decoration: none;
   outline: none;
 }
+
 .card-prijava .reg:active {
   box-shadow: 0 5px #00b7ff;
   transform: translateY(4px);
@@ -94,7 +109,7 @@ input[type="email"]:focus,
   width: 50%;
   margin: 0 auto;
 }
-p {
+.opis {
   font-family: "Nunito Sans", sans-serif;
   color: white;
   margin: 5%;
@@ -117,7 +132,7 @@ h1 {
   color: white;
   font-weight: 600;
 }
-.first-container {
+.first-container .profa {
   cursor: pointer;
   position: relative;
   margin-top: 20%;

@@ -8,7 +8,18 @@
 </template> 
 <script>
 export default {
-  props: ["info"]
+  props: ["info"],
+  data() {
+    return {
+      isClicked: false
+    };
+  },
+
+  methods: {
+    toggleIsClicked: function() {
+      this.isClicked = !this.isClicked;
+    }
+  }
 };
 </script>
 <style scoped>
@@ -33,10 +44,20 @@ export default {
 }
 .fas {
   color: rgba(51, 62, 121, 0.842);
+  font-size: 30px;
+  cursor: pointer;
   float: right;
-  font-size: 150%;
+}
+.fas:active {
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -ms-transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
 }
 .card-body {
   color: #272727;
+  font-size: 20px;
 }
 </style>
