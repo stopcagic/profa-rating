@@ -17,11 +17,11 @@ const routes = [
     component: () => import("../views/AboutTab.vue"),
   },
 
-  {
+  /*  {
     path: "/registracija",
     name: "Registracija",
     component: () => import("../views/Registracija.vue"),
-  },
+  }, */
   {
     path: "/popis",
     name: "Popis",
@@ -32,11 +32,11 @@ const routes = [
     name: "Oznacene",
     component: () => import("../views/oznaceneForme.vue"),
   },
-  {
+  /*   {
     path: "/prijava",
     name: "Prijava",
     component: () => import("../views/Prijava.vue"),
-  },
+  }, */
   {
     path: "/anketa",
     name: "Anketa",
