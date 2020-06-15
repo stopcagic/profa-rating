@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="card col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
       <div class="card-body">
-        <router-link class="link" to="/anketa">{{info.profesor}}</router-link>
+        <router-link v-bind:to="'/anketa/' + info._id" class="link">{{info.profesor}}</router-link>
         <i class="fas fa-clipboard"></i>
       </div>
     </div>

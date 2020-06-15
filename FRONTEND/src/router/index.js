@@ -38,7 +38,7 @@ const routes = [
     component: () => import("../views/Prijava.vue"),
   }, */
   {
-    path: "/anketa",
+    path: "/anketa/:id",
     name: "Anketa",
     component: () => import("../components/anketa.vue"),
   },

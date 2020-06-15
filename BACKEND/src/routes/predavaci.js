@@ -12,7 +12,6 @@ router.get('/predavaci/:faks', verify, async (req, res) => {
     let cursor = await db.collection("predavaci").find({ faks: fakultet })
     let results = await cursor.toArray()
 
-
     res.json(results)
 })
 
