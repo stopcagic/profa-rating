@@ -823,23 +823,58 @@
           </div>
           <div class="card-body">
             <div class="form-group">
-              <input required type="radio" id="option1" name="question14" value="1" />
+              <input
+                required
+                type="radio"
+                id="option1"
+                name="question14"
+                value="1"
+                v-model="forma.cetrnaesto"
+              />
               <label class="checkboxtext" for="option1">1</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option2" name="question14" value="2" />
+              <input
+                required
+                type="radio"
+                id="option2"
+                name="question14"
+                value="2"
+                v-model="forma.cetrnaesto"
+              />
               <label class="checkboxtext" for="2">2</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option3" name="question14" value="3" />
+              <input
+                required
+                type="radio"
+                id="option3"
+                name="question14"
+                value="3"
+                v-model="forma.cetrnaesto"
+              />
               <label class="checkboxtext" for="3">3</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option4" name="question14" value="3" />
+              <input
+                required
+                type="radio"
+                id="option4"
+                name="question14"
+                value="3"
+                v-model="forma.cetrnaesto"
+              />
               <label class="checkboxtext" for="4">4</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option5" name="question14" value="5" />
+              <input
+                required
+                type="radio"
+                id="option5"
+                name="question14"
+                value="5"
+                v-model="forma.cetrnaesto"
+              />
               <label class="checkboxtext" for="5">5</label>
             </div>
 
@@ -856,28 +891,70 @@
           </div>
           <div class="card-body">
             <div class="form-group">
-              <input required type="radio" id="option1" name="question15" value="1" />
+              <input
+                required
+                type="radio"
+                id="option1"
+                name="question15"
+                value="1"
+                v-model="forma.petnaesto"
+              />
               <label class="checkboxtext" for="option1">1</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option2" name="question15" value="2" />
+              <input
+                required
+                type="radio"
+                id="option2"
+                name="question15"
+                value="2"
+                v-model="forma.petnaesto"
+              />
               <label class="checkboxtext" for="2">2</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option3" name="question15" value="3" />
+              <input
+                required
+                type="radio"
+                id="option3"
+                name="question15"
+                value="3"
+                v-model="forma.petnaesto"
+              />
               <label class="checkboxtext" for="3">3</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option4" name="question15" value="3" />
+              <input
+                required
+                type="radio"
+                id="option4"
+                name="question15"
+                value="3"
+                v-model="forma.petnaesto"
+              />
               <label class="checkboxtext" for="4">4</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option5" name="question15" value="5" />
+              <input
+                required
+                type="radio"
+                id="option5"
+                name="question15"
+                value="5"
+                v-model="forma.petnaesto"
+              />
               <label class="checkboxtext" for="5">5</label>
             </div>
 
             <div class="form-group">
-              <input required type="radio" id="option6" name="question15" value="6" />
+              <input
+                required
+                type="radio"
+                id="option6"
+                name="question15"
+                value="6"
+                v-model="forma.petnaesto"
+              />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
           </div>
@@ -889,28 +966,70 @@
           </div>
           <div class="card-body">
             <div class="form-group">
-              <input required type="radio" id="option1" name="question16" value="1" />
+              <input
+                required
+                type="radio"
+                id="option1"
+                name="question16"
+                value="1"
+                v-model="forma.sesnaesto"
+              />
               <label class="checkboxtext" for="option1">1</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option2" name="question16" value="2" />
+              <input
+                required
+                type="radio"
+                id="option2"
+                name="question16"
+                value="2"
+                v-model="forma.sesnaesto"
+              />
               <label class="checkboxtext" for="2">2</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option3" name="question16" value="3" />
+              <input
+                required
+                type="radio"
+                id="option3"
+                name="question16"
+                value="3"
+                v-model="forma.sesnaesto"
+              />
               <label class="checkboxtext" for="3">3</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option4" name="question16" value="3" />
+              <input
+                required
+                type="radio"
+                id="option4"
+                name="question16"
+                value="3"
+                v-model="forma.sesnaesto"
+              />
               <label class="checkboxtext" for="4">4</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option5" name="question16" value="5" />
+              <input
+                required
+                type="radio"
+                id="option5"
+                name="question16"
+                value="5"
+                v-model="forma.sesnaesto"
+              />
               <label class="checkboxtext" for="5">5</label>
             </div>
 
             <div class="form-group">
-              <input required type="radio" id="option6" name="question16" value="6" />
+              <input
+                required
+                type="radio"
+                id="option6"
+                name="question16"
+                value="6"
+                v-model="forma.sesnaesto"
+              />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
           </div>
@@ -922,28 +1041,70 @@
           </div>
           <div class="card-body">
             <div class="form-group">
-              <input required type="radio" id="option1" name="question17" value="1" />
+              <input
+                required
+                type="radio"
+                id="option1"
+                name="question17"
+                value="1"
+                v-model="forma.osamnaesto"
+              />
               <label class="checkboxtext" for="option1">1</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option2" name="question17" value="2" />
+              <input
+                required
+                type="radio"
+                id="option2"
+                name="question17"
+                value="2"
+                v-model="forma.osamnaesto"
+              />
               <label class="checkboxtext" for="2">2</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option3" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option3"
+                name="question17"
+                value="3"
+                v-model="forma.osamnaesto"
+              />
               <label class="checkboxtext" for="3">3</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option4" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option4"
+                name="question17"
+                value="3"
+                v-model="forma.osamnaesto"
+              />
               <label class="checkboxtext" for="4">4</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option5" name="question17" value="5" />
+              <input
+                required
+                type="radio"
+                id="option5"
+                name="question17"
+                value="5"
+                v-model="forma.osamnaesto"
+              />
               <label class="checkboxtext" for="5">5</label>
             </div>
 
             <div class="form-group">
-              <input required type="radio" id="option6" name="question17" value="6" />
+              <input
+                required
+                type="radio"
+                id="option6"
+                name="question17"
+                value="6"
+                v-model="forma.osamnaesto"
+              />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
           </div>
@@ -955,28 +1116,70 @@
           </div>
           <div class="card-body">
             <div class="form-group">
-              <input required type="radio" id="option1" name="question17" value="1" />
+              <input
+                required
+                type="radio"
+                id="option1"
+                name="question17"
+                value="1"
+                v-model="forma.devetnaesto"
+              />
               <label class="checkboxtext" for="option1">1</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option2" name="question17" value="2" />
+              <input
+                required
+                type="radio"
+                id="option2"
+                name="question17"
+                value="2"
+                v-model="forma.devetnaesto"
+              />
               <label class="checkboxtext" for="2">2</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option3" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option3"
+                name="question17"
+                value="3"
+                v-model="forma.devetnaesto"
+              />
               <label class="checkboxtext" for="3">3</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option4" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option4"
+                name="question17"
+                value="3"
+                v-model="forma.devetnaesto"
+              />
               <label class="checkboxtext" for="4">4</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option5" name="question17" value="5" />
+              <input
+                required
+                type="radio"
+                id="option5"
+                name="question17"
+                value="5"
+                v-model="forma.devetnaesto"
+              />
               <label class="checkboxtext" for="5">5</label>
             </div>
 
             <div class="form-group">
-              <input required type="radio" id="option6" name="question17" value="6" />
+              <input
+                required
+                type="radio"
+                id="option6"
+                name="question17"
+                value="6"
+                v-model="forma.devetnaesto"
+              />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
           </div>
@@ -988,28 +1191,70 @@
           </div>
           <div class="card-body">
             <div class="form-group">
-              <input required type="radio" id="option1" name="question17" value="1" />
+              <input
+                required
+                type="radio"
+                id="option1"
+                name="question17"
+                value="1"
+                v-model="forma.dvadeseto"
+              />
               <label class="checkboxtext" for="option1">1</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option2" name="question17" value="2" />
+              <input
+                required
+                type="radio"
+                id="option2"
+                name="question17"
+                value="2"
+                v-model="forma.dvadeseto"
+              />
               <label class="checkboxtext" for="2">2</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option3" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option3"
+                name="question17"
+                value="3"
+                v-model="forma.dvadeseto"
+              />
               <label class="checkboxtext" for="3">3</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option4" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option4"
+                name="question17"
+                value="3"
+                v-model="forma.dvadeseto"
+              />
               <label class="checkboxtext" for="4">4</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option5" name="question17" value="5" />
+              <input
+                required
+                type="radio"
+                id="option5"
+                name="question17"
+                value="5"
+                v-model="forma.dvadeseto"
+              />
               <label class="checkboxtext" for="5">5</label>
             </div>
 
             <div class="form-group">
-              <input required type="radio" id="option6" name="question17" value="6" />
+              <input
+                required
+                type="radio"
+                id="option6"
+                name="question17"
+                value="6"
+                v-model="forma.dvadeseto"
+              />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
           </div>
@@ -1021,28 +1266,70 @@
           </div>
           <div class="card-body">
             <div class="form-group">
-              <input required type="radio" id="option1" name="question17" value="1" />
+              <input
+                required
+                type="radio"
+                id="option1"
+                name="question17"
+                value="1"
+                v-model="forma.dvadesetPrvo"
+              />
               <label class="checkboxtext" for="option1">1</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option2" name="question17" value="2" />
+              <input
+                required
+                type="radio"
+                id="option2"
+                name="question17"
+                value="2"
+                v-model="forma.dvadesetPrvo"
+              />
               <label class="checkboxtext" for="2">2</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option3" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option3"
+                name="question17"
+                value="3"
+                v-model="forma.dvadesetPrvo"
+              />
               <label class="checkboxtext" for="3">3</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option4" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option4"
+                name="question17"
+                value="3"
+                v-model="forma.dvadesetPrvo"
+              />
               <label class="checkboxtext" for="4">4</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option5" name="question17" value="5" />
+              <input
+                required
+                type="radio"
+                id="option5"
+                name="question17"
+                value="5"
+                v-model="forma.dvadesetPrvo"
+              />
               <label class="checkboxtext" for="5">5</label>
             </div>
 
             <div class="form-group">
-              <input required type="radio" id="option6" name="question17" value="6" />
+              <input
+                required
+                type="radio"
+                id="option6"
+                name="question17"
+                value="6"
+                v-model="forma.dvadesetPrvo"
+              />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
           </div>
@@ -1054,28 +1341,70 @@
           </div>
           <div class="card-body">
             <div class="form-group">
-              <input required type="radio" id="option1" name="question17" value="1" />
+              <input
+                required
+                type="radio"
+                id="option1"
+                name="question17"
+                value="1"
+                v-model="forma.dvadesetDrugo"
+              />
               <label class="checkboxtext" for="option1">1</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option2" name="question17" value="2" />
+              <input
+                required
+                type="radio"
+                id="option2"
+                name="question17"
+                value="2"
+                v-model="forma.dvadesetDrugo"
+              />
               <label class="checkboxtext" for="2">2</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option3" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option3"
+                name="question17"
+                value="3"
+                v-model="forma.dvadesetDrugo"
+              />
               <label class="checkboxtext" for="3">3</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option4" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option4"
+                name="question17"
+                value="3"
+                v-model="forma.dvadesetDrugo"
+              />
               <label class="checkboxtext" for="4">4</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option5" name="question17" value="5" />
+              <input
+                required
+                type="radio"
+                id="option5"
+                name="question17"
+                value="5"
+                v-model="forma.dvadesetDrugo"
+              />
               <label class="checkboxtext" for="5">5</label>
             </div>
 
             <div class="form-group">
-              <input required type="radio" id="option6" name="question17" value="6" />
+              <input
+                required
+                type="radio"
+                id="option6"
+                name="question17"
+                value="6"
+                v-model="forma.dvadesetDrugo"
+              />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
           </div>
@@ -1087,28 +1416,70 @@
           </div>
           <div class="card-body">
             <div class="form-group">
-              <input required type="radio" id="option1" name="question17" value="1" />
+              <input
+                required
+                type="radio"
+                id="option1"
+                name="question17"
+                value="1"
+                v-model="forma.dvadesetTrece"
+              />
               <label class="checkboxtext" for="option1">1</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option2" name="question17" value="2" />
+              <input
+                required
+                type="radio"
+                id="option2"
+                name="question17"
+                value="2"
+                v-model="forma.dvadesetTrece"
+              />
               <label class="checkboxtext" for="2">2</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option3" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option3"
+                name="question17"
+                value="3"
+                v-model="forma.dvadesetTrece"
+              />
               <label class="checkboxtext" for="3">3</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option4" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option4"
+                name="question17"
+                value="3"
+                v-model="forma.dvadesetTrece"
+              />
               <label class="checkboxtext" for="4">4</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option5" name="question17" value="5" />
+              <input
+                required
+                type="radio"
+                id="option5"
+                name="question17"
+                value="5"
+                v-model="forma.dvadesetTrece"
+              />
               <label class="checkboxtext" for="5">5</label>
             </div>
 
             <div class="form-group">
-              <input required type="radio" id="option6" name="question17" value="6" />
+              <input
+                required
+                type="radio"
+                id="option6"
+                name="question17"
+                value="6"
+                v-model="forma.dvadesetTrece"
+              />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
           </div>
@@ -1120,28 +1491,70 @@
           </div>
           <div class="card-body">
             <div class="form-group">
-              <input required type="radio" id="option1" name="question17" value="1" />
+              <input
+                required
+                type="radio"
+                id="option1"
+                name="question17"
+                value="1"
+                v-model="forma.dvadesetCetvrto"
+              />
               <label class="checkboxtext" for="option1">1</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option2" name="question17" value="2" />
+              <input
+                required
+                type="radio"
+                id="option2"
+                name="question17"
+                value="2"
+                v-model="forma.dvadesetCetvrto"
+              />
               <label class="checkboxtext" for="2">2</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option3" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option3"
+                name="question17"
+                value="3"
+                v-model="forma.dvadesetCetvrto"
+              />
               <label class="checkboxtext" for="3">3</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option4" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option4"
+                name="question17"
+                value="3"
+                v-model="forma.dvadesetCetvrto"
+              />
               <label class="checkboxtext" for="4">4</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option5" name="question17" value="5" />
+              <input
+                required
+                type="radio"
+                id="option5"
+                name="question17"
+                value="5"
+                v-model="forma.dvadesetCetvrto"
+              />
               <label class="checkboxtext" for="5">5</label>
             </div>
 
             <div class="form-group">
-              <input required type="radio" id="option6" name="question17" value="6" />
+              <input
+                required
+                type="radio"
+                id="option6"
+                name="question17"
+                value="6"
+                v-model="forma.dvadesetCetvrto"
+              />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
           </div>
@@ -1153,28 +1566,70 @@
           </div>
           <div class="card-body">
             <div class="form-group">
-              <input required type="radio" id="option1" name="question17" value="1" />
+              <input
+                required
+                type="radio"
+                id="option1"
+                name="question17"
+                value="1"
+                v-model="forma.dvadesetPeto"
+              />
               <label class="checkboxtext" for="option1">1</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option2" name="question17" value="2" />
+              <input
+                required
+                type="radio"
+                id="option2"
+                name="question17"
+                value="2"
+                v-model="forma.dvadesetPeto"
+              />
               <label class="checkboxtext" for="2">2</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option3" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option3"
+                name="question17"
+                value="3"
+                v-model="forma.dvadesetPeto"
+              />
               <label class="checkboxtext" for="3">3</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option4" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option4"
+                name="question17"
+                value="3"
+                v-model="forma.dvadesetPeto"
+              />
               <label class="checkboxtext" for="4">4</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option5" name="question17" value="5" />
+              <input
+                required
+                type="radio"
+                id="option5"
+                name="question17"
+                value="5"
+                v-model="forma.dvadesetPeto"
+              />
               <label class="checkboxtext" for="5">5</label>
             </div>
 
             <div class="form-group">
-              <input required type="radio" id="option6" name="question17" value="6" />
+              <input
+                required
+                type="radio"
+                id="option6"
+                name="question17"
+                value="6"
+                v-model="forma.dvadesetPeto"
+              />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
           </div>
@@ -1186,28 +1641,70 @@
           </div>
           <div class="card-body">
             <div class="form-group">
-              <input required type="radio" id="option1" name="question17" value="1" />
+              <input
+                required
+                type="radio"
+                id="option1"
+                name="question17"
+                value="1"
+                v-model="forma.dvadesetSesto"
+              />
               <label class="checkboxtext" for="option1">1</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option2" name="question17" value="2" />
+              <input
+                required
+                type="radio"
+                id="option2"
+                name="question17"
+                value="2"
+                v-model="forma.dvadesetSesto"
+              />
               <label class="checkboxtext" for="2">2</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option3" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option3"
+                name="question17"
+                value="3"
+                v-model="forma.dvadesetSesto"
+              />
               <label class="checkboxtext" for="3">3</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option4" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option4"
+                name="question17"
+                value="3"
+                v-model="forma.dvadesetSesto"
+              />
               <label class="checkboxtext" for="4">4</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option5" name="question17" value="5" />
+              <input
+                required
+                type="radio"
+                id="option5"
+                name="question17"
+                value="5"
+                v-model="forma.dvadesetSesto"
+              />
               <label class="checkboxtext" for="5">5</label>
             </div>
 
             <div class="form-group">
-              <input required type="radio" id="option6" name="question17" value="6" />
+              <input
+                required
+                type="radio"
+                id="option6"
+                name="question17"
+                value="6"
+                v-model="forma.dvadesetSesto"
+              />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
           </div>
@@ -1219,28 +1716,70 @@
           </div>
           <div class="card-body">
             <div class="form-group">
-              <input required type="radio" id="option1" name="question17" value="1" />
+              <input
+                required
+                type="radio"
+                id="option1"
+                name="question17"
+                value="1"
+                v-model="forma.dvadesetSedmo"
+              />
               <label class="checkboxtext" for="option1">1</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option2" name="question17" value="2" />
+              <input
+                required
+                type="radio"
+                id="option2"
+                name="question17"
+                value="2"
+                v-model="forma.dvadesetSedmo"
+              />
               <label class="checkboxtext" for="2">2</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option3" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option3"
+                name="question17"
+                value="3"
+                v-model="forma.dvadesetSedmo"
+              />
               <label class="checkboxtext" for="3">3</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option4" name="question17" value="3" />
+              <input
+                required
+                type="radio"
+                id="option4"
+                name="question17"
+                value="3"
+                v-model="forma.dvadesetSedmo"
+              />
               <label class="checkboxtext" for="4">4</label>
             </div>
             <div class="form-group">
-              <input required type="radio" id="option5" name="question17" value="5" />
+              <input
+                required
+                type="radio"
+                id="option5"
+                name="question17"
+                value="5"
+                v-model="forma.dvadesetSedmo"
+              />
               <label class="checkboxtext" for="5">5</label>
             </div>
 
             <div class="form-group">
-              <input required type="radio" id="option6" name="question17" value="6" />
+              <input
+                required
+                type="radio"
+                id="option6"
+                name="question17"
+                value="6"
+                v-model="forma.dvadesetSedmo"
+              />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
           </div>
