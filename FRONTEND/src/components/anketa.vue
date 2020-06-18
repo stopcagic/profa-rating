@@ -1793,7 +1793,7 @@
   </div>
 </template>
 <script>
-import { anketa } from "@/services";
+import { anketa, auth } from "@/services";
 import regeneratorRuntime from "regenerator-runtime";
 
 export default {
@@ -1834,6 +1834,8 @@ export default {
   },
   methods: {
     async form() {
+
+
       let save = await anketa.create(this.prof_id, this.forma);
       if (save.message == "success.") {
         this.$router.push("/popis");
