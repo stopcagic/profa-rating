@@ -23,8 +23,22 @@ Services.interceptors.response.use((response) => response, (error) => {
 })
 
 const profs = {
-    async getall(faks) {
-        let response = await Services.get(`/predavaci/${faks}`)
+    async getNeoznacene(faks) {
+        const user = auth.getUser()
+        
+        let response = await Services.post(`predavaci/${faks}`,{
+            email: user.email
+        })
+        let data = await response.data
+
+        return data
+    },
+    async getOznacene(faks){
+        const user = auth.getUser()
+        
+        let response = await Services.post(`predavaci/ispunjeni/${faks}`,{
+            email: user.email
+        })
         let data = await response.data
 
         return data
@@ -33,9 +47,7 @@ const profs = {
 
 const anketa = {
     async create(kljuc, forma) {
-        let response = await Services.post(`/anketa/${kljuc}`, {
-            forma: forma
-        })
+        let response = await Services.post(`/anketa/${kljuc}`,forma)
         let data = await response.data
 
         return data;

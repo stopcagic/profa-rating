@@ -3,7 +3,7 @@
     <appheader class="navbar-about"></appheader>
 
     <div class="container w3-center w3-animate-right">
-      <div v-for="profesor in profesori" :key="profesor._id">
+      <div v-for="profesor in profesoriIspunjeno" :key="profesor._id">
         <kartica :info="profesor" />
       </div>
     </div>
@@ -20,7 +20,7 @@ export default {
   name: "Home",
   data() {
     return {
-      profesori: []
+      profesoriIspunjeno: []
     };
   },
   components: {
@@ -28,13 +28,13 @@ export default {
     appheader
   },
   async created() {
-    // this.fetchPosts();
+     this.fetchPosts();
   },
   methods: {
-    // async fetchPosts() {
-    //   let faks = auth.getFaks();
-    //   this.profesori = await profs.getall(faks);
-    // }
+    async fetchPosts() {
+      let faks = auth.getFaks();
+      this.profesoriIspunjeno = await profs.getOznacene(faks);
+    }
   }
 };
 </script>
@@ -52,11 +52,20 @@ export default {
 }
 .navbar-about {
   -webkit-animation: w100 3s ease backwards;
+  animation: w100 3s ease backwards;
 }
 .navbar-about w100 {
   margin-left: 0%;
 }
 @-webkit-keyframes w100 {
+  from {
+    margin-left: 50%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes w100 {
   from {
     margin-left: 50%;
   }

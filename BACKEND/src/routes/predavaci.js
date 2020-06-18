@@ -5,15 +5,30 @@ import verify from '../protectedRoutes'
 
 const router = express.Router()
 
-router.get('/predavaci/:faks', verify, async (req, res) => {
+router.post('/:faks', verify, async (req, res) => {
     let db = await connect()
-    let fakultet = req.params.faks
-
-    let cursor = await db.collection("predavaci").find({ faks: fakultet })
+    const fakultet = req.params.faks
+    const user = req.body.email
+    
+    const cursor = db.collection('predavaci').find({
+        $and: [ {'forma.userEmail': {$ne: user}}, { faks : fakultet}]});
     let results = await cursor.toArray()
+
 
     res.json(results)
 })
 
+router.post('/ispunjeni/:faks', verify, async (req, res) => {
+    let db = await connect()
+    const fakultet = req.params.faks
+    const user = req.body.email
+    
+    const cursor = db.collection('predavaci').find({
+        $and: [ {'forma.userEmail': user}, { faks : fakultet}]});
+    let results = await cursor.toArray()
+ 
+
+    res.json(results)
+})
 
 export default router

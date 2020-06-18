@@ -71,6 +71,7 @@ ul {
   background-color: rgba(0, 0, 0, 0.384);
   backdrop-filter: blur(5px);
   -webkit-animation: w70 3s ease backwards;
+  animation: 3s ease backwards;
 }
 .naslov .w70 {
   margin-left: 0%;
@@ -112,6 +113,14 @@ ul {
   color: white;
 }
 @-webkit-keyframes w70 {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes w70 {
   from {
     margin-left: -100%;
   }

@@ -1834,9 +1834,10 @@ export default {
   },
   methods: {
     async form() {
+      const user = await auth.getUser()
+      this.forma.userEmail = user.email;
 
-
-      let save = await anketa.create(this.prof_id, this.forma);
+      const save = await anketa.create(this.prof_id, this.forma);
       if (save.message == "success.") {
         this.$router.push("/popis");
       }

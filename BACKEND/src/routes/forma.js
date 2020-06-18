@@ -12,22 +12,21 @@ router.post('/:kljuc', verify, async (req, res) => {
 
     let prof_id = req.params.kljuc
     let forma = req.body
+    
     let id = new ObjectID()
+    let formaWId = {_id: id, ...forma}
 
     try {
         await db.collection("predavaci").updateOne(
             { _id: mongo.ObjectId(prof_id) },
             {
                 $push: {
-                    "forma": {
-                        _id: id,
-                        forma: forma
-                    }
+                    forma: formaWId
                 }
             })
 
         res.send({
-            id: _id,
+            id: id,
             message: "success."
         })
 

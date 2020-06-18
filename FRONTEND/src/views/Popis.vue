@@ -35,7 +35,7 @@ export default {
   methods: {
     async fetchPosts() {
       let faks = auth.getFaks();
-      this.profesori = await profs.getall(faks);
+      this.profesori = await profs.getNeoznacene(faks);
     }
   }
 };
@@ -47,11 +47,20 @@ export default {
 }
 .navbar-about {
   -webkit-animation: w100 3s ease backwards;
+  animation: w100 3s ease backwards;
 }
 .navbar-about w100 {
   margin-left: 0%;
 }
 @-webkit-keyframes w100 {
+  from {
+    margin-left: 50%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes w100 {
   from {
     margin-left: 50%;
   }
