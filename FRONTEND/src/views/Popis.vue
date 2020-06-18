@@ -1,17 +1,18 @@
 <template>
-  <div class="container-fluid">
-    <div class="w3-container col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
-      <appheader class="navbar-about"></appheader>
+  <div class="container-fluid p-0">
+    <div class="row np-gutters">
+      <div class="w3-container col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
+        <appheader class="navbar-about"></appheader>
 
-      <div class="container w3-center w3-animate-right">
-        <div v-for="profesor in profesori" :key="profesor._id">
-          <kartica :info="profesor" />
+        <div class="container w3-center w3-animate-right">
+          <div v-for="profesor in profesori" :key="profesor._id">
+            <kartica :info="profesor" />
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-
 
 <script>
 import { profs, auth } from "@/services";
@@ -22,12 +23,12 @@ export default {
   name: "Home",
   data() {
     return {
-      profesori: []
+      profesori: [],
     };
   },
   components: {
     kartica,
-    appheader
+    appheader,
   },
   async created() {
     this.fetchPosts();
@@ -36,8 +37,8 @@ export default {
     async fetchPosts() {
       let faks = auth.getFaks();
       this.profesori = await profs.getNeoznacene(faks);
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>

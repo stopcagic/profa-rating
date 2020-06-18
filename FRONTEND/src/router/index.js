@@ -42,11 +42,6 @@ const routes = [
     name: "Anketa",
     component: () => import("../components/anketa.vue"),
   },
-  {
-    path: "/profil",
-    name: "Profil",
-    component: () => import("../components/profil.vue"),
-  },
 ];
 
 const router = new VueRouter({

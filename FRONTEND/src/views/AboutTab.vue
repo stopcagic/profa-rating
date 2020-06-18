@@ -6,8 +6,7 @@
           <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12 left title">
             <div class="w3-container">
               <div @click="idiHome" class="w3-center w3-animate-left hero">
-                OCIJENITE
-                PROFESORA
+                OCIJENITE PROFESORA
               </div>
             </div>
           </div>
@@ -43,20 +42,22 @@
             <div class="w3-center w3-animate-left">
               <h1>O aplikaciji</h1>
               <p class="opis">
-                Ova web aplikacija izrađena je u svrhu vrednovanja profesora i asistenata od strane
-                studenata. Profa rating omogućuje studentu da odabere profesora kojega
-                želi ocjeniti, te mu zatim nudi određena pitanja, ta ista pitanja se sastoje od
-                tri dijela. Prvi dio su osobna pitanja, u kojima student odgovara koliko često izlazi
-                na predavanja te koja mu je najčešća ocjena u indeksu, drugi dio je anketa o porfesoru/asistentu
-                a treća je komentar ukoliko student želi nešto svoje nadodati.
+                Ova web aplikacija izrađena je u svrhu vrednovanja profesora i
+                asistenata od strane studenata. Profa rating omogućuje studentu
+                da odabere profesora kojega želi ocjeniti, te mu zatim nudi
+                određena pitanja, ta ista pitanja se sastoje od tri dijela. Prvi
+                dio su osobna pitanja, u kojima student odgovara koliko često
+                izlazi na predavanja te koja mu je najčešća ocjena u indeksu,
+                drugi dio je anketa o porfesoru/asistentu a treća je komentar
+                ukoliko student želi nešto svoje nadodati.
               </p>
               <p class="opis">
-                Cilj aplikacije je omoćiti ocjenjivanje preko interneta, bez ikakve potrebe
-                fizičkog dolaska studenta u učionu.
+                Cilj aplikacije je omoćiti ocjenjivanje preko interneta, bez
+                ikakve potrebe fizičkog dolaska studenta u učionu.
               </p>
               <p class="opis">
-                Da bi ste bili u mogućnosti koristiti našu aplikaciju morate se prvo prijaviti,
-                to možete postići klikom na gumb ispod.
+                Da bi ste bili u mogućnosti koristiti našu aplikaciju morate se
+                prvo prijaviti, to možete postići klikom na gumb ispod.
               </p>
             </div>
           </div>
@@ -75,25 +76,37 @@
 
               <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
                 <div class="row">
-                  <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">Email:</div>
+                  <div
+                    class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12"
+                  >
+                    Email:
+                  </div>
                 </div>
                 <div class="row">
-                  <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">Fakultet:</div>
+                  <div
+                    class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12"
+                  >
+                    Fakultet:
+                  </div>
                 </div>
 
                 <div class="row">
                   <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6">
                     <button
-                      v-on:click="prikaziEmail=!prikaziEmail "
+                      v-on:click="prikaziEmail = !prikaziEmail"
                       class="profil-btn"
-                    >Promijeni Email</button>
+                    >
+                      Promijeni Email
+                    </button>
                   </div>
 
                   <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6">
                     <button
-                      v-on:click="prikaziLozinku=!prikaziLozinku  "
+                      v-on:click="prikaziLozinku = !prikaziLozinku"
                       class="profil-btn"
-                    >Promijeni Lozinku</button>
+                    >
+                      Promijeni Lozinku
+                    </button>
                   </div>
                 </div>
                 <div
@@ -109,8 +122,11 @@
                       class="form-control"
                       v-model="lozinka"
                     />
-                  </div>Novi email
-                  <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 promjena">
+                  </div>
+                  Novi email
+                  <div
+                    class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 promjena"
+                  >
                     <input
                       type="text"
                       name="lozinka"
@@ -118,8 +134,11 @@
                       class="form-control"
                       v-model="lozinka"
                     />
-                  </div>Ponovite novi email
-                  <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 promjena">
+                  </div>
+                  Ponovite novi email
+                  <div
+                    class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 promjena"
+                  >
                     <input
                       type="text"
                       name="lozinka"
@@ -140,7 +159,8 @@
                       class="form-control"
                       v-model="lozinka"
                     />
-                  </div>Nova lozinka
+                  </div>
+                  Nova lozinka
                   <div class="col promjena">
                     <input
                       type="password"
@@ -149,7 +169,8 @@
                       class="form-control"
                       v-model="lozinka"
                     />
-                  </div>Ponovite novu lozinku
+                  </div>
+                  Ponovite novu lozinku
                   <div class="col promjena">
                     <input
                       type="password"
@@ -170,7 +191,6 @@
   </div>
 </template>
 
-
 <script>
 import kartica from "@/components/kartica.vue";
 import header from "@/components/header";
@@ -186,23 +206,229 @@ export default {
       prikaziRegistracija: store.registriraj_se,
       auth: auth.state,
       prikaziEmail: true,
-      prikaziLozinku: true
+      prikaziLozinku: true,
     };
   },
   components: {
     kartica,
     "app-header": header,
     prijava,
-    registracija
+    registracija,
   },
   methods: {
     idiHome() {
       this.$router.push({ name: "About" });
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style scoped>
-@import url("../css/styles.css");
+.profil {
+  width: 80%;
+  color: black;
+  padding-top: 5%;
+  margin-top: 15%;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(218, 218, 218);
+}
+.profil-btn {
+  background-color: transparent;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+.profil-btn:hover {
+  transition: 0.3s ease-in-out;
+  background: #00b7ff;
+  color: white;
+}
+.hero {
+  cursor: pointer;
+}
+.promjena input[type="password"],
+[type="text"] {
+  color: black;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: transparent;
+}
+.opis {
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+  margin: 5%;
+}
+.first-container .profa {
+  cursor: pointer;
+  position: relative;
+  margin-top: 20%;
+}
+.first-container h1 {
+  font-family: "Playfair Display", serif;
+  position: relative;
+  color: #00b7ff;
+}
+
+.first-container {
+  margin-bottom: 5%;
+}
+
+span {
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+  font-size: 150%;
+}
+span:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  transition: 0.6s;
+  z-index: -5;
+}
+
+.share:hover > h1 > span:nth-child(1):after {
+  background: #00b7ff;
+  width: 150%;
+  transition: 0.6s;
+  transition-delay: 0ms;
+  transform: rotate(25deg);
+}
+
+.share:hover > h1 > span:nth-child(1) {
+  color: white;
+  transition-delay: 10ms;
+}
+
+.share:hover > h1 > span:nth-child(2):after {
+  background: #00b7ff;
+  width: 150%;
+  transition: 0.6s;
+  transition-delay: 50ms;
+  transform: rotate(-20deg);
+}
+
+.share:hover > h1 > span:nth-child(2) {
+  color: white;
+  transition-delay: 60ms;
+}
+
+.share:hover > h1 > span:nth-child(3):after {
+  background: #00b7ff;
+  width: 150%;
+  transition: 0.6s;
+  transition-delay: 100ms;
+  transform: rotate(-15deg);
+}
+
+.share:hover > h1 > span:nth-child(3) {
+  color: white;
+  transition-delay: 115ms;
+}
+
+.share:hover > h1 > span:nth-child(4):after {
+  background: #00b7ff;
+  width: 150%;
+  transition: 0.6s;
+  transition-delay: 150ms;
+  transform: rotate(10deg);
+}
+
+.share:hover > h1 > span:nth-child(4) {
+  color: white;
+  transition-delay: 170ms;
+}
+
+.share:hover > h1 > span:nth-child(5):after {
+  background: #00b7ff;
+  width: 150%;
+  transition: 0.6s;
+  transition-delay: 200ms;
+  transform: rotate(-5deg);
+}
+
+.share:hover > h1 > span:nth-child(5) {
+  color: white;
+  transition-delay: 220ms;
+}
+
+.share:hover > h1 > span:nth-child(7):after {
+  background: #00b7ff;
+  width: 150%;
+  transition: 0.6s;
+  transition-delay: 250ms;
+  transform: rotate(-10deg);
+}
+
+.share:hover > h1 > span:nth-child(7) {
+  color: white;
+  transition-delay: 270ms;
+}
+.share:hover > h1 > span:nth-child(8):after {
+  background: #00b7ff;
+  width: 150%;
+  transition: 0.6s;
+  transition-delay: 300ms;
+  transform: rotate(10deg);
+}
+
+.share:hover > h1 > span:nth-child(8) {
+  color: white;
+  transition-delay: 330ms;
+}
+.share:hover > h1 > span:nth-child(9):after {
+  background: #00b7ff;
+  width: 150%;
+  transition: 0.6s;
+  transition-delay: 350ms;
+  transform: rotate(5deg);
+}
+
+.share:hover > h1 > span:nth-child(9) {
+  color: white;
+  transition-delay: 380ms;
+}
+.share:hover > h1 > span:nth-child(10):after {
+  background: #00b7ff;
+  width: 150%;
+  transition: 0.6s;
+  transition-delay: 400ms;
+  transform: rotate(0deg);
+}
+
+.share:hover > h1 > span:nth-child(10) {
+  color: white;
+  transition-delay: 430ms;
+}
+.share:hover > h1 > span:nth-child(11):after {
+  background: #00b7ff;
+  width: 150%;
+  transition: 0.6s;
+  transition-delay: 450ms;
+  transform: rotate(-10deg);
+}
+
+.share:hover > h1 > span:nth-child(11) {
+  color: white;
+  transition-delay: 480ms;
+}
+.share:hover > h1 > span:nth-child(12):after {
+  background: #00b7ff;
+  width: 150%;
+  transition: 0.6s;
+  transition-delay: 500ms;
+  transform: rotate(-5deg);
+}
+
+.share:hover > h1 > span:nth-child(12) {
+  color: white;
+  transition-delay: 530ms;
+}
 </style>

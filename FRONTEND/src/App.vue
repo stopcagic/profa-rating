@@ -16,12 +16,12 @@ import appFooter from "@/components/footer";
 export default {
   name: "App",
   components: {
-    appFooter
-  }
+    appFooter,
+  },
 };
 </script>
 
-<style >
+<style>
 body {
   background-image: linear-gradient(to right, #014083, #178c9e);
 }
@@ -30,5 +30,33 @@ body {
   border-top: 1px solid white;
   color: #014083;
   -webkit-text-stroke: 1px black;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.input-group {
+  width: 65%;
+  margin: 0 auto;
+}
+h1 {
+  color: white;
+  font-weight: 600;
+}
+input[type="email"],
+[type="password"] {
+  color: #00b7ff;
+  background-color: transparent;
+  border-radius: 0px 20px 20px 0px;
+}
+input[type="email"]:focus,
+[type="password"]:focus {
+  background-color: transparent;
+  color: #00b7ff;
+}
+.input-group-text {
+  border-radius: 20px;
+  background-color: transparent;
+  color: #00b7ff;
 }
 </style>

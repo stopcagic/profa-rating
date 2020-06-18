@@ -1,11 +1,8 @@
-#about {
+/* #about {
   padding: 0px;
   text-align: center;
 }
-.about_ocjenam {
-  margin-top: -15%;
-  padding: 0px;
-}
+
 .about_tab {
   margin: 0px auto 10px;
   width: 50%;
@@ -62,8 +59,8 @@
 
 .btn {
   margin-bottom: 5%;
-  width: 180px;
-  height: 60px;
+  width: 40%;
+  height: 60%;
   cursor: pointer;
   background: transparent;
   border: 1px solid white;
@@ -91,15 +88,15 @@
 }
 
 .card-prijava {
-  margin: 0px auto 10px;
   width: 80%;
   color: white;
-  padding-top: 5%;
+  padding: 5%;
   margin-top: 15%;
   border: none;
   border-radius: 15px;
   background-image: url("../assets/card-pozadina.svg");
 }
+
 .card-prijava .reg {
   border: 1px solid #00b7ff;
   color: white;
@@ -119,13 +116,7 @@
   background-size: cover;
   border: 1px solid #00b7ff;
 }
-/* .right {
-  padding: 0px;
-}
-.left {
-  padding: 0px;
-  height: 100vh;
-} */
+
 .input-group-text {
   border-radius: 20px;
   background-color: transparent;
@@ -142,9 +133,11 @@ input[type="email"]:focus,
   background-color: transparent;
   color: #00b7ff;
 }
-
-.input-group {
+.card-registracija .input-group {
   width: 50%;
+}
+.input-group {
+  width: 65%;
   margin: 0 auto;
 }
 .opis {
@@ -152,14 +145,15 @@ input[type="email"]:focus,
   color: white;
   margin: 5%;
 }
-.card-prijava h1 {
+#login h1 {
+  width: auto;
   margin-bottom: 5%;
   color: white;
   margin-left: 150px;
   margin-right: 150px;
   transition: 0.3s ease-in-out;
 }
-.card-prijava h1:hover {
+#login h1:hover {
   transition: 0.3s ease-in-out;
   color: #00b7ff;
   letter-spacing: 1px;
