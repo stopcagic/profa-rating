@@ -1,6 +1,6 @@
 <template>
   <div id="login" class="container-fluid card-prijava">
-    <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12 ">
+    <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
       <h1>
         Prijava
         <hr />
@@ -9,8 +9,8 @@
 
     <form @submit.prevent="login">
       <div class="row">
-        <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12 ">
-          <div class="input-group mb-5 ">
+        <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
+          <div class="input-group mb-5">
             <div class="input-group-prepend">
               <span class="input-group-text">
                 <i class="far fa-envelope"></i>
@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12 ">
+        <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
           <div class="input-group mb-5">
             <div class="input-group-prepend">
               <span class="input-group-text">
@@ -48,10 +48,8 @@
       </div>
 
       <div class="row">
-        <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12 ">
-          <button type="submit" class="btn btn-primary btn-lg">
-            Prijavi se
-          </button>
+        <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
+          <button type="submit" class="btn btn-primary btn-lg">Prijavi se</button>
         </div>
       </div>
     </form>
@@ -59,9 +57,7 @@
       <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
         <p>
           Nemate račun?
-          <button class="reg" href="button" @click="show">
-            Registriraj se
-          </button>
+          <button class="reg" href="button" @click="show">Registriraj se</button>
 
           <modal></modal>
         </p>
@@ -83,7 +79,7 @@ export default {
     return {
       prikaziRegistracija: store.registriraj_se,
       lozinka: "",
-      email: "",
+      email: ""
     };
   },
   methods: {
@@ -98,15 +94,18 @@ export default {
       if (success == true) {
         this.$router.push({ path: "popis" });
       }
-    },
+    }
   },
   components: {
-    modal,
-  },
+    modal
+  }
 };
 </script>
 
 <style scoped>
+#login {
+  margin-left: 10%;
+}
 .card-prijava {
   width: 80%;
   color: white;
@@ -168,5 +167,55 @@ export default {
   letter-spacing: 1px;
   margin-left: 100px;
   margin-right: 100px;
+}
+@media (width: 375px) {
+  .card-prijava .btn {
+    width: 50%;
+    height: 80%;
+    font-size: 100%;
+  }
+  .card-prijava .reg {
+    margin-top: 10%;
+  }
+  #login h1 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #login h1:hover {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .input-group {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .card-prijava .reg {
+    font-size: 80%;
+  }
+}
+@media (max-width: 1250px) {
+  .card-prijava .btn {
+    width: 50%;
+    height: 80%;
+    font-size: 100%;
+  }
+  .card-prijava .reg {
+    margin-top: 10%;
+  }
+  #login h1 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #login h1:hover {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .input-group {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .card-prijava .reg {
+    font-size: 80%;
+  }
 }
 </style>

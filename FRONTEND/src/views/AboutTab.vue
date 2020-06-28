@@ -1,13 +1,11 @@
 <template>
-  <div class="container-fluid" id="about">
+  <div class="container-fluid p-0" id="about">
     <div class="row">
       <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 left">
         <div class="row">
           <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12 left title">
             <div class="w3-container">
-              <div @click="idiHome" class="w3-center w3-animate-left hero">
-                OCIJENITE PROFESORA
-              </div>
+              <div @click="idiHome" class="w3-center w3-animate-left hero">OCIJENITE PROFESORA</div>
             </div>
           </div>
         </div>
@@ -71,116 +69,130 @@
           <div v-if="auth.authenticated">
             <div class="profil">
               <div class="card-header">
-                <h2>Korisnički profil</h2>
+                <h1>Korisnički profil</h1>
+                <hr />
               </div>
 
               <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
                 <div class="row">
-                  <div
-                    class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12"
-                  >
-                    Email:
+                  <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
+                    <h2>Email:</h2>
                   </div>
                 </div>
                 <div class="row">
-                  <div
-                    class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12"
-                  >
-                    Fakultet:
+                  <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
+                    <h2>Fakultet:</h2>
                   </div>
                 </div>
 
                 <div class="row">
-                  <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6">
-                    <button
-                      v-on:click="prikaziEmail = !prikaziEmail"
-                      class="profil-btn"
-                    >
-                      Promijeni Email
+                  <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2"></div>
+                  <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3">
+                    <button v-on:click="prikaziEmail = !prikaziEmail" class="profil-btn">
+                      <b>Promijeni Email</b>
                     </button>
                   </div>
+                  <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2"></div>
 
-                  <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6">
-                    <button
-                      v-on:click="prikaziLozinku = !prikaziLozinku"
-                      class="profil-btn"
-                    >
-                      Promijeni Lozinku
+                  <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3">
+                    <button v-on:click="prikaziLozinku = !prikaziLozinku" class="profil-btn">
+                      <b>Promijeni Lozinku</b>
                     </button>
                   </div>
+                  <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2"></div>
                 </div>
                 <div
                   v-if="!prikaziEmail"
                   class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12"
                 >
                   Trenutačan email
-                  <div class="col promjena">
-                    <input
-                      type="text"
-                      name="lozinka"
-                      required
-                      class="form-control"
-                      v-model="lozinka"
-                    />
-                  </div>
-                  Novi email
-                  <div
-                    class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 promjena"
-                  >
-                    <input
-                      type="text"
-                      name="lozinka"
-                      required
-                      class="form-control"
-                      v-model="lozinka"
-                    />
-                  </div>
-                  Ponovite novi email
-                  <div
-                    class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 promjena"
-                  >
-                    <input
-                      type="text"
-                      name="lozinka"
-                      required
-                      class="form-control"
-                      v-model="lozinka"
-                    />
+                  <div class="row">
+                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                    <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
+                      <input
+                        type="text"
+                        name="lozinka"
+                        required
+                        class="form-control"
+                        v-model="lozinka"
+                      />
+                    </div>
+                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                  </div>Novi email
+                  <div class="row">
+                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                    <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
+                      <input
+                        type="text"
+                        name="lozinka"
+                        required
+                        class="form-control"
+                        v-model="lozinka"
+                      />
+                    </div>
+                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                  </div>Ponovite novi email
+                  <div class="row">
+                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                    <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
+                      <input
+                        type="text"
+                        name="lozinka"
+                        required
+                        class="form-control"
+                        v-model="lozinka"
+                      />
+                    </div>
+                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                   </div>
                 </div>
 
                 <div v-if="!prikaziLozinku" class="col">
                   Trenutačna lozinka
-                  <div class="col promjena">
-                    <input
-                      type="password"
-                      name="lozinka"
-                      required
-                      class="form-control"
-                      v-model="lozinka"
-                    />
+                  <div class="row">
+                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                    <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
+                      <input
+                        type="password"
+                        name="lozinka"
+                        required
+                        class="form-control"
+                        v-model="lozinka"
+                      />
+                    </div>
+                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                  </div>Nova lozinka
+                  <div class="row">
+                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                    <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
+                      <input
+                        type="password"
+                        name="lozinka"
+                        required
+                        class="form-control"
+                        v-model="lozinka"
+                      />
+                    </div>
+                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                  </div>Ponovite novu lozinku
+                  <div class="row">
+                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                    <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
+                      <input
+                        type="password"
+                        name="lozinka"
+                        required
+                        class="form-control"
+                        v-model="lozinka"
+                      />
+                    </div>
+                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                   </div>
-                  Nova lozinka
-                  <div class="col promjena">
-                    <input
-                      type="password"
-                      name="lozinka"
-                      required
-                      class="form-control"
-                      v-model="lozinka"
-                    />
+                  <div class="row">
+                    <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
+                    <button class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4 btn-podnesi">Spremi</button>
+                    <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
                   </div>
-                  Ponovite novu lozinku
-                  <div class="col promjena">
-                    <input
-                      type="password"
-                      name="lozinka"
-                      required
-                      class="form-control"
-                      v-model="lozinka"
-                    />
-                  </div>
-                  <button>Podnesi</button>
                 </div>
               </div>
             </div>
@@ -206,56 +218,75 @@ export default {
       prikaziRegistracija: store.registriraj_se,
       auth: auth.state,
       prikaziEmail: true,
-      prikaziLozinku: true,
+      prikaziLozinku: true
     };
   },
   components: {
     kartica,
     "app-header": header,
     prijava,
-    registracija,
+    registracija
   },
   methods: {
     idiHome() {
       this.$router.push({ name: "About" });
-    },
-  },
+    }
+  }
 };
 </script>
 
 <style scoped>
 .profil {
   width: 80%;
-  color: black;
+  color: white;
   padding-top: 5%;
   margin-top: 15%;
+  margin-left: 10%;
   border: none;
   border-radius: 15px;
-  background-color: rgb(218, 218, 218);
+  background-image: url("../assets/card-pozadina.svg");
 }
 .profil-btn {
   background-color: transparent;
   border-radius: 20px;
+  border: 1px solid#00b7ff;
   outline: none;
   margin-top: 15%;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
+  color: white;
+  padding: 10%;
+  font-size: 130%;
 }
 .profil-btn:hover {
   transition: 0.3s ease-in-out;
   background: #00b7ff;
   color: white;
 }
-.hero {
-  cursor: pointer;
+.btn-podnesi {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid#00b7ff;
+  outline: none;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  color: white;
+  width: 60%;
+  font-size: 130%;
+}
+.first-container h1 {
+  font-family: "Playfair Display", serif;
+  position: relative;
+  color: #00b7ff;
 }
 .promjena input[type="password"],
 [type="text"] {
-  color: black;
+  color: #00b7ff;
   margin-top: 10%;
   margin-bottom: 5%;
-  border: 1px solid black;
+  border: 1px solid #00b7ff;
   border-radius: 25px;
   background-color: transparent;
+  width: 100%;
 }
 .opis {
   font-family: "Nunito Sans", sans-serif;
@@ -267,10 +298,11 @@ export default {
   position: relative;
   margin-top: 20%;
 }
-.first-container h1 {
+.hero {
   font-family: "Playfair Display", serif;
   position: relative;
   color: #00b7ff;
+  font-size: 25px;
 }
 
 .first-container {
@@ -430,5 +462,24 @@ span:after {
 .share:hover > h1 > span:nth-child(12) {
   color: white;
   transition-delay: 530ms;
+}
+@media (width: 375px) {
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+  .profil-btn {
+    margin-top: 15%;
+    margin-bottom: 0%;
+    padding: 5%;
+    font-size: 90%;
+  }
+  .profil-btn:hover {
+    transition: 0.3s ease-in-out;
+    background: #00b7ff;
+    color: white;
+  }
+}
+@media (max-width: 1250px) {
 }
 </style>

@@ -4,32 +4,32 @@
       <ul type="button" class="navbar">
         <button class="button">
           <router-link class="link" to="/about">
-            <a class="dugme">About |</a>
+            <a class="dugme">• About</a>
           </router-link>
         </button>
 
         <button class="button">
           <router-link class="link" to="/popis">
-            <a class="dugme">Popis |</a>
+            <a class="dugme">• Popis</a>
           </router-link>
         </button>
         <button class="button">
           <router-link class="link" to="/oznacene">
-            <a class="dugme">Popunjene forme |</a>
+            <a class="dugme">• Popunjene forme</a>
           </router-link>
         </button>
 
         <div v-if="!auth.authenticated">
           <button class="button">
             <router-link class="link" to="/prijava">
-              <a class="dugme">Prijava |</a>
+              <a class="dugme">• Prijava</a>
             </router-link>
           </button>
         </div>
         <div v-if="auth.authenticated">
           <button class="button" @click="logout">
             <router-link class="link" to="/">
-              <a class="dugme odjava">Odjavi se |</a>
+              <a class="dugme odjava">• Odjavi se</a>
             </router-link>
           </button>
         </div>
@@ -126,6 +126,13 @@ ul {
   }
   to {
     margin-left: 0%;
+  }
+}
+
+@media (max-width: 375px) {
+  .naslov ul {
+    position: sticky;
+    top: 0;
   }
 }
 </style>

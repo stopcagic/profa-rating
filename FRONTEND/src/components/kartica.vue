@@ -2,8 +2,14 @@
   <div class="container-fluid">
     <div class="card col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
       <div class="card-body">
-        <router-link v-bind:to="'/anketa/' + info._id" class="link">{{info.profesor}}</router-link>
-        <i class="fas fa-clipboard"></i>
+        <div class="row">
+          <div class="col-9">
+            <router-link v-bind:to="'/anketa/' + info._id" class="link">{{info.profesor}}</router-link>
+          </div>
+          <div class="col-3">
+            <i class="fas fa-clipboard"></i>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -35,6 +41,7 @@ export default {
   background-color: #f2f3f5;
   margin-top: 5%;
   transition: transform 0.2s;
+  padding: 20px;
 }
 .card:hover {
   -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
@@ -44,6 +51,7 @@ export default {
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
 }
+
 .fas {
   color: rgba(51, 62, 121, 0.842);
   font-size: 30px;
@@ -61,6 +69,7 @@ export default {
 .card-body {
   color: #272727;
   font-size: 20px;
+  font-weight: 550;
 }
 @media (max-width: 767px) {
   .card-body {

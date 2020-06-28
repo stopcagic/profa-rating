@@ -16,8 +16,8 @@ import appFooter from "@/components/footer";
 export default {
   name: "App",
   components: {
-    appFooter,
-  },
+    appFooter
+  }
 };
 </script>
 
@@ -36,7 +36,7 @@ body {
   margin-left: 0;
 }
 .input-group {
-  width: 65%;
+  width: 50%;
   margin: 0 auto;
 }
 h1 {
@@ -58,5 +58,8 @@ input[type="email"]:focus,
   border-radius: 20px;
   background-color: transparent;
   color: #00b7ff;
+}
+p {
+  font-size: 120%;
 }
 </style>

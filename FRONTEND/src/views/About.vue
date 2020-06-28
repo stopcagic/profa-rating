@@ -1,17 +1,17 @@
 <template>
-  <div class="container-fluid " id="about">
+  <div class="container-fluid" id="about">
     <div class="row">
       <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 left">
         <div class="row">
-          <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12  title">
+          <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12 title">
             <div class="w3-container">
-              <div class="w3-center w3-animate-left hero">
-                OCIJENITE PROFESORA
-              </div>
+              <div class="w3-center w3-animate-left">OCIJENITE PROFESORA</div>
             </div>
           </div>
         </div>
         <hr />
+        <br />
+        <br />
         <div class="row">
           <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
             <div class="w3-center w3-animate-left" id="logo">
@@ -63,9 +63,7 @@
               <button
                 class="btn btn-primary btn-lg"
                 v-on:click="prikaziPrijava = !prikaziPrijava"
-              >
-                Prijavi se
-              </button>
+              >Prijavi se</button>
             </div>
           </div>
         </div>
@@ -95,15 +93,15 @@ export default {
   data() {
     return {
       prikaziPrijava: store.prijavi_se,
-      prikaziRegistracija: store.registriraj_se,
+      prikaziRegistracija: store.registriraj_se
     };
   },
   components: {
     kartica,
     "app-header": header,
     prijava,
-    registracija,
-  },
+    registracija
+  }
 };
 </script>
 
@@ -133,7 +131,7 @@ export default {
 .btn {
   margin-bottom: 5%;
   width: 40%;
-  height: 60%;
+  height: 50px;
   cursor: pointer;
   background: transparent;
   border: 1px solid white;
@@ -167,7 +165,7 @@ export default {
 .first-container .profa {
   cursor: pointer;
   position: relative;
-  margin-top: 20%;
+  margin-top: 35%;
 }
 .first-container h1 {
   font-family: "Playfair Display", serif;
@@ -332,5 +330,9 @@ span:after {
 .share:hover > h1 > span:nth-child(12) {
   color: white;
   transition-delay: 530ms;
+}
+* {
+  margin: 0px;
+  padding: 0px;
 }
 </style>

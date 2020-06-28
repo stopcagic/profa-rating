@@ -816,7 +816,7 @@
 
       <hr />
       <div class="card grupiranje">
-        <div class="card grupiranje2">
+        <div class="card">
           <div class="card-header">
             <h2>*</h2>
             <p>Redovito održava nastavu</p>
@@ -1047,7 +1047,7 @@
                 id="option1"
                 name="question17"
                 value="1"
-                v-model="forma.osamnaesto"
+                v-model="forma.sedamnaesto"
               />
               <label class="checkboxtext" for="option1">1</label>
             </div>
@@ -1058,7 +1058,7 @@
                 id="option2"
                 name="question17"
                 value="2"
-                v-model="forma.osamnaesto"
+                v-model="forma.sedamnaesto"
               />
               <label class="checkboxtext" for="2">2</label>
             </div>
@@ -1069,7 +1069,7 @@
                 id="option3"
                 name="question17"
                 value="3"
-                v-model="forma.osamnaesto"
+                v-model="forma.sedamnaesto"
               />
               <label class="checkboxtext" for="3">3</label>
             </div>
@@ -1080,7 +1080,7 @@
                 id="option4"
                 name="question17"
                 value="3"
-                v-model="forma.osamnaesto"
+                v-model="forma.sedamnaesto"
               />
               <label class="checkboxtext" for="4">4</label>
             </div>
@@ -1091,7 +1091,7 @@
                 id="option5"
                 name="question17"
                 value="5"
-                v-model="forma.osamnaesto"
+                v-model="forma.sedamnaesto"
               />
               <label class="checkboxtext" for="5">5</label>
             </div>
@@ -1103,7 +1103,7 @@
                 id="option6"
                 name="question17"
                 value="6"
-                v-model="forma.osamnaesto"
+                v-model="forma.sedamnaesto"
               />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
@@ -1120,9 +1120,9 @@
                 required
                 type="radio"
                 id="option1"
-                name="question17"
+                name="question18"
                 value="1"
-                v-model="forma.devetnaesto"
+                v-model="forma.osamnaesto"
               />
               <label class="checkboxtext" for="option1">1</label>
             </div>
@@ -1131,9 +1131,9 @@
                 required
                 type="radio"
                 id="option2"
-                name="question17"
+                name="question18"
                 value="2"
-                v-model="forma.devetnaesto"
+                v-model="forma.osamnaesto"
               />
               <label class="checkboxtext" for="2">2</label>
             </div>
@@ -1142,9 +1142,9 @@
                 required
                 type="radio"
                 id="option3"
-                name="question17"
+                name="question18"
                 value="3"
-                v-model="forma.devetnaesto"
+                v-model="forma.osamnaesto"
               />
               <label class="checkboxtext" for="3">3</label>
             </div>
@@ -1153,9 +1153,9 @@
                 required
                 type="radio"
                 id="option4"
-                name="question17"
+                name="question18"
                 value="3"
-                v-model="forma.devetnaesto"
+                v-model="forma.osamnaesto"
               />
               <label class="checkboxtext" for="4">4</label>
             </div>
@@ -1164,9 +1164,9 @@
                 required
                 type="radio"
                 id="option5"
-                name="question17"
+                name="question18"
                 value="5"
-                v-model="forma.devetnaesto"
+                v-model="forma.osamnaesto"
               />
               <label class="checkboxtext" for="5">5</label>
             </div>
@@ -1176,9 +1176,9 @@
                 required
                 type="radio"
                 id="option6"
-                name="question17"
+                name="question18"
                 value="6"
-                v-model="forma.devetnaesto"
+                v-model="forma.osamnaesto"
               />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
@@ -1195,9 +1195,9 @@
                 required
                 type="radio"
                 id="option1"
-                name="question17"
+                name="question19"
                 value="1"
-                v-model="forma.dvadeseto"
+                v-model="forma.devetnaesto"
               />
               <label class="checkboxtext" for="option1">1</label>
             </div>
@@ -1206,9 +1206,9 @@
                 required
                 type="radio"
                 id="option2"
-                name="question17"
+                name="question19"
                 value="2"
-                v-model="forma.dvadeseto"
+                v-model="forma.devetnaesto"
               />
               <label class="checkboxtext" for="2">2</label>
             </div>
@@ -1217,9 +1217,9 @@
                 required
                 type="radio"
                 id="option3"
-                name="question17"
+                name="question19"
                 value="3"
-                v-model="forma.dvadeseto"
+                v-model="forma.devetnaesto"
               />
               <label class="checkboxtext" for="3">3</label>
             </div>
@@ -1228,9 +1228,9 @@
                 required
                 type="radio"
                 id="option4"
-                name="question17"
+                name="question19"
                 value="3"
-                v-model="forma.dvadeseto"
+                v-model="forma.devetnaesto"
               />
               <label class="checkboxtext" for="4">4</label>
             </div>
@@ -1239,9 +1239,9 @@
                 required
                 type="radio"
                 id="option5"
-                name="question17"
+                name="question19"
                 value="5"
-                v-model="forma.dvadeseto"
+                v-model="forma.devetnaesto"
               />
               <label class="checkboxtext" for="5">5</label>
             </div>
@@ -1251,9 +1251,9 @@
                 required
                 type="radio"
                 id="option6"
-                name="question17"
+                name="question19"
                 value="6"
-                v-model="forma.dvadeseto"
+                v-model="forma.devetnaesto"
               />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
@@ -1270,9 +1270,9 @@
                 required
                 type="radio"
                 id="option1"
-                name="question17"
+                name="question20"
                 value="1"
-                v-model="forma.dvadesetPrvo"
+                v-model="forma.dvadeseto"
               />
               <label class="checkboxtext" for="option1">1</label>
             </div>
@@ -1281,9 +1281,9 @@
                 required
                 type="radio"
                 id="option2"
-                name="question17"
+                name="question20"
                 value="2"
-                v-model="forma.dvadesetPrvo"
+                v-model="forma.dvadeseto"
               />
               <label class="checkboxtext" for="2">2</label>
             </div>
@@ -1292,9 +1292,9 @@
                 required
                 type="radio"
                 id="option3"
-                name="question17"
+                name="question20"
                 value="3"
-                v-model="forma.dvadesetPrvo"
+                v-model="forma.dvadeseto"
               />
               <label class="checkboxtext" for="3">3</label>
             </div>
@@ -1303,9 +1303,9 @@
                 required
                 type="radio"
                 id="option4"
-                name="question17"
+                name="question20"
                 value="3"
-                v-model="forma.dvadesetPrvo"
+                v-model="forma.dvadeseto"
               />
               <label class="checkboxtext" for="4">4</label>
             </div>
@@ -1314,9 +1314,9 @@
                 required
                 type="radio"
                 id="option5"
-                name="question17"
+                name="question20"
                 value="5"
-                v-model="forma.dvadesetPrvo"
+                v-model="forma.dvadeseto"
               />
               <label class="checkboxtext" for="5">5</label>
             </div>
@@ -1326,9 +1326,9 @@
                 required
                 type="radio"
                 id="option6"
-                name="question17"
+                name="question20"
                 value="6"
-                v-model="forma.dvadesetPrvo"
+                v-model="forma.dvadeseto"
               />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
@@ -1345,9 +1345,9 @@
                 required
                 type="radio"
                 id="option1"
-                name="question17"
+                name="question21"
                 value="1"
-                v-model="forma.dvadesetDrugo"
+                v-model="forma.dvadesetPrvo"
               />
               <label class="checkboxtext" for="option1">1</label>
             </div>
@@ -1356,9 +1356,9 @@
                 required
                 type="radio"
                 id="option2"
-                name="question17"
+                name="question21"
                 value="2"
-                v-model="forma.dvadesetDrugo"
+                v-model="forma.dvadesetPrvo"
               />
               <label class="checkboxtext" for="2">2</label>
             </div>
@@ -1367,9 +1367,9 @@
                 required
                 type="radio"
                 id="option3"
-                name="question17"
+                name="question21"
                 value="3"
-                v-model="forma.dvadesetDrugo"
+                v-model="forma.dvadesetPrvo"
               />
               <label class="checkboxtext" for="3">3</label>
             </div>
@@ -1378,9 +1378,9 @@
                 required
                 type="radio"
                 id="option4"
-                name="question17"
+                name="question21"
                 value="3"
-                v-model="forma.dvadesetDrugo"
+                v-model="forma.dvadesetPrvo"
               />
               <label class="checkboxtext" for="4">4</label>
             </div>
@@ -1389,9 +1389,9 @@
                 required
                 type="radio"
                 id="option5"
-                name="question17"
+                name="question21"
                 value="5"
-                v-model="forma.dvadesetDrugo"
+                v-model="forma.dvadesetPrvo"
               />
               <label class="checkboxtext" for="5">5</label>
             </div>
@@ -1401,9 +1401,9 @@
                 required
                 type="radio"
                 id="option6"
-                name="question17"
+                name="question21"
                 value="6"
-                v-model="forma.dvadesetDrugo"
+                v-model="forma.dvadesetPrvo"
               />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
@@ -1420,9 +1420,9 @@
                 required
                 type="radio"
                 id="option1"
-                name="question17"
+                name="question22"
                 value="1"
-                v-model="forma.dvadesetTrece"
+                v-model="forma.dvadesetDrugo"
               />
               <label class="checkboxtext" for="option1">1</label>
             </div>
@@ -1431,9 +1431,9 @@
                 required
                 type="radio"
                 id="option2"
-                name="question17"
+                name="question22"
                 value="2"
-                v-model="forma.dvadesetTrece"
+                v-model="forma.dvadesetDrugo"
               />
               <label class="checkboxtext" for="2">2</label>
             </div>
@@ -1442,9 +1442,9 @@
                 required
                 type="radio"
                 id="option3"
-                name="question17"
+                name="question22"
                 value="3"
-                v-model="forma.dvadesetTrece"
+                v-model="forma.dvadesetDrugo"
               />
               <label class="checkboxtext" for="3">3</label>
             </div>
@@ -1453,9 +1453,9 @@
                 required
                 type="radio"
                 id="option4"
-                name="question17"
+                name="question22"
                 value="3"
-                v-model="forma.dvadesetTrece"
+                v-model="forma.dvadesetDrugo"
               />
               <label class="checkboxtext" for="4">4</label>
             </div>
@@ -1464,9 +1464,9 @@
                 required
                 type="radio"
                 id="option5"
-                name="question17"
+                name="question22"
                 value="5"
-                v-model="forma.dvadesetTrece"
+                v-model="forma.dvadesetDrugo"
               />
               <label class="checkboxtext" for="5">5</label>
             </div>
@@ -1476,9 +1476,9 @@
                 required
                 type="radio"
                 id="option6"
-                name="question17"
+                name="question22"
                 value="6"
-                v-model="forma.dvadesetTrece"
+                v-model="forma.dvadesetDrugo"
               />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
@@ -1495,9 +1495,9 @@
                 required
                 type="radio"
                 id="option1"
-                name="question17"
+                name="question23"
                 value="1"
-                v-model="forma.dvadesetCetvrto"
+                v-model="forma.dvadesetTrece"
               />
               <label class="checkboxtext" for="option1">1</label>
             </div>
@@ -1506,9 +1506,9 @@
                 required
                 type="radio"
                 id="option2"
-                name="question17"
+                name="question23"
                 value="2"
-                v-model="forma.dvadesetCetvrto"
+                v-model="forma.dvadesetTrece"
               />
               <label class="checkboxtext" for="2">2</label>
             </div>
@@ -1517,9 +1517,9 @@
                 required
                 type="radio"
                 id="option3"
-                name="question17"
+                name="question23"
                 value="3"
-                v-model="forma.dvadesetCetvrto"
+                v-model="forma.dvadesetTrece"
               />
               <label class="checkboxtext" for="3">3</label>
             </div>
@@ -1528,9 +1528,9 @@
                 required
                 type="radio"
                 id="option4"
-                name="question17"
+                name="question23"
                 value="3"
-                v-model="forma.dvadesetCetvrto"
+                v-model="forma.dvadesetTrece"
               />
               <label class="checkboxtext" for="4">4</label>
             </div>
@@ -1539,9 +1539,9 @@
                 required
                 type="radio"
                 id="option5"
-                name="question17"
+                name="question23"
                 value="5"
-                v-model="forma.dvadesetCetvrto"
+                v-model="forma.dvadesetTrece"
               />
               <label class="checkboxtext" for="5">5</label>
             </div>
@@ -1551,9 +1551,9 @@
                 required
                 type="radio"
                 id="option6"
-                name="question17"
+                name="question23"
                 value="6"
-                v-model="forma.dvadesetCetvrto"
+                v-model="forma.dvadesetTrece"
               />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
@@ -1570,9 +1570,9 @@
                 required
                 type="radio"
                 id="option1"
-                name="question17"
+                name="question24"
                 value="1"
-                v-model="forma.dvadesetPeto"
+                v-model="forma.dvadesetCetvrto"
               />
               <label class="checkboxtext" for="option1">1</label>
             </div>
@@ -1581,9 +1581,9 @@
                 required
                 type="radio"
                 id="option2"
-                name="question17"
+                name="question24"
                 value="2"
-                v-model="forma.dvadesetPeto"
+                v-model="forma.dvadesetCetvrto"
               />
               <label class="checkboxtext" for="2">2</label>
             </div>
@@ -1592,9 +1592,9 @@
                 required
                 type="radio"
                 id="option3"
-                name="question17"
+                name="question24"
                 value="3"
-                v-model="forma.dvadesetPeto"
+                v-model="forma.dvadesetCetvrto"
               />
               <label class="checkboxtext" for="3">3</label>
             </div>
@@ -1603,9 +1603,9 @@
                 required
                 type="radio"
                 id="option4"
-                name="question17"
+                name="question24"
                 value="3"
-                v-model="forma.dvadesetPeto"
+                v-model="forma.dvadesetCetvrto"
               />
               <label class="checkboxtext" for="4">4</label>
             </div>
@@ -1614,9 +1614,9 @@
                 required
                 type="radio"
                 id="option5"
-                name="question17"
+                name="question24"
                 value="5"
-                v-model="forma.dvadesetPeto"
+                v-model="forma.dvadesetCetvrto"
               />
               <label class="checkboxtext" for="5">5</label>
             </div>
@@ -1626,9 +1626,9 @@
                 required
                 type="radio"
                 id="option6"
-                name="question17"
+                name="question24"
                 value="6"
-                v-model="forma.dvadesetPeto"
+                v-model="forma.dvadesetCetvrto"
               />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
@@ -1645,9 +1645,9 @@
                 required
                 type="radio"
                 id="option1"
-                name="question17"
+                name="question25"
                 value="1"
-                v-model="forma.dvadesetSesto"
+                v-model="forma.dvadesetPeto"
               />
               <label class="checkboxtext" for="option1">1</label>
             </div>
@@ -1656,9 +1656,9 @@
                 required
                 type="radio"
                 id="option2"
-                name="question17"
+                name="question25"
                 value="2"
-                v-model="forma.dvadesetSesto"
+                v-model="forma.dvadesetPeto"
               />
               <label class="checkboxtext" for="2">2</label>
             </div>
@@ -1667,9 +1667,9 @@
                 required
                 type="radio"
                 id="option3"
-                name="question17"
+                name="question25"
                 value="3"
-                v-model="forma.dvadesetSesto"
+                v-model="forma.dvadesetPeto"
               />
               <label class="checkboxtext" for="3">3</label>
             </div>
@@ -1678,9 +1678,9 @@
                 required
                 type="radio"
                 id="option4"
-                name="question17"
+                name="question25"
                 value="3"
-                v-model="forma.dvadesetSesto"
+                v-model="forma.dvadesetPeto"
               />
               <label class="checkboxtext" for="4">4</label>
             </div>
@@ -1689,9 +1689,9 @@
                 required
                 type="radio"
                 id="option5"
-                name="question17"
+                name="question25"
                 value="5"
-                v-model="forma.dvadesetSesto"
+                v-model="forma.dvadesetPeto"
               />
               <label class="checkboxtext" for="5">5</label>
             </div>
@@ -1701,9 +1701,9 @@
                 required
                 type="radio"
                 id="option6"
-                name="question17"
+                name="question25"
                 value="6"
-                v-model="forma.dvadesetSesto"
+                v-model="forma.dvadesetPeto"
               />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
@@ -1720,9 +1720,9 @@
                 required
                 type="radio"
                 id="option1"
-                name="question17"
+                name="question26"
                 value="1"
-                v-model="forma.dvadesetSedmo"
+                v-model="forma.dvadesetSesto"
               />
               <label class="checkboxtext" for="option1">1</label>
             </div>
@@ -1731,9 +1731,9 @@
                 required
                 type="radio"
                 id="option2"
-                name="question17"
+                name="question26"
                 value="2"
-                v-model="forma.dvadesetSedmo"
+                v-model="forma.dvadesetSesto"
               />
               <label class="checkboxtext" for="2">2</label>
             </div>
@@ -1742,9 +1742,9 @@
                 required
                 type="radio"
                 id="option3"
-                name="question17"
+                name="question26"
                 value="3"
-                v-model="forma.dvadesetSedmo"
+                v-model="forma.dvadesetSesto"
               />
               <label class="checkboxtext" for="3">3</label>
             </div>
@@ -1753,9 +1753,9 @@
                 required
                 type="radio"
                 id="option4"
-                name="question17"
+                name="question26"
                 value="3"
-                v-model="forma.dvadesetSedmo"
+                v-model="forma.dvadesetSesto"
               />
               <label class="checkboxtext" for="4">4</label>
             </div>
@@ -1764,9 +1764,9 @@
                 required
                 type="radio"
                 id="option5"
-                name="question17"
+                name="question26"
                 value="5"
-                v-model="forma.dvadesetSedmo"
+                v-model="forma.dvadesetSesto"
               />
               <label class="checkboxtext" for="5">5</label>
             </div>
@@ -1776,14 +1776,18 @@
                 required
                 type="radio"
                 id="option6"
-                name="question17"
+                name="question26"
                 value="6"
-                v-model="forma.dvadesetSedmo"
+                v-model="forma.dvadesetSesto"
               />
               <label class="checkboxtext" for="6">ne znam (ne mogu procijeniti)</label>
             </div>
           </div>
         </div>
+      </div>
+      <h2 class="komentar-naslov">Komentar:</h2>
+      <div class="card comment">
+        <textarea name="komentar" cols="30" rows="8"></textarea>
       </div>
 
       <div class="card-button">
@@ -1827,14 +1831,14 @@ export default {
         dvadesetCetvrto: "",
         dvadesetPeto: "",
         dvadesetSesto: "",
-        dvadesetSedmo: "",
+
         komentar: ""
       }
     };
   },
   methods: {
     async form() {
-      const user = await auth.getUser()
+      const user = await auth.getUser();
       this.forma.userEmail = user.email;
 
       const save = await anketa.create(this.prof_id, this.forma);
@@ -1892,6 +1896,15 @@ input[type="radio"] {
 .card-button {
   display: flex;
   justify-content: center;
+}
+.comment {
+  width: 60%;
+  text-indent: 5px;
+  margin-bottom: 10%;
+}
+.komentar-naslov {
+  color: white;
+  margin-left: 10%;
 }
 @media (max-width: 1326px) {
   .grupiranje2 {

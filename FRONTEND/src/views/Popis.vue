@@ -23,12 +23,12 @@ export default {
   name: "Home",
   data() {
     return {
-      profesori: [],
+      profesori: []
     };
   },
   components: {
     kartica,
-    appheader,
+    appheader
   },
   async created() {
     this.fetchPosts();
@@ -37,8 +37,8 @@ export default {
     async fetchPosts() {
       let faks = auth.getFaks();
       this.profesori = await profs.getNeoznacene(faks);
-    },
-  },
+    }
+  }
 };
 </script>
 <style scoped>
@@ -67,6 +67,19 @@ export default {
   }
   to {
     margin-left: 0%;
+  }
+}
+
+@media (width: 375px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+@media (max-width: 1250px) {
+  * {
+    margin: 0px;
+    padding: 0px;
   }
 }
 </style>
