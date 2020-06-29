@@ -105,7 +105,7 @@
                   v-if="!prikaziEmail"
                   class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12"
                 >
-                  Trenutačan email
+                  <div class="podnaslov">Trenutačan email</div>
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
@@ -118,7 +118,8 @@
                       />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                  </div>Novi email
+                  </div>
+                  <div class="podnaslov">Novi email</div>
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
@@ -131,7 +132,8 @@
                       />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                  </div>Ponovite novi email
+                  </div>
+                  <div class="podnaslov">Ponovite novi email</div>
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
@@ -148,7 +150,7 @@
                 </div>
 
                 <div v-if="!prikaziLozinku" class="col">
-                  Trenutačna lozinka
+                  <div class="podnaslov">Trenutačna lozinka</div>
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
@@ -161,7 +163,8 @@
                       />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                  </div>Nova lozinka
+                  </div>
+                  <div class="podnaslov">Nova Lozinka</div>
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
@@ -174,7 +177,8 @@
                       />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                  </div>Ponovite novu lozinku
+                  </div>
+                  <div class="podnaslov">Ponovite novu lozinku</div>
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
@@ -479,7 +483,62 @@ span:after {
     background: #00b7ff;
     color: white;
   }
+
+  h2 {
+    font-size: 100%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  .profil-btn {
+    padding: 0%;
+    width: 200px;
+    height: 50px;
+    font-size: 100%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+  }
+  .promjena input[type="password"],
+  [type="text"] {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .podnaslov {
+    margin-left: 5%;
+  }
 }
 @media (max-width: 1250px) {
+  .profil-btn {
+    margin-top: 15%;
+    margin-bottom: 0%;
+    padding: 5%;
+    font-size: 90%;
+  }
+  .profil-btn:hover {
+    transition: 0.3s ease-in-out;
+    background: #00b7ff;
+    color: white;
+  }
+
+  h2 {
+    font-size: 100%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  .profil-btn {
+    padding: 0%;
+    width: 200px;
+    height: 50px;
+    font-size: 100%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+  }
+  .promjena input[type="password"],
+  [type="text"] {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .podnaslov {
+    margin-left: 5%;
+  }
 }
 </style>
