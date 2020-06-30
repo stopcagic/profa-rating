@@ -234,6 +234,9 @@ export default {
   methods: {
     idiHome() {
       this.$router.push({ name: "About" });
+    },
+    zamjena() {
+      if (this.prikaziEmail == false) this.prikaziEmail = true;
     }
   }
 };
