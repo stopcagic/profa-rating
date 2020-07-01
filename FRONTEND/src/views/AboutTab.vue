@@ -88,14 +88,14 @@
                 <div class="row">
                   <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2"></div>
                   <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3">
-                    <button v-on:click="prikaziEmail = !prikaziEmail" class="profil-btn">
+                    <button v-on:click="prikaziEmail = !prikaziEmail; prikaziLozinku = true" class="profil-btn">
                       <b>Promijeni Email</b>
                     </button>
                   </div>
                   <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2"></div>
 
                   <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3">
-                    <button v-on:click="prikaziLozinku = !prikaziLozinku" class="profil-btn">
+                    <button v-on:click="prikaziLozinku = !prikaziLozinku; prikaziEmail = true" class="profil-btn">
                       <b>Promijeni Lozinku</b>
                     </button>
                   </div>
@@ -114,7 +114,6 @@
                         name="lozinka"
                         required
                         class="form-control"
-                        v-model="lozinka"
                       />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
@@ -128,7 +127,6 @@
                         name="lozinka"
                         required
                         class="form-control"
-                        v-model="lozinka"
                       />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
@@ -142,7 +140,6 @@
                         name="lozinka"
                         required
                         class="form-control"
-                        v-model="lozinka"
                       />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
@@ -159,7 +156,6 @@
                         name="lozinka"
                         required
                         class="form-control"
-                        v-model="lozinka"
                       />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
@@ -173,7 +169,6 @@
                         name="lozinka"
                         required
                         class="form-control"
-                        v-model="lozinka"
                       />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
@@ -187,7 +182,6 @@
                         name="lozinka"
                         required
                         class="form-control"
-                        v-model="lozinka"
                       />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
