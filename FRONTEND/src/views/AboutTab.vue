@@ -88,14 +88,22 @@
                 <div class="row">
                   <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2"></div>
                   <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3">
-                    <button v-on:click="prikaziEmail = !prikaziEmail; prikaziLozinku = true" class="profil-btn">
+                    <button
+                      type="button"
+                      v-on:click="prikaziEmail = !prikaziEmail; prikaziLozinku = true"
+                      class="btn btn-primary"
+                    >
                       <b>Promijeni Email</b>
                     </button>
                   </div>
                   <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2"></div>
 
                   <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3">
-                    <button v-on:click="prikaziLozinku = !prikaziLozinku; prikaziEmail = true" class="profil-btn">
+                    <button
+                      type="button"
+                      v-on:click="prikaziLozinku = !prikaziLozinku; prikaziEmail = true"
+                      class="btn btn-primary"
+                    >
                       <b>Promijeni Lozinku</b>
                     </button>
                   </div>
@@ -109,12 +117,7 @@
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input
-                        type="text"
-                        name="lozinka"
-                        required
-                        class="form-control"
-                      />
+                      <input type="text" name="lozinka" required class="form-control" />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                   </div>
@@ -122,12 +125,7 @@
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input
-                        type="text"
-                        name="lozinka"
-                        required
-                        class="form-control"
-                      />
+                      <input type="text" name="lozinka" required class="form-control" />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                   </div>
@@ -135,12 +133,7 @@
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input
-                        type="text"
-                        name="lozinka"
-                        required
-                        class="form-control"
-                      />
+                      <input type="text" name="lozinka" required class="form-control" />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                   </div>
@@ -151,12 +144,7 @@
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input
-                        type="password"
-                        name="lozinka"
-                        required
-                        class="form-control"
-                      />
+                      <input type="password" name="lozinka" required class="form-control" />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                   </div>
@@ -164,12 +152,7 @@
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input
-                        type="password"
-                        name="lozinka"
-                        required
-                        class="form-control"
-                      />
+                      <input type="password" name="lozinka" required class="form-control" />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                   </div>
@@ -177,12 +160,7 @@
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input
-                        type="password"
-                        name="lozinka"
-                        required
-                        class="form-control"
-                      />
+                      <input type="password" name="lozinka" required class="form-control" />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                   </div>
@@ -237,6 +215,9 @@ export default {
 </script>
 
 <style scoped>
+h2 {
+  font-size: 200%;
+}
 .profil {
   width: 80%;
   color: white;
@@ -247,18 +228,19 @@ export default {
   border-radius: 15px;
   background-image: url("../assets/card-pozadina.svg");
 }
-.profil-btn {
+.btn {
   background-color: transparent;
   border-radius: 20px;
   border: 1px solid#00b7ff;
   outline: none;
-  margin-top: 15%;
-  margin-bottom: 15%;
-  color: white;
+  width: 100%;
   padding: 10%;
-  font-size: 130%;
+  color: white;
 }
-.profil-btn:hover {
+.btn b {
+  font-size: 120%;
+}
+.btn:hover {
   transition: 0.3s ease-in-out;
   background: #00b7ff;
   color: white;
@@ -464,78 +446,12 @@ span:after {
   color: white;
   transition-delay: 530ms;
 }
-@media (width: 375px) {
+@media (max-width: 375px) {
   * {
     padding: 0px;
     margin: 0px;
   }
-  .profil-btn {
-    margin-top: 15%;
-    margin-bottom: 0%;
-    padding: 5%;
-    font-size: 90%;
-  }
-  .profil-btn:hover {
-    transition: 0.3s ease-in-out;
-    background: #00b7ff;
-    color: white;
-  }
-
-  h2 {
-    font-size: 100%;
-    margin-left: 10%;
-    margin-top: 10%;
-  }
-  .profil-btn {
-    padding: 0%;
-    width: 200px;
-    height: 50px;
-    font-size: 100%;
-    margin-left: 20%;
-    margin-bottom: 5%;
-  }
-  .promjena input[type="password"],
-  [type="text"] {
-    width: 80%;
-    margin-left: 10%;
-  }
-  .podnaslov {
-    margin-left: 5%;
-  }
 }
 @media (max-width: 1250px) {
-  .profil-btn {
-    margin-top: 15%;
-    margin-bottom: 0%;
-    padding: 5%;
-    font-size: 90%;
-  }
-  .profil-btn:hover {
-    transition: 0.3s ease-in-out;
-    background: #00b7ff;
-    color: white;
-  }
-
-  h2 {
-    font-size: 100%;
-    margin-left: 10%;
-    margin-top: 10%;
-  }
-  .profil-btn {
-    padding: 0%;
-    width: 200px;
-    height: 50px;
-    font-size: 100%;
-    margin-left: 20%;
-    margin-bottom: 5%;
-  }
-  .promjena input[type="password"],
-  [type="text"] {
-    width: 80%;
-    margin-left: 10%;
-  }
-  .podnaslov {
-    margin-left: 5%;
-  }
 }
 </style>
