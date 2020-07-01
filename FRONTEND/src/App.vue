@@ -31,10 +31,7 @@ body {
   color: #014083;
   -webkit-text-stroke: 1px black;
 }
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
+
 .input-group {
   width: 50%;
   margin: 0 auto;

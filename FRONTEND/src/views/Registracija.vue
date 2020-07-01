@@ -1,5 +1,5 @@
 <template>
-  <modal resizable:true height="auto" name="registracija-modal">
+  <modal adaptive="true" height="auto" name="registracija-modal">
     <div id="signup" class="container-fluid card-registracija">
       <h1>
         Registracija
@@ -88,7 +88,7 @@
           </select>
         </div>
 
-        <div>
+        <div class="register">
           <button type="submit" class="btn btn-primary btn-lg">Registriraj se</button>
         </div>
       </form>
@@ -158,10 +158,16 @@ export default {
   background: #00b7ff;
   color: white;
 }
+.text-center {
+  font-size: 100%;
+}
+.register .btn {
+  font-size: 80%;
+}
 
 @media (width: 375px) {
-  .modal-view {
-    width: 20%;
+  .text-center {
+    font-size: 80%;
   }
 }
 </style>

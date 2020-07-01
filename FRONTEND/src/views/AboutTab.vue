@@ -76,7 +76,7 @@
               <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
                 <div class="row">
                   <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
-                    <h2>Email:</h2>
+                    <h2 style="font-size:200%">Email:</h2>
                   </div>
                 </div>
                 <div class="row">
@@ -109,6 +109,7 @@
                   </div>
                   <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2"></div>
                 </div>
+
                 <div
                   v-if="!prikaziEmail"
                   class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12"
@@ -136,6 +137,11 @@
                       <input type="text" name="lozinka" required class="form-control" />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
+                    <button class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4 btn-podnesi">Spremi</button>
+                    <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
                   </div>
                 </div>
 
@@ -215,9 +221,6 @@ export default {
 </script>
 
 <style scoped>
-h2 {
-  font-size: 200%;
-}
 .profil {
   width: 80%;
   color: white;
@@ -234,12 +237,10 @@ h2 {
   border: 1px solid#00b7ff;
   outline: none;
   width: 100%;
-  padding: 10%;
+  height: 100%;
   color: white;
 }
-.btn b {
-  font-size: 120%;
-}
+
 .btn:hover {
   transition: 0.3s ease-in-out;
   background: #00b7ff;
@@ -252,9 +253,8 @@ h2 {
   outline: none;
   margin-top: 10%;
   margin-bottom: 5%;
+  padding: 2%;
   color: white;
-  width: 60%;
-  font-size: 130%;
 }
 .first-container h1 {
   font-family: "Playfair Display", serif;
@@ -447,11 +447,33 @@ span:after {
   transition-delay: 530ms;
 }
 @media (max-width: 375px) {
-  * {
-    padding: 0px;
-    margin: 0px;
+  .btn {
+    padding: 5%;
+    margin-bottom: 5%;
+  }
+  .row {
+    padding: 0;
+  }
+  .promjena input[type="password"],
+  [type="text"] {
+    width: 120%;
   }
 }
-@media (max-width: 1250px) {
+
+@media (max-width: 1380px) {
+  .btn b {
+    font-size: 80%;
+  }
+}
+@media (max-width: 1220px) {
+  .btn b {
+    font-size: 60%;
+  }
+}
+@media (max-width: 990px) {
+  .promjena input[type="password"],
+  [type="text"] {
+    width: 80%;
+  }
 }
 </style>
