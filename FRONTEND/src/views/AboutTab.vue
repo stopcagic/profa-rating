@@ -73,10 +73,10 @@
                 <hr />
               </div>
 
-              <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
+              <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 ab">
                 <div class="row">
                   <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
-                    <h2 style="font-size:200%">Email:</h2>
+                    <h2>Email:</h2>
                   </div>
                 </div>
                 <div class="row">
@@ -87,7 +87,7 @@
 
                 <div class="row">
                   <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2"></div>
-                  <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3">
+                  <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3 br">
                     <button
                       type="button"
                       v-on:click="prikaziEmail = !prikaziEmail; prikaziLozinku = true"
@@ -98,7 +98,7 @@
                   </div>
                   <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2"></div>
 
-                  <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3">
+                  <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3 br">
                     <button
                       type="button"
                       v-on:click="prikaziLozinku = !prikaziLozinku; prikaziEmail = true"
@@ -449,31 +449,54 @@ span:after {
 @media (max-width: 375px) {
   .btn {
     padding: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 10px;
   }
   .row {
     padding: 0;
   }
-  .promjena input[type="password"],
-  [type="text"] {
-    width: 120%;
+
+  .br {
+    margin-bottom: 10%;
   }
 }
 
 @media (max-width: 1380px) {
+  .br {
+    margin-bottom: 10%;
+  }
   .btn b {
-    font-size: 80%;
+    font-size: 100%;
+  }
+  .promjena input[type="password"],
+  [type="text"] {
+    width: 100%;
+  }
+  .ab h2 {
+    font-size: 90%;
   }
 }
 @media (max-width: 1220px) {
   .btn b {
     font-size: 60%;
   }
+  .promjena input[type="password"],
+  [type="text"] {
+    width: 60%;
+  }
 }
 @media (max-width: 990px) {
+  .br {
+    margin-bottom: 10%;
+  }
+  .btn b {
+    font-size: 80%;
+  }
   .promjena input[type="password"],
   [type="text"] {
     width: 80%;
+  }
+  .ab h2 {
+    font-size: 150%;
   }
 }
 </style>
