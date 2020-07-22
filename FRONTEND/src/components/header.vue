@@ -11,23 +11,29 @@
             </button>
           </div>
           <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2">
-            <button class="button">
+            <div v-if="auth.authenticated">
+              <button class="button">
               <router-link class="link" to="/popis">
                 <a class="dugme">| Popis</a>
               </router-link>
             </button>
+            </div>
+            
           </div>
-          <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-">
-            <button class="button">
+          <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-" >
+            <div v-if="auth.authenticated">
+              <button class="button">
               <router-link class="link" to="/oznacene">
                 <a class="dugme">| Popunjene forme</a>
               </router-link>
             </button>
-          </div>
+            </div>
+            </div>
+          
 
           <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2">
             <div v-if="!auth.authenticated">
-              <button class="button">
+              <button class="button"  v-on:click="prijaviSe = !prijaviSe">
                 <router-link class="link" to="/prijava">
                   <a class="dugme">| Prijava</a>
                 </router-link>
@@ -56,8 +62,8 @@ export default {
   data() {
     return {
       auth: auth.state,
-      prikaziPrijava: store.prijavi_se,
-      isActive: false
+      isActive: false,
+      prijaviSe: store.prijavi_se
     };
   },
   methods: {
