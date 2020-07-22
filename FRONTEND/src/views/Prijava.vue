@@ -6,7 +6,7 @@
         <hr />
       </h1>
     </div>
-    <div class="alert alert-danger" role="alert" v-show="errorHandler.status">
+    <div class="alert alertCustom" role="alert" v-show="errorHandler.status">
       <b>{{errorHandler.message}}</b>
     </div>
     <form @submit.prevent="login">
@@ -177,6 +177,10 @@ export default {
   letter-spacing: 1px;
   margin-left: 100px;
   margin-right: 100px;
+}
+.alertCustom{
+  border: 1px solid rgb(141, 52, 52);
+  color: rgb(247, 41, 41);
 }
 @media (width: 375px) {
   .card-prijava .btn {
