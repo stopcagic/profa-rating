@@ -49,7 +49,7 @@ router.post('/login', async (req, res) => {
 
     //provjeriti dal je pw ispravan
     const pwExists = await bcrypt.compare(req.body.password, user.password)
-    if (!pwExists) return res.status(400).send('Invalid password.')
+    if (!pwExists) return res.status(400).send('Wrong password.')
 
     //Izrada tokena
     const token = jwt.sign({

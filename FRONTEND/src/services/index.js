@@ -18,8 +18,8 @@ Services.interceptors.request.use((request) => {
 Services.interceptors.response.use((response) => response, (error) => {
     if (error.response.status == 401 || 403) {
         auth.logout()
-        router.go()
     }
+    return error.response
 })
 
 const profs = {
@@ -61,10 +61,18 @@ const auth = {
             password: password
         })
         let data = await response.data
-
-        localStorage.setItem('user', JSON.stringify(data))
-
-        return true;
+        let status = response.status
+        
+        if(status == 400) return{
+            status: false,
+            message: data
+        }
+        else{
+            localStorage.setItem('user', JSON.stringify(data))
+            return{
+                status: true
+            }
+        };
     },
     async signup(email, password, faks) {
 

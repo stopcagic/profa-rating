@@ -6,7 +6,9 @@
         <hr />
       </h1>
     </div>
-
+    <div class="alert alert-danger" role="alert" v-show="errorHandler.status">
+      {{errorHandler.message}}
+    </div>
     <form @submit.prevent="login">
       <div class="row">
         <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
@@ -74,12 +76,15 @@ import regeneratorRuntime from "regenerator-runtime";
 
 export default {
   name: "Prijava",
-
   data() {
     return {
       prikaziRegistracija: store.registriraj_se,
       lozinka: "",
-      email: ""
+      email: "",
+      errorHandler:{
+        status: false,
+        message: ''
+      }
     };
   },
   methods: {
@@ -90,12 +95,14 @@ export default {
       this.$modal.hide("registracija-modal");
     },
     async login() {
-      let success = await auth.login(this.email, this.lozinka);
-      if (success.status == true) {
+      let didItPass = await auth.login(this.email, this.lozinka);
+
+      if (didItPass.status == true) {
         this.$router.push({ path: "popis" });
       }
       else{
-        console.log(success.message);
+        this.errorHandler.status = true
+        this.errorHandler.message = didItPass.message
       }
     }
   },
