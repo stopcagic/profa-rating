@@ -3,51 +3,42 @@
     <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
       <ul type="button" class="navbar">
         <div class="row">
-          <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2">
+          <button class="button">
+            <router-link class="link" to="/about">
+              <a v-bind:class="{currentLink: isActive}" @click="myFilter" class="dugme">| About</a>
+            </router-link>
+          </button>
+
+          <div v-if="auth.authenticated">
             <button class="button">
-              <router-link class="link" to="/about">
-                <a v-bind:class="{currentLink: isActive}" @click="myFilter" class="dugme">| About</a>
-              </router-link>
-            </button>
-          </div>
-          <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2">
-            <div v-if="auth.authenticated">
-              <button class="button">
               <router-link class="link" to="/popis">
                 <a class="dugme">| Popis</a>
               </router-link>
             </button>
-            </div>
-            
           </div>
-          <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-" >
-            <div v-if="auth.authenticated">
-              <button class="button">
+
+          <div v-if="auth.authenticated">
+            <button class="button">
               <router-link class="link" to="/oznacene">
                 <a class="dugme">| Popunjene forme</a>
               </router-link>
             </button>
-            </div>
-            </div>
-          
-
-          <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2">
-            <div v-if="!auth.authenticated">
-              <button class="button"  v-on:click="prijaviSe = !prijaviSe">
-                <router-link class="link" to="/prijava">
-                  <a class="dugme">| Prijava</a>
-                </router-link>
-              </button>
-            </div>
           </div>
-          <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2">
-            <div v-if="auth.authenticated">
-              <button class="button" @click="logout">
-                <router-link class="link" to="/">
-                  <a class="dugme odjava">| Odjavi se</a>
-                </router-link>
-              </button>
-            </div>
+
+          <div v-if="!auth.authenticated">
+            <button class="button" v-on:click="prijaviSe = !prijaviSe">
+              <router-link class="link" to="/prijava">
+                <a class="dugme">| Prijava</a>
+              </router-link>
+            </button>
+          </div>
+
+          <div v-if="auth.authenticated">
+            <button class="button" @click="logout">
+              <router-link class="link" to="/">
+                <a class="dugme odjava">| Odjavi se</a>
+              </router-link>
+            </button>
           </div>
         </div>
       </ul>
@@ -63,7 +54,7 @@ export default {
     return {
       auth: auth.state,
       isActive: false,
-      prijaviSe: store.prijavi_se
+      prijaviSe: store.prijavi_se,
     };
   },
   methods: {
@@ -71,11 +62,11 @@ export default {
       auth.logout();
       this.$router.go();
     },
-    myFilter: function() {
+    myFilter: function () {
       this.isActive = !this.isActive;
       // some code to filter users
-    }
-  }
+    },
+  },
 };
 </script>
 
