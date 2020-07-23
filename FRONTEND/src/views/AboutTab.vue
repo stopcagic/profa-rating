@@ -145,7 +145,10 @@
                   </div>
                 </div>
 
-                <div v-if="!prikaziLozinku" class="col">
+                <div
+                  v-if="!prikaziLozinku"
+                  class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12"
+                >
                   <div class="podnaslov">Trenutačna lozinka</div>
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
@@ -200,14 +203,14 @@ export default {
       prikaziRegistracija: store.registriraj_se,
       auth: auth.state,
       prikaziEmail: true,
-      prikaziLozinku: true
+      prikaziLozinku: true,
     };
   },
   components: {
     kartica,
     "app-header": header,
     prijava,
-    registracija
+    registracija,
   },
   methods: {
     idiHome() {
@@ -215,8 +218,8 @@ export default {
     },
     zamjena() {
       if (this.prikaziEmail == false) this.prikaziEmail = true;
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -38,7 +38,7 @@
           </router-link>
         </button>
       </div>
-      <a href="javascript:void(0);" class="ikona" @click="myFunction">
+      <a href="javascript:void(0);" class="ikona">
         <i class="fa fa-bars"></i>
       </a>
     </ul>
@@ -65,14 +65,6 @@ export default {
       this.isActive = !this.isActive;
       // some code to filter users
     },
-    /*  myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-      }
-    }, */
   },
 };
 </script>
@@ -108,6 +100,7 @@ ul {
   cursor: pointer;
 }
 .button .dugme {
+  float: right;
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -140,9 +133,7 @@ ul {
 .link {
   color: white;
 }
-.odjava {
-  float: right;
-}
+
 @-webkit-keyframes w70 {
   from {
     margin-left: -100%;
@@ -160,11 +151,20 @@ ul {
   }
 }
 
-@media screen and (max-width: 410px) {
-  .navbar a .dugme .odjava {
+@media screen and (max-width: 407px) {
+  .navbar a .dugme {
     display: none;
   }
+  ul.navbar {
+    overflow-x: scroll;
+  }
 }
-@media screen and (max-width: 410px) {
-}
+/* @media screen and (max-width: 375px) {
+  div.naslov.navbar-about {
+    padding: 40px;
+  }
+  ul.navbar {
+    margin-top: -45px;
+  }
+}  */
 </style>
