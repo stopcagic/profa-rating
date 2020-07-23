@@ -3,7 +3,7 @@
     <ul class="navbar">
       <button class="button">
         <router-link class="link" to="/about">
-          <a v-bind:class="{ currentLink: isActive }" @click="myFilter" class="dugme">| About</a>
+          <a v-bind:class="{ currentLink: isActive }" class="dugme">| About</a>
         </router-link>
       </button>
 
@@ -24,7 +24,7 @@
       </div>
 
       <div v-if="!auth.authenticated">
-        <button class="button" v-on:click="prijaviSe = !prijaviSe">
+        <button class="button" v-on:click="openLogin()">
           <router-link class="link" to="/prijava">
             <a class="dugme">| Prijava</a>
           </router-link>
@@ -38,7 +38,7 @@
           </router-link>
         </button>
       </div>
-      <a href="javascript:void(0);" class="ikona" @click="myFunction">
+      <a href="javascript:void(0);" class="ikona">
         <i class="fa fa-bars"></i>
       </a>
     </ul>
@@ -53,7 +53,6 @@ export default {
     return {
       auth: auth.state,
       isActive: false,
-      prijaviSe: store.prijavi_se,
     };
   },
   methods: {
@@ -61,18 +60,10 @@ export default {
       auth.logout();
       this.$router.go();
     },
-    myFilter: function () {
-      this.isActive = !this.isActive;
-      // some code to filter users
+    openLogin() {
+      this.$store.commit("showLogin");
+      console.log(this.$store.state.prijavi_se)
     },
-    /*  myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-      }
-    }, */
   },
 };
 </script>
