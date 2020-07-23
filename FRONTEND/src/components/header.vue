@@ -94,6 +94,7 @@ ul {
   background-color: rgba(0, 0, 0, 0.384);
   backdrop-filter: blur(5px);
   -webkit-animation: w70 3s ease backwards;
+  animation: w70 3s ease backwards;
 }
 .naslov .w70 {
   margin-left: 0%;
