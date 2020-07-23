@@ -3,12 +3,7 @@
     <ul class="navbar">
       <button class="button">
         <router-link class="link" to="/about">
-          <a
-            v-bind:class="{ currentLink: isActive }"
-            @click="myFilter"
-            class="dugme"
-            >| About</a
-          >
+          <a v-bind:class="{ currentLink: isActive }" @click="myFilter" class="dugme">| About</a>
         </router-link>
       </button>
 
@@ -43,7 +38,7 @@
           </router-link>
         </button>
       </div>
-      <a href="javascript:void(0);" class="ikona" onclick="myFunction()">
+      <a href="javascript:void(0);" class="ikona" @click="myFunction">
         <i class="fa fa-bars"></i>
       </a>
     </ul>
@@ -66,10 +61,18 @@ export default {
       auth.logout();
       this.$router.go();
     },
-    myFilter: function() {
+    myFilter: function () {
       this.isActive = !this.isActive;
       // some code to filter users
     },
+    /*  myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }, */
   },
 };
 </script>
@@ -136,6 +139,9 @@ ul {
 .link {
   color: white;
 }
+.odjava {
+  float: right;
+}
 @-webkit-keyframes w70 {
   from {
     margin-left: -100%;
@@ -153,13 +159,11 @@ ul {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .navbar .button {
-    color: black;
+@media screen and (max-width: 410px) {
+  .navbar a .dugme .odjava {
+    display: none;
   }
-  .naslov a.ikona {
-    float: right;
-    display: block;
-  }
+}
+@media screen and (max-width: 410px) {
 }
 </style>
