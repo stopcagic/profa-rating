@@ -1,47 +1,37 @@
 <template>
   <div class="naslov">
-    <ul class="navbar">
-      <button class="button">
-        <router-link class="link" to="/about">
-          <a v-bind:class="{ currentLink: isActive }" class="dugme">| About</a>
-        </router-link>
-      </button>
+    <div class="navbar" id="myTopnav">
+      <router-link class="link button" to="/about">
+        <a v-bind:class="{ currentLink: isActive }" class="dugme">| About</a>
+      </router-link>
 
       <div v-if="auth.authenticated">
-        <button class="button">
-          <router-link class="link" to="/popis">
-            <a class="dugme">| Popis</a>
-          </router-link>
-        </button>
+        <router-link class="link button" to="/popis">
+          <a class="dugme">| Popis</a>
+        </router-link>
       </div>
 
       <div v-if="auth.authenticated">
-        <button class="button">
-          <router-link class="link" to="/oznacene">
-            <a class="dugme">| Popunjene forme</a>
-          </router-link>
-        </button>
+        <router-link class="link button" to="/oznacene">
+          <a class="dugme">| Popunjene forme</a>
+        </router-link>
       </div>
 
       <div v-if="!auth.authenticated">
-        <button class="button" v-on:click="openLogin()">
-          <router-link class="link" to="/prijava">
-            <a class="dugme">| Prijava</a>
-          </router-link>
-        </button>
+        <router-link class="link button" to="/prijava" v-on:click="openLogin()">
+          <a class="dugme">| Prijava</a>
+        </router-link>
       </div>
 
       <div v-if="auth.authenticated">
-        <button class="button" @click="logout">
-          <router-link class="link" to="/">
-            <a class="dugme odjava">| Odjavi se</a>
-          </router-link>
-        </button>
+        <router-link class="link button" to="/" @click="logout">
+          <a class="dugme odjava">| Odjavi se</a>
+        </router-link>
       </div>
-      <a href="javascript:void(0);" class="ikona">
+      <!--   <a href="javascript:void(0);" class="ikona" @click="myFunction">
         <i class="fa fa-bars"></i>
-      </a>
-    </ul>
+      </a>-->
+    </div>
   </div>
 </template>
 <script>
@@ -62,7 +52,15 @@ export default {
     },
     openLogin() {
       this.$store.commit("showLogin");
-      console.log(this.$store.state.prijavi_se)
+      console.log(this.$store.state.prijavi_se);
+    },
+    myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
     },
   },
 };
@@ -75,8 +73,12 @@ export default {
 .odjava:hover {
   color: rgb(219, 6, 6);
 }
-ul {
+.navbar {
   float: right;
+}
+.navbar a {
+  -webkit-animation: w70 3s ease backwards;
+  animation: w70 3s ease backwards;
 }
 .naslov {
   height: 40px;
@@ -90,6 +92,9 @@ ul {
 .naslov .w70 {
   margin-left: 0%;
 }
+.navbar .w70 {
+  margin-left: 0%;
+}
 .button {
   background-color: transparent;
   border: none;
@@ -99,7 +104,6 @@ ul {
   cursor: pointer;
 }
 .button .dugme {
-  float: right;
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -150,20 +154,28 @@ ul {
   }
 }
 
-@media screen and (max-width: 407px) {
-  .navbar a .dugme {
+/* @media screen and (max-width: 407px) {
+  .navbar a {
     display: none;
   }
-  ul.navbar {
-    overflow-x: scroll;
+  .navbar a.ikona {
+    float: right;
+    display: block;
   }
 }
-/* @media screen and (max-width: 375px) {
-  div.naslov.navbar-about {
-    padding: 40px;
+@media screen and (max-width: 407px) {
+  .navbar.responsive {
+    position: relative;
   }
-  ul.navbar {
-    margin-top: -45px;
+  .navbar.responsive a.ikona {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-}  */
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} */
 </style>
