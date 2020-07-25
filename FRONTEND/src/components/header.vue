@@ -46,7 +46,6 @@
 </template>
 <script>
 import { auth } from "@/services";
-import store from "../store.js";
 
 export default {
   data() {
@@ -61,7 +60,7 @@ export default {
       this.$router.go();
     },
     openLogin() {
-      console.log('ok i clicked');
+      this.$store.commit('prijava')
     },
   },
 };
