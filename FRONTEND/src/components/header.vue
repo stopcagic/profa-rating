@@ -61,8 +61,7 @@ export default {
       this.$router.go();
     },
     openLogin() {
-      this.$store.commit("showLogin");
-      console.log(this.$store.state.prijavi_se)
+      console.log('ok i clicked');
     },
   },
 };
@@ -99,7 +98,6 @@ ul {
   cursor: pointer;
 }
 .button .dugme {
-  float: right;
   cursor: pointer;
   display: inline-block;
   position: relative;
