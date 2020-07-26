@@ -5,7 +5,9 @@
         <div class="row">
           <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12 left title">
             <div class="w3-container">
-              <div @click="idiHome" class="w3-center w3-animate-left hero">OCIJENITE PROFESORA</div>
+              <div @click="idiHome" class="w3-center w3-animate-left hero">
+                OCIJENITE PROFESORA
+              </div>
             </div>
           </div>
         </div>
@@ -73,7 +75,9 @@
                 <hr />
               </div>
 
-              <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 ab">
+              <div
+                class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 ab"
+              >
                 <div class="row">
                   <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
                     <h2>Email: <p class="userData userDataEmail"><b>{{ userEmail }}</b> </p></h2> 
@@ -90,7 +94,10 @@
                   <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3 br">
                     <button
                       type="button"
-                      v-on:click="prikaziEmail = !prikaziEmail; prikaziLozinku = true"
+                      v-on:click="
+                        prikaziEmail = !prikaziEmail;
+                        prikaziLozinku = true;
+                      "
                       class="btn btn-primary"
                     >
                       <b>Promijeni Email</b>
@@ -101,7 +108,10 @@
                   <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3 br">
                     <button
                       type="button"
-                      v-on:click="prikaziLozinku = !prikaziLozinku; prikaziEmail = true"
+                      v-on:click="
+                        prikaziLozinku = !prikaziLozinku;
+                        prikaziEmail = true;
+                      "
                       class="btn btn-primary"
                     >
                       <b>Promijeni Lozinku</b>
@@ -118,7 +128,12 @@
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input type="text" name="lozinka" required class="form-control" />
+                      <input
+                        type="text"
+                        name="lozinka"
+                        required
+                        class="form-control"
+                      />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                   </div>
@@ -126,13 +141,22 @@
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input type="text" name="lozinka" required class="form-control" />
+                      <input
+                        type="text"
+                        name="lozinka"
+                        required
+                        class="form-control"
+                      />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                   </div>
                   <div class="row">
                     <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
-                    <button class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4 btn-podnesi">Spremi</button>
+                    <button
+                      class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4 btn-podnesi"
+                    >
+                      Spremi
+                    </button>
                     <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
                   </div>
                 </div>
@@ -145,7 +169,12 @@
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input type="password" name="lozinka" required class="form-control" />
+                      <input
+                        type="password"
+                        name="lozinka"
+                        required
+                        class="form-control"
+                      />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                   </div>
@@ -153,7 +182,12 @@
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input type="password" name="lozinka" required class="form-control" />
+                      <input
+                        type="password"
+                        name="lozinka"
+                        required
+                        class="form-control"
+                      />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                   </div>
@@ -161,13 +195,22 @@
                   <div class="row">
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input type="password" name="lozinka" required class="form-control" />
+                      <input
+                        type="password"
+                        name="lozinka"
+                        required
+                        class="form-control"
+                      />
                     </div>
                     <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                   </div>
                   <div class="row">
                     <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
-                    <button class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4 btn-podnesi">Spremi</button>
+                    <button
+                      class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4 btn-podnesi"
+                    >
+                      Spremi
+                    </button>
                     <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
                   </div>
                 </div>
@@ -451,6 +494,12 @@ span:after {
 .share:hover > h1 > span:nth-child(12) {
   color: white;
   transition-delay: 530ms;
+}
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  margin-top: 5%;
+  color: #00b7ff;
 }
 @media (max-width: 375px) {
   .btn {
