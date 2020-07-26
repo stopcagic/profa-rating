@@ -96,77 +96,20 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2"></div>
-                  <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3 br">
+                  <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
                     <button
-                      type="button"
-                      v-on:click="prikaziEmail = !prikaziEmail; prikaziLozinku = true"
-                      class="btn btn-primary"
-                    >
-                      <b>Promijeni Email</b>
-                    </button>
+                      type="submit"
+                      class="btn btn-primary btn-lg"
+                      v-on:click="prikaziLozinku = !prikaziLozinku"
+                    >Priomijeni lozinku</button>
                   </div>
-                  <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2"></div>
-
-                  <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3 br">
-                    <button
-                      type="button"
-                      v-on:click="prikaziLozinku = !prikaziLozinku; prikaziEmail = true"
-                      class="btn btn-primary"
-                    >
-                      <b>Promijeni Lozinku</b>
-                    </button>
-                  </div>
-                  <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2"></div>
                 </div>
+
                 <div
                   class="alert alertCustom"
                   role="alert"
                   v-show="errorHndlr.status"
                 >{{errorHndlr.message}}</div>
-                <form @submit.prevent="updateEmail">
-                  <div
-                    v-if="!prikaziEmail"
-                    class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12"
-                  >
-                    <div class="podnaslov">Novi email</div>
-                    <div class="row">
-                      <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                      <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                        <input
-                          type="text"
-                          name="lozinka"
-                          required
-                          class="form-control"
-                          v-model="new_email"
-                        />
-                      </div>
-                      <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                    </div>
-                    <div class="podnaslov">Ponovite novi email</div>
-                    <div class="row">
-                      <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                      <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                        <input
-                          type="text"
-                          name="lozinka"
-                          required
-                          class="form-control"
-                          v-model="new_email2"
-                        />
-                      </div>
-                      <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
-                      <button
-                        class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4 btn-podnesi"
-                        type="submit"
-                      >Spremi</button>
-                      <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
-                    </div>
-                  </div>
-                </form>
                 <form @submit.prevent="updatePassword">
                   <div
                     v-if="!prikaziLozinku"
@@ -243,12 +186,9 @@ export default {
   data() {
     return {
       auth: auth.state,
-      prikaziEmail: true,
       prikaziLozinku: true,
       userEmail: "",
       userFaks: "",
-      new_email: "",
-      new_email2: "",
       old_password: "",
       new_password: "",
       new_password2: "",
@@ -278,21 +218,6 @@ export default {
     zamjena() {
       if (this.prikaziEmail == false) this.prikaziEmail = true;
     },
-    async updateEmail() {
-      if (this.new_email == this.new_email2) {
-        if (this.new_email2 == this.userEmail) {
-          this.errorHndlr.status = true;
-          this.errorHndlr.message = "Novi email ne smije biti isti kao stari.";
-        } else {
-          let response = await updateProfile.updateEmail(this.new_email);
-          auth.logout();
-          this.$router.go();
-        }
-      } else {
-        this.errorHndlr.status = true;
-        this.errorHndlr.message = "Email krivo ponovljen.";
-      }
-    },
     async updatePassword() {
       if (this.new_password == this.new_password2) {
         let response = await updateProfile.updatePassword(
@@ -300,14 +225,12 @@ export default {
           this.new_password
         );
         if (response.status == false) {
-          this.errorHndlr.message = response.message,
-          this.errorHndlr.status = true;
-        }
-        else{
+          (this.errorHndlr.message = response.message),
+            (this.errorHndlr.status = true);
+        } else {
           auth.logout();
           this.$router.go();
         }
-        
       } else {
         this.errorHndlr.status = true;
         this.errorHndlr.message = "Lozinka krivo ponovljena.";
@@ -603,7 +526,7 @@ span:after {
   }
   .promjena input[type="password"],
   [type="text"] {
-    width: 80%;
+    width: 100%;
   }
   .ab h2 {
     font-size: 150%;

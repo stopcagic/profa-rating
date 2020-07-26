@@ -37,35 +37,7 @@ router.patch('/password', verify, async (req, res) => {
     }
 
 })
-
-router.patch('/email', verify, async (req, res) => {
-    let db = await connect()
-    let newEmail = req.body.email
-    let email = req.jwt.email
-
-    let user = await db.collection('users').findOne({ email: email})
-
-    if(user && newEmail){
-
-        try {
-            await db.collection('users').updateOne(
-                {_id: user._id},
-                {
-                    $set: { email: newEmail }
-                }
-                )
-            res.status(200).send('Novi email spremljen.')
-        } catch (error) {
-            res.status(500).send(error)
-        }
-    }
-    else{
-        res.status(400).send('Ne dostaje novi email')
-    }
-
-})
-
-router.post('/register', async (req, res) => {
+router.post('/', async (req, res) => {
 
     const db = await connect()
 

@@ -120,7 +120,7 @@ const auth = {
 
 const updateProfile = {
     async updatePassword(old_password, new_password){
-        let response = await Services.patch('/user/password',{
+        let response = await Services.patch('/user',{
             old_password: old_password.toString(),
             new_password: new_password.toString()
         })
@@ -137,15 +137,6 @@ const updateProfile = {
                 status: true,
             }
         }
-    },
-    async updateEmail(newEmail){
-        let response = await Services.patch('/user/email',{
-            email: newEmail
-        })
-        
-        let data = await response.data
-
-        return data
     }
 }
 export { profs, auth, anketa, updateProfile }
