@@ -15,13 +15,13 @@
         <span>| Popunjene forme</span>
       </a>
     </div>
-    <div v-if="auth.authenticated" v-on:click="openLogin()">
+    <div v-if="!auth.authenticated" v-on:click="openLogin()">
       <a class="button" href="/prijava">
         <span>| Prijava</span>
       </a>
     </div>
-    <div v-if="auth.authenticated ">
-      <a class="odjava button" @click="logout" href="#about">
+    <div v-if="auth.authenticated">
+      <a class="odjava button" @click="logout" href="/">
         <span>| Odjavi se</span>
       </a>
     </div>
