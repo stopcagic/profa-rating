@@ -1,5 +1,4 @@
 import axios from 'axios'
-import router from '@/router'
 
 let Services = axios.create({
     baseURL: 'http://localhost:3000',
