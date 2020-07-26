@@ -1,12 +1,35 @@
 <template>
   <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-    <a href="javascript:void(0);" class="icon" @click="myFunction">
-      <i class="fa fa-bars"></i>
-    </a>
+    <div>
+      <a class="button" href="/about" v-bind:class="{ currentLink: isActive }">
+        <span>| About</span>
+      </a>
+    </div>
+    <div v-if="auth.authenticated">
+      <a class="button" href="/popis">
+        <span>| Popis</span>
+      </a>
+    </div>
+    <div v-if="auth.authenticated" class="button">
+      <a class="button" href="/oznacene">
+        <span>| Popunjene forme</span>
+      </a>
+    </div>
+    <div v-if="auth.authenticated" v-on:click="openLogin()">
+      <a class="button" href="/prijava">
+        <span>| Prijava</span>
+      </a>
+    </div>
+    <div v-if="auth.authenticated ">
+      <a class="odjava button" @click="logout" href="#about">
+        <span>| Odjavi se</span>
+      </a>
+    </div>
+    <div v-if="auth.authenticated">
+      <a href="javascript:void(0);" class="icon" @click="myFunction">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
   </div>
 </template>
 <script>
@@ -42,7 +65,6 @@ export default {
 </script>
 
 <style scoped>
-/* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -53,6 +75,33 @@ export default {
   -webkit-animation: w70 3s ease backwards;
   animation: w70 3s ease backwards;
 }
+.button {
+  transition: all 0.5s;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 .topnav .w70 {
   margin-left: 0%;
 }
@@ -60,25 +109,26 @@ export default {
   margin-left: 0%;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
+  margin-right: 0.5%;
   float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+
+  font-size: 14px;
 }
 
-/* Add an active class to highlight the current page */
-.topnav a:hover {
+/* .topnav a:hover {
   border-radius: 5px;
   backdrop-filter: blur(15px);
   color: white;
 }
+.topnav .odjava:hover {
+  color: rgb(219, 6, 6);
+} */
 
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
@@ -93,7 +143,6 @@ export default {
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
