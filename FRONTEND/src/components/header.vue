@@ -1,37 +1,12 @@
 <template>
-  <div class="naslov">
-    <div class="navbar" id="myTopnav">
-      <router-link class="link button" to="/about">
-        <a v-bind:class="{ currentLink: isActive }" class="dugme">| About</a>
-      </router-link>
-
-      <div v-if="auth.authenticated">
-        <router-link class="link button" to="/popis">
-          <a class="dugme">| Popis</a>
-        </router-link>
-      </div>
-
-      <div v-if="auth.authenticated">
-        <router-link class="link button" to="/oznacene">
-          <a class="dugme">| Popunjene forme</a>
-        </router-link>
-      </div>
-
-      <div v-if="!auth.authenticated">
-        <router-link class="link button" to="/prijava" v-on:click="openLogin()">
-          <a class="dugme">| Prijava</a>
-        </router-link>
-      </div>
-
-      <div v-if="auth.authenticated">
-        <router-link class="link button" to="/" @click="logout">
-          <a class="dugme odjava">| Odjavi se</a>
-        </router-link>
-      </div>
-      <!--   <a href="javascript:void(0);" class="ikona" @click="myFunction">
-        <i class="fa fa-bars"></i>
-      </a>-->
-    </div>
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" @click="myFunction">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
 </template>
 <script>
@@ -56,10 +31,10 @@ export default {
     },
     myFunction() {
       var x = document.getElementById("myTopnav");
-      if (x.className === "navbar") {
+      if (x.className === "topnav") {
         x.className += " responsive";
       } else {
-        x.className = "navbar";
+        x.className = "topnav";
       }
     },
   },
@@ -67,115 +42,64 @@ export default {
 </script>
 
 <style scoped>
-.currentLink {
-  font-size: 150%;
-}
-.odjava:hover {
-  color: rgb(219, 6, 6);
-}
-.navbar {
-  float: right;
-}
-.navbar a {
-  -webkit-animation: w70 3s ease backwards;
-  animation: w70 3s ease backwards;
-}
-.naslov {
-  height: 40px;
-  border-radius: 0px 0px 0px 10px;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.384);
-  backdrop-filter: blur(5px);
-  -webkit-animation: w70 3s ease backwards;
-  animation: w70 3s ease backwards;
-}
-.naslov .w70 {
-  margin-left: 0%;
-}
-.navbar .w70 {
-  margin-left: 0%;
-}
-.button {
-  background-color: transparent;
-  border: none;
-  color: gray;
-  font-size: 1em;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-.button .dugme {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-.dugme::after:active {
-  font-size: 50px;
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
 }
 
-.button .dugme:after {
-  content: "\00bb";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.button:hover .dugme {
-  padding-right: 25px;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.button:hover .dugme:after {
-  opacity: 1;
-  right: 0;
-}
-.naslov .ikona {
-  display: none;
-}
-.link {
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4caf50;
   color: white;
 }
 
-@-webkit-keyframes w70 {
-  from {
-    margin-left: -100%;
-  }
-  to {
-    margin-left: 0%;
-  }
-}
-@keyframes w70 {
-  from {
-    margin-left: -100%;
-  }
-  to {
-    margin-left: 0%;
-  }
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
 }
 
-/* @media screen and (max-width: 407px) {
-  .navbar a {
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
     display: none;
   }
-  .navbar a.ikona {
+  .topnav a.icon {
     float: right;
     display: block;
   }
 }
-@media screen and (max-width: 407px) {
-  .navbar.responsive {
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
     position: relative;
   }
-  .navbar.responsive a.ikona {
+  .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .navbar.responsive a {
+  .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-} */
+}
 </style>
