@@ -1,4 +1,5 @@
 import axios from 'axios'
+import router from '@/router'
 
 let Services = axios.create({
     baseURL: 'http://localhost:3000',
@@ -15,8 +16,9 @@ Services.interceptors.request.use((request) => {
 });
 
 Services.interceptors.response.use((response) => response, (error) => {
-    if (error.response.status == 401 || 403) {
+    if (error.response.status < 300 || error.response.status > 599) {
         auth.logout()
+        router.go()
     }
     return error.response
 })
@@ -118,16 +120,26 @@ const auth = {
 
 const updateProfile = {
     async updatePassword(old_password, new_password){
-        let response = await Services.patch({
-            old_password: old_password,
-            new_password: new_password
+        let response = await Services.patch('/user/password',{
+            old_password: old_password.toString(),
+            new_password: new_password.toString()
         })
         let data = await response.data
+        let status = response.status
 
-        return data
+        if(status !== 200) return {
+            status: false,
+            message: data
+        }
+        else {
+            console.log(data);
+            return {
+                status: true,
+            }
+        }
     },
     async updateEmail(newEmail){
-        let response = await Services.patch({
+        let response = await Services.patch('/user/email',{
             email: newEmail
         })
         

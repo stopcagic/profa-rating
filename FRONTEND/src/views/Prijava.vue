@@ -1,14 +1,16 @@
 <template >
-  <div id="login" class="container-fluid card-prijava" >
+  <div id="login" class="container-fluid card-prijava">
     <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
       <h1>
         Prijava
         <hr />
       </h1>
     </div>
-    <div class="alert alertCustom" role="alert" v-show="errorHandler.status">
-      {{errorHandler.message}}
-    </div>
+    <div
+      class="alert alertCustom"
+      role="alert"
+      v-show="errorHandler.status"
+    >{{errorHandler.message}}</div>
     <form @submit.prevent="login">
       <div class="row">
         <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
@@ -79,10 +81,10 @@ export default {
     return {
       lozinka: "",
       email: "",
-      errorHandler:{
+      errorHandler: {
         status: false,
-        message: ''
-      }
+        message: "",
+      },
     };
   },
   methods: {
@@ -97,16 +99,15 @@ export default {
 
       if (didItPass.status == true) {
         this.$router.push({ path: "popis" });
+      } else {
+        this.errorHandler.status = true;
+        this.errorHandler.message = didItPass.message;
       }
-      else{
-        this.errorHandler.status = true
-        this.errorHandler.message = didItPass.message
-      }
-    }
+    },
   },
   components: {
-    modal
-  }
+    modal,
+  },
 };
 </script>
 
@@ -176,7 +177,7 @@ export default {
   margin-left: 100px;
   margin-right: 100px;
 }
-.alertCustom{
+.alertCustom {
   border: 1px solid rgb(141, 52, 52);
   color: rgb(247, 41, 41);
 }

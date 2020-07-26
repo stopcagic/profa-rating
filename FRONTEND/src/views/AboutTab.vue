@@ -76,12 +76,22 @@
               <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 ab">
                 <div class="row">
                   <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
-                    <h2>Email: <p class="userData userDataEmail"><b>{{ userEmail }}</b> </p></h2> 
+                    <h2>
+                      Email:
+                      <p class="userData userDataEmail">
+                        <b>{{ userEmail }}</b>
+                      </p>
+                    </h2>
                   </div>
                 </div>
                 <div class="row">
                   <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
-                    <h2>Fakultet: <p class="userData userDataFaks"> <b>{{userFaks}}</b></p></h2>
+                    <h2>
+                      Fakultet:
+                      <p class="userData userDataFaks">
+                        <b>{{userFaks}}</b>
+                      </p>
+                    </h2>
                   </div>
                 </div>
 
@@ -109,68 +119,111 @@
                   </div>
                   <div class="col-xs-2 .col-sm-2 .col-md-2 col-lg-2"></div>
                 </div>
-
                 <div
-                  v-if="!prikaziEmail"
-                  class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12"
-                >
-                  <div class="podnaslov">Novi email</div>
-                  <div class="row">
-                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                    <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input type="text" name="lozinka" required class="form-control" />
+                  class="alert alertCustom"
+                  role="alert"
+                  v-show="errorHndlr.status"
+                >{{errorHndlr.message}}</div>
+                <form @submit.prevent="updateEmail">
+                  <div
+                    v-if="!prikaziEmail"
+                    class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12"
+                  >
+                    <div class="podnaslov">Novi email</div>
+                    <div class="row">
+                      <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                      <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
+                        <input
+                          type="text"
+                          name="lozinka"
+                          required
+                          class="form-control"
+                          v-model="new_email"
+                        />
+                      </div>
+                      <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     </div>
-                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                  </div>
-                  <div class="podnaslov">Ponovite novi email</div>
-                  <div class="row">
-                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                    <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input type="text" name="lozinka" required class="form-control" />
+                    <div class="podnaslov">Ponovite novi email</div>
+                    <div class="row">
+                      <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                      <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
+                        <input
+                          type="text"
+                          name="lozinka"
+                          required
+                          class="form-control"
+                          v-model="new_email2"
+                        />
+                      </div>
+                      <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     </div>
-                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
-                    <button class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4 btn-podnesi">Spremi</button>
-                    <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
-                  </div>
-                </div>
-
-                <div
-                  v-if="!prikaziLozinku"
-                  class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12"
-                >
-                  <div class="podnaslov">Trenutačna lozinka</div>
-                  <div class="row">
-                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                    <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input type="password" name="lozinka" required class="form-control" />
+                    <div class="row">
+                      <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
+                      <button
+                        class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4 btn-podnesi"
+                        type="submit"
+                      >Spremi</button>
+                      <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
                     </div>
-                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                   </div>
-                  <div class="podnaslov">Nova Lozinka</div>
-                  <div class="row">
-                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                    <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input type="password" name="lozinka" required class="form-control" />
+                </form>
+                <form @submit.prevent="updatePassword">
+                  <div
+                    v-if="!prikaziLozinku"
+                    class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12"
+                  >
+                    <div class="podnaslov">Trenutačna lozinka</div>
+                    <div class="row">
+                      <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                      <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
+                        <input
+                          type="password"
+                          name="lozinka"
+                          required
+                          class="form-control"
+                          v-model="old_password"
+                        />
+                      </div>
+                      <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     </div>
-                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                  </div>
-                  <div class="podnaslov">Ponovite novu lozinku</div>
-                  <div class="row">
-                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
-                    <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
-                      <input type="password" name="lozinka" required class="form-control" />
+                    <div class="podnaslov">Nova Lozinka</div>
+                    <div class="row">
+                      <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                      <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
+                        <input
+                          type="password"
+                          name="lozinka"
+                          required
+                          class="form-control"
+                          v-model="new_password"
+                        />
+                      </div>
+                      <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
                     </div>
-                    <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                    <div class="podnaslov">Ponovite novu lozinku</div>
+                    <div class="row">
+                      <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                      <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 promjena">
+                        <input
+                          type="password"
+                          name="lozinka"
+                          required
+                          class="form-control"
+                          v-model="new_password2"
+                        />
+                      </div>
+                      <div class="col-xs-3 .col-sm-3 .col-md-3 col-lg-3"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
+                      <button
+                        class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4 btn-podnesi"
+                        type="submit"
+                      >Spremi</button>
+                      <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
+                    </div>
                   </div>
-                  <div class="row">
-                    <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
-                    <button class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4 btn-podnesi">Spremi</button>
-                    <div class="col-xs-4 .col-sm-4 .col-md-4 col-lg-4"></div>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
@@ -182,8 +235,9 @@
 
 <script>
 import header from "@/components/header";
-import { auth } from "@/services";
-import faks from '../faks.json'
+import { auth, updateProfile } from "@/services";
+import faks from "../faks.json";
+import regeneratorRuntime from "regenerator-runtime";
 
 export default {
   data() {
@@ -192,7 +246,16 @@ export default {
       prikaziEmail: true,
       prikaziLozinku: true,
       userEmail: "",
-      userFaks: '',
+      userFaks: "",
+      new_email: "",
+      new_email2: "",
+      old_password: "",
+      new_password: "",
+      new_password2: "",
+      errorHndlr: {
+        message: "",
+        status: false,
+      },
     };
   },
   components: {
@@ -200,11 +263,13 @@ export default {
   },
   mounted() {
     let data = auth.getUser();
-    this.userEmail = data.email;
+    if (data) {
+      this.userEmail = data.email;
 
-    let tempFaks = auth.getFaks()
-    tempFaks = faks.find(el => el.short == tempFaks)
-    this.userFaks = tempFaks['long']
+      let tempFaks = auth.getFaks();
+      tempFaks = faks.find((el) => el.short == tempFaks);
+      this.userFaks = tempFaks["long"];
+    }
   },
   methods: {
     idiHome() {
@@ -212,6 +277,41 @@ export default {
     },
     zamjena() {
       if (this.prikaziEmail == false) this.prikaziEmail = true;
+    },
+    async updateEmail() {
+      if (this.new_email == this.new_email2) {
+        if (this.new_email2 == this.userEmail) {
+          this.errorHndlr.status = true;
+          this.errorHndlr.message = "Novi email ne smije biti isti kao stari.";
+        } else {
+          let response = await updateProfile.updateEmail(this.new_email);
+          auth.logout();
+          this.$router.go();
+        }
+      } else {
+        this.errorHndlr.status = true;
+        this.errorHndlr.message = "Email krivo ponovljen.";
+      }
+    },
+    async updatePassword() {
+      if (this.new_password == this.new_password2) {
+        let response = await updateProfile.updatePassword(
+          this.old_password,
+          this.new_password
+        );
+        if (response.status == false) {
+          this.errorHndlr.message = response.message,
+          this.errorHndlr.status = true;
+        }
+        else{
+          auth.logout();
+          this.$router.go();
+        }
+        
+      } else {
+        this.errorHndlr.status = true;
+        this.errorHndlr.message = "Lozinka krivo ponovljena.";
+      }
     },
   },
 };
@@ -288,14 +388,14 @@ export default {
 .first-container {
   margin-bottom: 5%;
 }
-.userData{
-  color:#00b7ff;
+.userData {
+  color: #00b7ff;
   overflow-wrap: break-word;
 }
-.userDataEmail{
+.userDataEmail {
   font-size: 30px;
 }
-.userDataFaks{
+.userDataFaks {
   font-size: 20px;
 }
 span {
@@ -452,6 +552,10 @@ span:after {
   color: white;
   transition-delay: 530ms;
 }
+.alertCustom {
+  border: 1px solid rgb(141, 52, 52);
+  color: rgb(247, 41, 41);
+}
 @media (max-width: 375px) {
   .btn {
     padding: 5%;
@@ -475,10 +579,10 @@ span:after {
   }
   .promjena input[type="password"],
   [type="text"] {
-    width: 100%;
+    width: 160%;
   }
   .ab h2 {
-    font-size: 90%;
+    font-size: 100%;
   }
 }
 @media (max-width: 1220px) {
@@ -487,7 +591,7 @@ span:after {
   }
   .promjena input[type="password"],
   [type="text"] {
-    width: 60%;
+    width: 150%;
   }
 }
 @media (max-width: 990px) {

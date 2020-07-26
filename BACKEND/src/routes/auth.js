@@ -13,9 +13,10 @@ router.patch('/password', verify, async (req, res) => {
     let newPassword = req.body.new_password
     let oldPassword = req.body.old_password
     let email = req.jwt.email
-
     let user = await db.collection('users').findOne({ email: email})
-
+    if((await bcrypt.compare(newPassword, user.password))){
+        res.status(500).send('Nova lozinka ne smije biti ista kao stara.')
+    }
     if(newPassword && oldPassword && user && (await bcrypt.compare(oldPassword, user.password))){
         let new_password_hash = await bcrypt.hash(newPassword, 10)
 
@@ -32,7 +33,7 @@ router.patch('/password', verify, async (req, res) => {
         }
     }
     else{
-        res.status(400).send('Ne dostaje stara ili nova lozinka.')
+        res.status(400).send('Kriva stara lozinka')
     }
 
 })
@@ -53,7 +54,7 @@ router.patch('/email', verify, async (req, res) => {
                     $set: { email: newEmail }
                 }
                 )
-            res.status(200).send('New email updated.')
+            res.status(200).send('Novi email spremljen.')
         } catch (error) {
             res.status(500).send(error)
         }
