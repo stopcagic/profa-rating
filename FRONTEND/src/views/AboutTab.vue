@@ -76,12 +76,12 @@
               <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 ab">
                 <div class="row">
                   <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
-                    <h2>Email:</h2>
+                    <h2>Email: <p class="userData userDataEmail"><b>{{ userEmail }}</b> </p></h2> 
                   </div>
                 </div>
                 <div class="row">
                   <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
-                    <h2>Fakultet:</h2>
+                    <h2>Fakultet: <p class="userData userDataFaks"> <b>{{userFaks}}</b></p></h2>
                   </div>
                 </div>
 
@@ -195,6 +195,7 @@ import prijava from "./Prijava.vue";
 import registracija from "./Registracija.vue";
 import store from "../store.js";
 import { auth } from "@/services";
+import faks from '../faks.json'
 
 export default {
   data() {
@@ -204,6 +205,8 @@ export default {
       auth: auth.state,
       prikaziEmail: true,
       prikaziLozinku: true,
+      userEmail: "",
+      userFaks: '',
     };
   },
   components: {
@@ -211,6 +214,13 @@ export default {
     "app-header": header,
     prijava,
     registracija,
+  },
+  mounted() {
+    let data = auth.getUser();
+    this.userEmail = data.email;
+    let tempFaks = data.faks
+    tempFaks = faks.find(el => el.short == tempFaks)
+    this.userFaks = tempFaks['long']
   },
   methods: {
     idiHome() {
@@ -294,7 +304,16 @@ export default {
 .first-container {
   margin-bottom: 5%;
 }
-
+.userData{
+  color:#00b7ff;
+  overflow-wrap: break-word;
+}
+.userDataEmail{
+  font-size: 30px;
+}
+.userDataFaks{
+  font-size: 20px;
+}
 span {
   display: inline-block;
   position: relative;
