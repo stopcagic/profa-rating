@@ -46,11 +46,23 @@ export default {
 .topnav {
   background-color: #333;
   overflow: hidden;
+  border-radius: 0px 0px 0px 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.384);
+  backdrop-filter: blur(5px);
+  -webkit-animation: w70 3s ease backwards;
+  animation: w70 3s ease backwards;
+}
+.topnav .w70 {
+  margin-left: 0%;
+}
+.topnav .w70 {
+  margin-left: 0%;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -59,15 +71,10 @@ export default {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 /* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: #4caf50;
+.topnav a:hover {
+  border-radius: 5px;
+  backdrop-filter: blur(15px);
   color: white;
 }
 
@@ -77,7 +84,7 @@ export default {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
+  .topnav a {
     display: none;
   }
   .topnav a.icon {
