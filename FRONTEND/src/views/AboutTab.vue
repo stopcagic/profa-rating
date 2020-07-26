@@ -189,19 +189,13 @@
 </template>
 
 <script>
-import kartica from "@/components/kartica.vue";
 import header from "@/components/header";
-import prijava from "./Prijava.vue";
-import registracija from "./Registracija.vue";
-import store from "../store.js";
 import { auth } from "@/services";
 import faks from '../faks.json'
 
 export default {
   data() {
     return {
-      prikaziPrijava: store.prikaziPrijava,
-      prikaziRegistracija: store.registriraj_se,
       auth: auth.state,
       prikaziEmail: true,
       prikaziLozinku: true,
@@ -210,15 +204,13 @@ export default {
     };
   },
   components: {
-    kartica,
     "app-header": header,
-    prijava,
-    registracija,
   },
   mounted() {
     let data = auth.getUser();
     this.userEmail = data.email;
-    let tempFaks = data.faks
+
+    let tempFaks = auth.getFaks()
     tempFaks = faks.find(el => el.short == tempFaks)
     this.userFaks = tempFaks['long']
   },
