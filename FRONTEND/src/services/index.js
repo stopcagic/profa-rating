@@ -115,4 +115,25 @@ const auth = {
         }
     }
 }
-export { profs, auth, anketa }
+
+const updateProfile = {
+    async updatePassword(old_password, new_password){
+        let response = await Services.patch({
+            old_password: old_password,
+            new_password: new_password
+        })
+        let data = await response.data
+
+        return data
+    },
+    async updateEmail(newEmail){
+        let response = await Services.patch({
+            email: newEmail
+        })
+        
+        let data = await response.data
+
+        return data
+    }
+}
+export { profs, auth, anketa, updateProfile }
