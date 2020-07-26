@@ -45,10 +45,12 @@ export default {
   font-family: "Gotu", sans-serif;
   text-align: center;
   height: 100%;
+  pointer-events: none
 }
 .w3-container {
   padding: 0px;
   margin: 0px;
+  opacity: 0.9;
 }
 .navbar-about {
   -webkit-animation: w100 3s ease backwards;
