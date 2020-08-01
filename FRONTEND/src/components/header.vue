@@ -1,47 +1,43 @@
 <template>
-  <div class="naslov">
-    <ul class="navbar">
-      <button class="button">
-        <router-link class="link" to="/about">
-          <a v-bind:class="{ currentLink: isActive }" class="dugme">| About</a>
-        </router-link>
-      </button>
+  <div class="topnav" id="myTopnav">
+    <div>
+      <a class="button" href="/about" v-bind:class="{ currentLink: isActive }">
+        <span>| About</span>
+      </a>
+    </div>
+    <div v-if="auth.authenticated">
+      <a class="button" href="/popis">
+        <span>| Popis</span>
+      </a>
+    </div>
+    <div v-if="auth.authenticated" class="button">
+      <a class="button" href="/oznacene">
+        <span>| Popunjene forme</span>
+      </a>
+    </div>
+    <div v-if="!auth.authenticated" v-on:click="openLogin()">
+      <a class="button" href="/prijava">
+        <span>| Prijava</span>
+      </a>
+    </div>
 
-      <div v-if="auth.authenticated">
-        <button class="button">
-          <router-link class="link" to="/popis">
-            <a class="dugme">| Popis</a>
-          </router-link>
-        </button>
-      </div>
-
-      <div v-if="auth.authenticated">
-        <button class="button">
-          <router-link class="link" to="/oznacene">
-            <a class="dugme">| Popunjene forme</a>
-          </router-link>
-        </button>
-      </div>
-
-      <div v-if="!auth.authenticated">
+    <!--       <div v-if="!auth.authenticated">
         <button class="button" v-on:click="openLogin()">
           <router-link class="link" to="/prijava">
             <a class="dugme">| Prijava</a>
           </router-link>
         </button>
-      </div>
-
-      <div v-if="auth.authenticated">
-        <button class="button" @click="logout">
-          <router-link class="link" to="/">
-            <a class="dugme odjava">| Odjavi se</a>
-          </router-link>
-        </button>
-      </div>
-      <a href="javascript:void(0);" class="ikona">
+      </div> -->
+    <div v-if="auth.authenticated">
+      <a class="odjava button" @click="logout" href="/">
+        <span>| Odjavi se</span>
+      </a>
+    </div>
+    <div v-if="auth.authenticated">
+      <a href="javascript:void(0);" class="icon" @click="myFunction">
         <i class="fa fa-bars"></i>
       </a>
-    </ul>
+    </div>
   </div>
 </template>
 <script>
@@ -60,24 +56,25 @@ export default {
       this.$router.go();
     },
     openLogin() {
-      this.$store.commit('prijava')
+      this.$store.commit("prijava");
+      console.log(this.$store.state.prijavi_se);
+    },
+    myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
     },
   },
 };
 </script>
 
 <style scoped>
-.currentLink {
-  font-size: 150%;
-}
-.odjava:hover {
-  color: rgb(219, 6, 6);
-}
-ul {
-  float: right;
-}
-.naslov {
-  height: 40px;
+.topnav {
+  background-color: #333;
+  overflow: hidden;
   border-radius: 0px 0px 0px 10px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.384);
@@ -85,28 +82,17 @@ ul {
   -webkit-animation: w70 3s ease backwards;
   animation: w70 3s ease backwards;
 }
-.naslov .w70 {
-  margin-left: 0%;
-}
 .button {
-  background-color: transparent;
-  border: none;
-  color: gray;
-  font-size: 1em;
   transition: all 0.5s;
-  cursor: pointer;
 }
-.button .dugme {
+.button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-.dugme::after:active {
-  font-size: 50px;
-}
 
-.button .dugme:after {
+.button span:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -115,52 +101,68 @@ ul {
   transition: 0.5s;
 }
 
-.button:hover .dugme {
+.button:hover span {
   padding-right: 25px;
 }
 
-.button:hover .dugme:after {
+.button:hover span:after {
   opacity: 1;
   right: 0;
 }
-.naslov .ikona {
-  display: none;
+.topnav .w70 {
+  margin-left: 0%;
 }
-.link {
+.topnav .w70 {
+  margin-left: 0%;
+}
+
+.topnav a {
+  margin-right: 0.5%;
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+
+  font-size: 14px;
+}
+
+/* .topnav a:hover {
+  border-radius: 5px;
+  backdrop-filter: blur(15px);
   color: white;
 }
+.topnav .odjava:hover {
+  color: rgb(219, 6, 6);
+} */
 
-@-webkit-keyframes w70 {
-  from {
-    margin-left: -100%;
-  }
-  to {
-    margin-left: 0%;
-  }
-}
-@keyframes w70 {
-  from {
-    margin-left: -100%;
-  }
-  to {
-    margin-left: 0%;
-  }
+.topnav .icon {
+  display: none;
 }
 
-@media screen and (max-width: 407px) {
-  .navbar a .dugme {
+@media screen and (max-width: 600px) {
+  .topnav a {
     display: none;
   }
-  ul.navbar {
-    overflow-x: scroll;
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
 }
-/* @media screen and (max-width: 375px) {
-  div.naslov.navbar-about {
-    padding: 40px;
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
   }
-  ul.navbar {
-    margin-top: -45px;
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-}  */
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 </style>

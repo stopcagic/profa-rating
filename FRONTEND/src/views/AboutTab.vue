@@ -5,7 +5,9 @@
         <div class="row">
           <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12 left title">
             <div class="w3-container">
-              <div @click="idiHome" class="w3-center w3-animate-left hero">OCIJENITE PROFESORA</div>
+              <div @click="idiHome" class="w3-center w3-animate-left hero">
+                OCIJENITE PROFESORA
+              </div>
             </div>
           </div>
         </div>
@@ -73,7 +75,9 @@
                 <hr />
               </div>
 
-              <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 ab">
+              <div
+                class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 ab"
+              >
                 <div class="row">
                   <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
                     <h2>
