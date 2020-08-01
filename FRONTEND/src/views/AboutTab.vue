@@ -251,6 +251,7 @@ export default {
   padding-top: 5%;
   margin-top: 15%;
   margin-left: 10%;
+  padding-bottom: 20px;
   border: none;
   border-radius: 15px;
   background-image: url("../assets/card-pozadina.svg");

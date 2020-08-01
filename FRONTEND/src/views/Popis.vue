@@ -6,7 +6,7 @@
 
         <div class="container w3-center w3-animate-right">
           <div v-for="profesor in profesori" :key="profesor._id">
-            <kartica :info="profesor" />
+            <kartica :info="profesor"/>
           </div>
         </div>
       </div>

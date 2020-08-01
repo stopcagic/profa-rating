@@ -126,16 +126,6 @@ export default {
 
   font-size: 14px;
 }
-
-/* .topnav a:hover {
-  border-radius: 5px;
-  backdrop-filter: blur(15px);
-  color: white;
-}
-.topnav .odjava:hover {
-  color: rgb(219, 6, 6);
-} */
-
 .topnav .icon {
   display: none;
 }

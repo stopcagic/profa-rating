@@ -5,7 +5,6 @@
     <div class="container w3-center w3-animate-right">
       <div v-for="profesor in profesoriIspunjeno" :key="profesor._id">
         <kartica :info="profesor"/>
-        
       </div>
     </div>
   </div>
@@ -26,17 +25,17 @@ export default {
   },
   components: {
     kartica,
-    appheader
+    appheader,
   },
   async created() {
-     this.fetchPosts();
+    this.fetchPosts();
   },
   methods: {
     async fetchPosts() {
       let faks = auth.getFaks();
       this.profesoriIspunjeno = await profs.getOznacene(faks);
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>
@@ -46,12 +45,13 @@ export default {
   font-family: "Gotu", sans-serif;
   text-align: center;
   height: 100%;
-  pointer-events: none
+  pointer-events: none;
 }
 .w3-container {
   padding: 0px;
   margin: 0px;
   opacity: 0.9;
+
 }
 .navbar-about {
   -webkit-animation: w100 3s ease backwards;
@@ -67,6 +67,9 @@ export default {
   to {
     margin-left: 0%;
   }
+}
+.card{
+  background-color: lightcoral;
 }
 @keyframes w100 {
   from {
