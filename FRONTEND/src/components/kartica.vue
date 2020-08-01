@@ -18,16 +18,8 @@
 export default {
   props: ["info"],
   data() {
-    return {
-      isClicked: false
-    };
+    return {};
   },
-
-  methods: {
-    toggleIsClicked: function() {
-      this.isClicked = !this.isClicked;
-    }
-  }
 };
 </script>
 <style scoped>
