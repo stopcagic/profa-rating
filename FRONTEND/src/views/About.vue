@@ -126,7 +126,7 @@ export default {
 .title {
   font-family: "Playfair Display", serif;
   font-size: 25px;
-  margin-top: 5%;
+  margin-top: 2%;
   color: #00b7ff;
 }
 
