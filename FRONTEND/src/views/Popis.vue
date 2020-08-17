@@ -53,6 +53,7 @@ export default {
 .navbar-about w100 {
   margin-left: 0%;
 }
+
 @-webkit-keyframes w100 {
   from {
     margin-left: 50%;
