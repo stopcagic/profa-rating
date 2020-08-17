@@ -4,7 +4,7 @@
 
     <div class="container w3-center w3-animate-right">
       <div v-for="profesor in profesoriIspunjeno" :key="profesor._id">
-        <kartica :info="profesor"/>
+        <kartica :info="profesor" :oznacene="true"/>
       </div>
     </div>
   </div>

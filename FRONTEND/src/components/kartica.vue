@@ -7,7 +7,12 @@
             <router-link v-bind:to="'/anketa/' + info._id" class="link">{{info.profesor}}</router-link>
           </div>
           <div class="col-3">
+          <div v-if="oznacene">
+            <i class="fas fa-clipboard-check"></i>
+          </div>
+          <div v-else>
             <i class="fas fa-clipboard"></i>
+          </div>
           </div>
         </div>
       </div>
@@ -16,7 +21,7 @@
 </template> 
 <script>
 export default {
-  props: ["info"],
+  props: ["info", "oznacene"],
   data() {
     return {};
   },
@@ -44,8 +49,13 @@ export default {
   transform: scale(1.03);
 }
 
-.fas {
+.fa-clipboard {
   color: rgba(51, 62, 121, 0.842);
+  font-size: 30px;
+  float: right;
+}
+.fa-clipboard-check{
+  color: rgba(14, 110, 78, 0.842);
   font-size: 30px;
   float: right;
 }
