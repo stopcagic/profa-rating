@@ -311,6 +311,7 @@ export default {
   position: relative;
   color: #00b7ff;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .first-container {
