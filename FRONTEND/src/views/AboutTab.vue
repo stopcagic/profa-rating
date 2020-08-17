@@ -312,6 +312,8 @@ export default {
   color: #00b7ff;
   font-size: 25px;
   cursor: pointer;
+  padding-top: 12px;
+  margin-bottom: -17px;
 }
 
 .first-container {
