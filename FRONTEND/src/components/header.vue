@@ -20,14 +20,6 @@
         <span>| Prijava</span>
       </a>
     </div>
-
-    <!--       <div v-if="!auth.authenticated">
-        <button class="button" v-on:click="openLogin()">
-          <router-link class="link" to="/prijava">
-            <a class="dugme">| Prijava</a>
-          </router-link>
-        </button>
-      </div> -->
     <div v-if="auth.authenticated">
       <a class="odjava button" @click="logout" href="/">
         <span>| Odjavi se</span>
