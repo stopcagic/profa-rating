@@ -55,10 +55,6 @@
                 Cilj aplikacije je omoćiti ocjenjivanje preko interneta, bez
                 ikakve potrebe fizičkog dolaska studenta u učionu.
               </p>
-              <p class="opis">
-                Da bi ste bili u mogućnosti koristiti našu aplikaciju morate se
-                prvo prijaviti, to možete postići klikom na gumb ispod.
-              </p>
             </div>
           </div>
         </div>
@@ -105,7 +101,7 @@
                       type="submit"
                       class="btn btn-primary btn-lg"
                       v-on:click="prikaziLozinku = !prikaziLozinku"
-                    >Priomijeni lozinku</button>
+                    >Promijeni lozinku</button>
                   </div>
                 </div>
 
