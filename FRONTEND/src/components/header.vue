@@ -56,8 +56,7 @@ export default {
       this.$router.go();
     },
     openLogin() {
-      this.$store.commit('prijava');
-      console.log(this.$store.state.prijavi_se);
+      this.$store.commit('prijava')
     },
     myFunction() {
       var x = document.getElementById("myTopnav");
