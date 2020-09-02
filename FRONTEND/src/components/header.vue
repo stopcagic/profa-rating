@@ -16,7 +16,7 @@
       </a>
     </div>
     <div v-if="!auth.authenticated" v-on:click="openLogin()">
-      <a class="button" href="/prijava">
+      <a class="button">
         <span>| Prijava</span>
       </a>
     </div>
