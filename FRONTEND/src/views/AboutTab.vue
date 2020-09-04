@@ -1,13 +1,11 @@
 <template>
   <div class="container-fluid p-0" id="about">
-    <div class="row  flex-column-reverse flex-md-row">
+    <div class="row flex-column-reverse flex-md-row">
       <div class="col-xs-6 .col-sm-6 .col-md-6 col-lg-6 left">
         <div class="row">
           <div class="col-xs-12 .col-sm-12 .col-md-12 col-lg-12 left title">
             <div class="w3-container">
-              <div @click="idiHome" class="w3-center w3-animate-left hero">
-                OCIJENITE PROFESORA
-              </div>
+              <div @click="idiHome" class="w3-center w3-animate-left hero">OCIJENITE PROFESORA</div>
             </div>
           </div>
         </div>
@@ -55,10 +53,6 @@
                 Cilj aplikacije je omoćiti ocjenjivanje preko interneta, bez
                 ikakve potrebe fizičkog dolaska studenta u učionu.
               </p>
-              <p class="opis">
-                Da bi ste bili u mogućnosti koristiti našu aplikaciju morate se
-                prvo prijaviti, to možete postići klikom na gumb ispod.
-              </p>
             </div>
           </div>
         </div>
@@ -75,9 +69,7 @@
                 <hr />
               </div>
 
-              <div
-                class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 ab"
-              >
+              <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12 ab">
                 <div class="row">
                   <div class="card-body col-xs-12 .col-sm-12 .col-md-12 col-lg-12">
                     <h2>
