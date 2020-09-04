@@ -17,11 +17,7 @@ app.use(urlencoded({ extended: true }));
 app.use(express.json());
 app.use(CookieParser());
 
-app.all("/", function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  next();
-});
+app.options("*", cors());
 app.use("/predavaci", predavaci);
 app.use("/user", auth);
 app.use("/anketa", forma);
