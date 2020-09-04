@@ -20,7 +20,6 @@
         <span>| Prijava</span>
       </a>
     </div>
-
     <div v-if="auth.authenticated">
       <a class="odjava button" @click="logout" href="/">
         <span>| Odjavi se</span>
@@ -50,7 +49,6 @@ export default {
     },
     openLogin() {
       this.$store.commit("prijava");
-      console.log(this.$store.state.prijavi_se);
     },
     myFunction() {
       var x = document.getElementById("myTopnav");

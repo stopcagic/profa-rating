@@ -97,7 +97,7 @@
                       type="submit"
                       class="btn btn-primary btn-lg"
                       v-on:click="prikaziLozinku = !prikaziLozinku"
-                    >Priomijeni lozinku</button>
+                    >Promijeni lozinku</button>
                   </div>
                 </div>
 
