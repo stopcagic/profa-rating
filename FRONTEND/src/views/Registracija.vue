@@ -92,10 +92,6 @@
           <button type="submit" class="btn btn-primary btn-lg">Registriraj se</button>
         </div>
       </form>
-      <p class="text-center">
-        Imate račun?
-        <router-link to="/" href="button">Prijavite se</router-link>
-      </p>
     </div>
   </modal>
 </template>
@@ -109,7 +105,7 @@ export default {
       newEmail: "",
       password: "",
       newPassword: "",
-      faks: ""
+      faks: "",
     };
   },
   methods: {
@@ -127,8 +123,8 @@ export default {
           }
         }
       }
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>
