@@ -17,6 +17,10 @@ app.use(urlencoded({ extended: true }));
 app.use(express.json());
 app.use(CookieParser());
 
+app.get('/', (req,res)=>{
+    res.send('im online')
+})
+
 app.use("/predavaci", predavaci);
 app.use("/user", auth);
 app.use("/anketa", forma);
