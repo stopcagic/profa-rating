@@ -1,11 +1,13 @@
-import express, { urlencoded } from "express";
+import express from "express";
+const {urlencoded} = express
+
 import cors from "cors";
 import dotenv from "dotenv";
 import CookieParser from "cookie-parser";
 
-import auth from "./routes/auth";
-import predavaci from "./routes/predavaci";
-import forma from "./routes/forma";
+import auth from "./routes/auth.js";
+import predavaci from "./routes/predavaci.js";
+import forma from "./routes/forma.js";
 
 const app = express();
 const port = process.env.PORT || 3000;

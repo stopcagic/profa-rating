@@ -1,7 +1,7 @@
 import express from 'express'
 
-import connect from '../db'
-import verify from '../protectedRoutes'
+import connect from '../db.js'
+import verify from '../protectedRoutes.js'
 
 const router = express.Router()
 

@@ -2,9 +2,9 @@ import express from 'express'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 
-import connect from '../db'
-import { registerValidation, loginValidation } from '../validation'
-import verify from '../protectedRoutes'
+import connect from '../db.js'
+import { registerValidation, loginValidation } from '../validation.js'
+import verify from '../protectedRoutes.js'
 
 const router = express.Router()
 

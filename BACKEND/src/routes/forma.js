@@ -1,8 +1,8 @@
 import express from 'express'
-import mongo, { ObjectID } from 'mongodb'
-
-import connect from '../db'
-import verify from '../protectedRoutes'
+import mongo from 'mongodb'
+const {ObjectID} = mongo
+import connect from '../db.js'
+import verify from '../protectedRoutes.js'
 
 
 const router = express.Router()
