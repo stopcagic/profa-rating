@@ -42,15 +42,15 @@
               <p class="opis">
                 Ova web aplikacija izrađena je u svrhu vrednovanja profesora i
                 asistenata od strane studenata. Profa rating omogućuje studentu
-                da odabere profesora kojega želi ocjeniti, te mu zatim nudi
+                da odabere profesora kojega želi ocijeniti, te mu zatim nudi
                 određena pitanja, ta ista pitanja se sastoje od tri dijela. Prvi
                 dio su osobna pitanja, u kojima student odgovara koliko često
                 izlazi na predavanja te koja mu je najčešća ocjena u indeksu,
-                drugi dio je anketa o porfesoru/asistentu a treća je komentar
+                drugi dio je anketa o profesoru/asistentu a treća je komentar
                 ukoliko student želi nešto svoje nadodati.
               </p>
               <p class="opis">
-                Cilj aplikacije je omoćiti ocjenjivanje preko interneta, bez
+                Cilj aplikacije je omogućiti ocjenjivanje preko interneta, bez
                 ikakve potrebe fizičkog dolaska studenta u učionu.
               </p>
             </div>
