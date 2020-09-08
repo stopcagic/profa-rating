@@ -49,6 +49,9 @@ export default {
     },
     openLogin() {
       this.$store.commit("prijava");
+      if (this.$router.currentRoute.path != "/") {
+        this.$router.push({ path: "/" });
+      }
     },
     myFunction() {
       var x = document.getElementById("myTopnav");
