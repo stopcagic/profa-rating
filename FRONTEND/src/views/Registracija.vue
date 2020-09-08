@@ -115,10 +115,9 @@ export default {
         console.log("Passwords dont match.");
       else {
         let data = await auth.signup(this.email, this.password, this.faks);
-
         if (data == "success.") {
           let success = await auth.login(this.email, this.password);
-          if (success == true) {
+          if (success.status == true) {
             this.$router.push({ path: "/popis" });
           }
         }

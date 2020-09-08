@@ -80,7 +80,7 @@ const auth = {
     }
   },
   async signup(email, password, faks) {
-    let response = await Services.post("/user/register", {
+    let response = await Services.post("/user", {
       email: email,
       password: password,
       faks: faks,
