@@ -225,7 +225,7 @@ export default {
             (this.errorHndlr.status = true);
         } else {
           auth.logout();
-          this.$router.go();
+          this.$router.push({ path: "/" });
         }
       } else {
         this.errorHndlr.status = true;
@@ -478,6 +478,7 @@ span:after {
 .alertCustom {
   border: 1px solid rgb(141, 52, 52);
   color: rgb(247, 41, 41);
+  margin-top: 5px;
 }
 @media (max-width: 375px) {
   .btn {

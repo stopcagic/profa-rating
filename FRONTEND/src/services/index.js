@@ -121,7 +121,7 @@ const auth = {
 
 const updateProfile = {
   async updatePassword(old_password, new_password) {
-    let response = await Services.patch("/user", {
+    let response = await Services.patch("/user/password", {
       old_password: old_password.toString(),
       new_password: new_password.toString(),
     });
